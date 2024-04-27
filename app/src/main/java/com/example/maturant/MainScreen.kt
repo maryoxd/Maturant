@@ -2,6 +2,7 @@ package com.example.maturant
 
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -28,10 +29,11 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowRight
 import androidx.compose.material3.Icon
 import androidx.compose.ui.res.painterResource
+import androidx.navigation.NavController
 
 
 @Composable
-fun MainScreen() {
+fun MainScreen(navController: NavController) {
     Surface(
         modifier = Modifier.fillMaxSize(),
         color = MaterialTheme.colorScheme.background
@@ -51,21 +53,22 @@ fun MainScreen() {
                     .width(400.dp)
             )
             Spacer(modifier = Modifier.height(1.dp))
-            MenuItem("Gramatické témy", Color(0xFFB6FFBE))
-            MenuItem("Literatúrne témy", Color(0xFF8BFF97))
-            MenuItem("Maturitné testy", Color(0xFF5AFF6C))
+            MenuItem("Gramatické témy", Color(0xFFB6FFBE))  {navController.navigate("grammarTopicsScreen")}
+            MenuItem("Literatúrne témy", Color(0xFF8BFF97)) {navController.navigate("literatureTopicsScreen")}
+            MenuItem("Maturitné testy", Color(0xFF5AFF6C)) {navController.navigate("maturitaTestsScreen")}
             Spacer(modifier = Modifier.height(24.dp))
-            MenuItem("Výsledky", Color(0xFFFF7752))
+            MenuItem("Výsledky", Color(0xFFFF7752)) {navController.navigate("resultsScreen")}
 
         }
     }
 }
 
 @Composable
-fun MenuItem(text: String, backgroundColor: Color) {
+fun MenuItem(text: String, backgroundColor: Color, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
+            .clickable (onClick = onClick)
             .padding(vertical = 0.dp),
         colors = CardDefaults.cardColors(containerColor = backgroundColor),
         shape = RectangleShape,
