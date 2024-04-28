@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -27,9 +26,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowRight
-import androidx.compose.material3.Icon
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
+import com.example.maturant.ui.theme.AppColors
+import com.example.maturant.ui.theme.BulletPoint
 
 
 @Composable
@@ -53,11 +53,11 @@ fun MainScreen(navController: NavController) {
                     .width(400.dp)
             )
             Spacer(modifier = Modifier.height(1.dp))
-            MenuItem("Gramatické témy", Color(0xFFB6FFBE))  {navController.navigate("grammarTopicsScreen")}
-            MenuItem("Literatúrne témy", Color(0xFF8BFF97)) {navController.navigate("literatureTopicsScreen")}
-            MenuItem("Maturitné testy", Color(0xFF5AFF6C)) {navController.navigate("maturitaTestsScreen")}
+            MenuItem("Gramatické témy", AppColors.LightestGreen)  {navController.navigate("GrammarTopicsScreen")}
+            MenuItem("Literatúrne témy", AppColors.LightGreen) {navController.navigate("literatureTopicsScreen")}
+            MenuItem("Maturitné testy", AppColors.Green) {navController.navigate("maturitaTestsScreen")}
             Spacer(modifier = Modifier.height(24.dp))
-            MenuItem("Výsledky", Color(0xFFFF7752)) {navController.navigate("resultsScreen")}
+            MenuItem("Výsledky", AppColors.Orange) {navController.navigate("resultsScreen")}
 
         }
     }
@@ -79,7 +79,7 @@ fun MenuItem(text: String, backgroundColor: Color, onClick: () -> Unit) {
                 .padding(25.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            BulletPoint()
+            BulletPoint(Icons.Default.KeyboardArrowRight, 50)
             Spacer(modifier = Modifier.width(8.dp))
             Text(
                 text = text,
@@ -89,12 +89,4 @@ fun MenuItem(text: String, backgroundColor: Color, onClick: () -> Unit) {
     }
 }
 
-@Composable
-fun BulletPoint() {
-    Icon(
-        imageVector = Icons.Default.KeyboardArrowRight,
-        contentDescription = "Bullet point",
-        modifier = Modifier.size(50.dp),
-        tint = MaterialTheme.colorScheme.onSurface
-    )
-}
+
