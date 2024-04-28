@@ -1,5 +1,4 @@
 
-import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -29,7 +28,6 @@ import com.example.maturant.StyleInfo
 import com.example.maturant.authorDetails
 import com.example.maturant.styleDetails
 import com.example.maturant.ui.theme.AppColors
-import java.util.logging.LogRecord
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
