@@ -1,6 +1,6 @@
 package com.example.maturant.GrammarScreen
 
-import SharedViewModel
+import com.example.maturant.ui.theme.SharedViewModel
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
@@ -34,9 +34,10 @@ fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel
     LaunchedEffect(key1 = resourceId) {
         viewModel.loadStyles(context, resourceId)
     }
-    val styles = viewModel.styles
-    if (styles.value.isEmpty()) {
-        CircularProgressIndicator()
+    if (viewModel.isLoading.value) {
+        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            CircularProgressIndicator()
+        }
     } else {
         Scaffold(
             topBar = {
@@ -77,7 +78,7 @@ fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel
                     verticalArrangement = Arrangement.Top,
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    itemsIndexed(styles.value) { index, style ->
+                    itemsIndexed(viewModel.styles.value) { index, style ->
                         GrammarMenuItem(style, if (index % 2 == 0) AppColors.Blue else AppColors.Green)
                     }
 

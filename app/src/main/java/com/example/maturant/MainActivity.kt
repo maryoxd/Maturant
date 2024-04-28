@@ -16,8 +16,8 @@ class MainActivity : ComponentActivity() {
             MaturantTheme {
                 val navController = rememberNavController()
                 NavHost(navController = navController, startDestination = "mainScreen") {
-                    composable("mainScreen") { MainScreen(navController)}
-                    composable("grammarTopicsScreen") { GrammarTopicsScreen(navController) }
+                    composable("MainScreen") { MainScreen(navController)}
+                    composable("GrammarTopicsScreen") { GrammarTopicsScreen(navController) }
 
                 }
             }
