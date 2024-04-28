@@ -1,4 +1,4 @@
-package com.example.maturant.GrammarScreen
+package com.example.maturant.LiteratureScreen
 
 import com.example.maturant.ui.theme.SharedViewModel
 import androidx.compose.foundation.layout.*
@@ -21,17 +21,17 @@ import com.example.maturant.R
 import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.ui.theme.CommonComponents.MenuItemContent
 
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel = viewModel() ) {
+fun LiteratureTopicsScreen(navController: NavController, viewModel: SharedViewModel = viewModel() ) {
     val context = LocalContext.current
-    val resourceId = R.raw.grammar_styles
+    val resourceId = R.raw.literature_styles
 
     LaunchedEffect(key1 = resourceId) {
         viewModel.loadStyles(context, resourceId)
     }
-    if (viewModel.isLoading.value) {
+
+    if(viewModel.isLoading.value) {
         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             CircularProgressIndicator()
         }
@@ -47,7 +47,7 @@ fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel
                             contentAlignment = Alignment.Center
                         ) {
                             Text(
-                                "GRAMATIKA",
+                                "LITERATÚRA",
                                 fontSize = 30.sp,
                                 fontWeight = FontWeight.Bold,
                                 color = AppColors.White
@@ -86,7 +86,3 @@ fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel
         )
     }
 }
-
-
-
-

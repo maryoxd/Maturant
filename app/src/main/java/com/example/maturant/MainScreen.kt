@@ -54,10 +54,10 @@ fun MainScreen(navController: NavController) {
             )
             Spacer(modifier = Modifier.height(1.dp))
             MenuItem("Gramatické témy", AppColors.LightestGreen)  {navController.navigate("GrammarTopicsScreen")}
-            MenuItem("Literatúrne témy", AppColors.LightGreen) {navController.navigate("literatureTopicsScreen")}
-            MenuItem("Maturitné testy", AppColors.Green) {navController.navigate("maturitaTestsScreen")}
+            MenuItem("Literatúrne témy", AppColors.LightGreen) {navController.navigate("LiteratureTopicsScreen")}
+            MenuItem("Maturitné testy", AppColors.Green) {navController.navigate("MaturitaTestsScreen")}
             Spacer(modifier = Modifier.height(24.dp))
-            MenuItem("Výsledky", AppColors.Orange) {navController.navigate("resultsScreen")}
+            MenuItem("Výsledky", AppColors.Orange) {navController.navigate("ResultsScreen")}
 
         }
     }
