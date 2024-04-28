@@ -25,11 +25,11 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.KeyboardArrowRight
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.ui.res.painterResource
 import androidx.navigation.NavController
 import com.example.maturant.ui.theme.AppColors
-import com.example.maturant.ui.theme.BulletPoint
+import com.example.maturant.ui.theme.CommonComponents.BulletPoint
 
 
 @Composable
@@ -79,7 +79,7 @@ fun MenuItem(text: String, backgroundColor: Color, onClick: () -> Unit) {
                 .padding(25.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            BulletPoint(Icons.Default.KeyboardArrowRight, 50)
+            BulletPoint(Icons.AutoMirrored.Filled.KeyboardArrowRight, 50)
             Spacer(modifier = Modifier.width(8.dp))
             Text(
                 text = text,
