@@ -76,11 +76,11 @@ fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     itemsIndexed(viewModel.styles.value) { index, style ->
-                        MenuItemContent(style, if (index % 2 == 0) AppColors.Blue else AppColors.Green) {
-                            navController.navigate("detailScreen/${style}")
+                        val colorName = if (index % 2 == 0) "Blue" else "Green"
+                        MenuItemContent(style, AppColors.colorsMap[colorName] ?: AppColors.Green) {
+                            navController.navigate("detailScreen/$style/grammatical/$colorName")
                         }
                     }
-
                 }
             }
         )

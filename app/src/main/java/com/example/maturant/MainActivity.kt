@@ -9,6 +9,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.maturant.GrammarScreen.GrammarTopicsScreen
 import com.example.maturant.LiteratureScreen.LiteratureTopicsScreen
+import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.ui.theme.MaturantTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,14 +22,19 @@ class MainActivity : ComponentActivity() {
                     composable("MainScreen") { MainScreen(navController)}
                     composable("GrammarTopicsScreen") { GrammarTopicsScreen(navController) }
                     composable("LiteratureTopicsScreen") { LiteratureTopicsScreen(navController) }
-                    composable("detailScreen/{style}") { backStackEntry ->
-                        DetailScreen(style = backStackEntry.arguments?.getString("style") ?: "", navController = navController)
+                    composable("DetailScreen/{style}/{source}/{colorName}") { backStackEntry ->
+                        DetailScreen(
+                            style = backStackEntry.arguments?.getString("style") ?: "",
+                            source = backStackEntry.arguments?.getString("source") ?: "unknown",
+                            colorName = backStackEntry.arguments?.getString("colorName") ?: "Green",
+                            navController = navController
+                        )
                     }
-
                 }
             }
         }
     }
 }
+
 
 
