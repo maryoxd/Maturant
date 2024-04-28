@@ -1,5 +1,6 @@
 package com.example.maturant.GrammarScreen
 
+import android.util.Log
 import com.example.maturant.ui.theme.SharedViewModel
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -79,6 +80,7 @@ fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel
                         val colorName = if (index % 2 == 0) "Blue" else "Green"
                         MenuItemContent(style, AppColors.colorsMap[colorName] ?: AppColors.Green) {
                             navController.navigate("detailScreen/$style/grammatical/$colorName")
+                            Log.d("OD GRAMMARU DALEJ", "detailScreen/$style/grammatical/$colorName")
                         }
                     }
                 }

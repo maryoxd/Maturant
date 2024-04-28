@@ -1,4 +1,5 @@
 
+import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -23,12 +24,24 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.maturant.AuthorInfo
+import com.example.maturant.StyleInfo
+import com.example.maturant.authorDetails
+import com.example.maturant.styleDetails
 import com.example.maturant.ui.theme.AppColors
+import java.util.logging.LogRecord
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DetailScreen(style: String, source: String, colorName: String, navController: NavController) {
     val color = AppColors.colorsMap[colorName] ?: Color.Green
+
+    val styleInfo = if (source == "grammatical") {
+        styleDetails[style] ?: StyleInfo("Informácie nie sú dostupné", "Žiadne znaky")
+    } else {
+        authorDetails[style] ?: AuthorInfo("Informácie nie sú dostupné", "Žiadne znaky")
+    }
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -53,10 +66,10 @@ fun DetailScreen(style: String, source: String, colorName: String, navController
             Column(modifier = Modifier.padding(innerPadding)) {
                 Box(
                     modifier = Modifier
-                        .fillMaxWidth() // Šírka na celú obrazovku
-                        .height(55.dp) // Minimálna výška boxu
-                        .background(color), // Farba pozadia boxu
-                    contentAlignment = Alignment.Center // Zarovnanie textu na stred
+                        .fillMaxWidth()
+                        .height(55.dp)
+                        .background(color),
+                    contentAlignment = Alignment.Center
                 ) {
                     Text(
                         text = style,
@@ -67,6 +80,25 @@ fun DetailScreen(style: String, source: String, colorName: String, navController
                         color = AppColors.White
                     )
                 }
+                Text(
+                    "O štýle",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                )
+                Text(
+                    styleInfo.about,
+                    fontSize = 16.sp
+                )
+                Text(
+                    "Znaky",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                )
+                Text(
+                    styleInfo.features,
+                    fontSize = 16.sp
+                )
+
             }
         }
     )
