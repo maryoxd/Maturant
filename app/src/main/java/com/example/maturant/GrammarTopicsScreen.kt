@@ -1,6 +1,9 @@
 package com.example.maturant
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.KeyboardArrowUp
@@ -13,12 +16,13 @@ import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.ui.theme.BulletPoint
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun GrammarTopicsScreen() {
+fun GrammarTopicsScreen(navController: NavController) {
     Scaffold(
         topBar = {
             TopAppBar(
@@ -39,7 +43,7 @@ fun GrammarTopicsScreen() {
                     }
                 },
                 navigationIcon = {
-                    IconButton(onClick = { /* TODO: Add your navigation back action here */ }) {
+                    IconButton(onClick = { navController.navigateUp() }) {
                         Icon(Icons.Filled.ArrowBack, contentDescription = "Back")
                     }
                 },
@@ -49,17 +53,31 @@ fun GrammarTopicsScreen() {
             )
         },
         content = { innerPadding ->
-            Column(
+            LazyColumn(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(innerPadding),
-                verticalArrangement = Arrangement.Center,
+                    .padding(
+                        top = innerPadding.calculateTopPadding()
+                    ),
+
+                verticalArrangement = Arrangement.Top,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                GrammarMenuItem("Administratívny štýl", Color(0xFFB6FFBE))
-                GrammarMenuItem("Vedecký štýl", Color(0xFF8BFF97))
-                GrammarMenuItem("Publicistický štýl", Color(0xFF5AFF6C))
-                GrammarMenuItem("Hovorový štýl", Color(0xFFFF7752))
+                itemsIndexed(
+                    listOf(
+                        "Administratívny štýl",
+                        "Vedecký štýl",
+                        "Publicistický štýl",
+                        "Hovorový štýl",
+                        "Náučný štýl",
+                        "Rečnícky štýl",
+                        "Umelecký štýl",
+                        "Citoslovcia"
+                    )
+                ) { index, item ->
+                    GrammarMenuItem(item, if (index % 2 == 0) AppColors.Blue else AppColors.Green)
+                }
+
             }
         }
     )
@@ -69,18 +87,17 @@ fun GrammarTopicsScreen() {
 fun GrammarMenuItem(text: String, backgroundColor: Color) {
     Card(
         modifier = Modifier
-            .fillMaxWidth()
-            .padding(vertical = 8.dp),
+            .fillMaxWidth(),
         colors = CardDefaults.cardColors(containerColor = backgroundColor),
         shape = RectangleShape,
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp),
+                .padding(vertical = 30.dp, horizontal = 16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            BulletPoint(Icons.Default.KeyboardArrowUp, 24)
+            BulletPoint(Icons.Default.KeyboardArrowUp, 32)
             Spacer(modifier = Modifier.width(8.dp))
             Text(
                 text = text,
