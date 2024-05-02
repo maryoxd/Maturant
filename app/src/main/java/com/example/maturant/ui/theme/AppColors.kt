@@ -11,6 +11,8 @@ object AppColors {
     val White = Color(0xFFFFFFFF)
     val LightYellow = Color(0xFFE5FF63)
     val Blue = Color(0xFF088FFF)
+    val LightBlue = Color(0xFF5CB5FF)
+    val LightPurple = Color(0xFFAE88FF)
     val Black = Color(0xFF000000)
 
     val colorsMap = mapOf(
@@ -21,7 +23,9 @@ object AppColors {
         "White" to White,
         "LightYellow" to LightYellow,
         "Blue" to Blue,
-        "Black" to Black
+        "Black" to Black,
+        "LightBlue" to LightBlue,
+        "LightPurple" to LightPurple
     )
 }
 

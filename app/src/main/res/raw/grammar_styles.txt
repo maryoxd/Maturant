@@ -1,12 +1,12 @@
-Administratívny štýl
-Vedecký štýl
-Publicistický štýl
-Hovorový štýl
-Náučný štýl
-Rečnícky štýl
-Umelecký štýl
-Citoslovcia
-Nieco
-test
-skuska
-ide to?
+ADMINISTRATÍVNY ŠTÝL
+VEDECKÝ ŠTÝL
+PUBLICISTICKÝ ŠTÝL
+HOVOROVÝ ŠTÝL
+NÁUČNÝ ŠTÝL
+REČNÍCKY ŠTÝL
+UMELECKÝ ŠTÝL
+CITOSLOVCIA
+NIECO
+TEST
+SKUSKA
+IDE TO?

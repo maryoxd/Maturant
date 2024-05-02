@@ -1,6 +1,6 @@
-package com.example.maturant.LiteratureScreen
+package com.example.maturant.Topics
 
-import com.example.maturant.ui.theme.SharedViewModel
+import com.example.maturant.ViewModels.SharedViewModel
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
@@ -21,17 +21,18 @@ import com.example.maturant.R
 import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.ui.theme.CommonComponents.MenuItemContent
 
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun LiteratureTopicsScreen(navController: NavController, viewModel: SharedViewModel = viewModel() ) {
+fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel = viewModel()) {
     val context = LocalContext.current
-    val resourceId = R.raw.literature_styles
+    val resourceId = R.raw.grammar_styles
 
     LaunchedEffect(key1 = resourceId) {
         viewModel.loadStyles(context, resourceId)
     }
 
-    if(viewModel.isLoading.value) {
+    if (viewModel.isLoading.value) {
         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             CircularProgressIndicator()
         }
@@ -41,13 +42,11 @@ fun LiteratureTopicsScreen(navController: NavController, viewModel: SharedViewMo
                 TopAppBar(
                     title = {
                         Box(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(end = 40.dp),
+                            modifier = Modifier.fillMaxWidth().padding(end = 40.dp),
                             contentAlignment = Alignment.Center
                         ) {
                             Text(
-                                "LITERATÚRA",
+                                "GRAMATIKA",
                                 fontSize = 30.sp,
                                 fontWeight = FontWeight.Bold,
                                 color = AppColors.White
@@ -59,31 +58,33 @@ fun LiteratureTopicsScreen(navController: NavController, viewModel: SharedViewMo
                             Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
                         }
                     },
-                    colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-                        containerColor = AppColors.LightYellow
-                    )
+                    colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.LightYellow)
                 )
             },
             content = { innerPadding ->
                 LazyColumn(
                     modifier = Modifier
                         .fillMaxSize()
-                        .padding(
-                            top = innerPadding.calculateTopPadding()
-                        ),
-
+                        .padding(top = innerPadding.calculateTopPadding()),
                     verticalArrangement = Arrangement.Top,
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     itemsIndexed(viewModel.styles.value) { index, style ->
                         val colorName = if (index % 2 == 0) "Blue" else "Green"
                         MenuItemContent(style, AppColors.colorsMap[colorName] ?: AppColors.Green) {
-                            navController.navigate("detailScreen/$style/literary/$colorName")
+                            if (!viewModel.isNavigationLocked.value) {
+                                viewModel.lockNavigation()
+                                navController.navigate("DetailScreen/$style/grammatical/$colorName")
+                            }
                         }
                     }
-
                 }
             }
         )
     }
 }
+
+
+
+
+

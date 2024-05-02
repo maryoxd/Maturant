@@ -4,7 +4,6 @@ package com.example.maturant
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,6 +11,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
@@ -27,41 +28,62 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.ui.res.painterResource
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.ui.theme.CommonComponents.BulletPoint
+import com.example.maturant.ViewModels.SharedViewModel
 
 
 @Composable
-fun MainScreen(navController: NavController) {
+fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewModel()) {
     Surface(
         modifier = Modifier.fillMaxSize(),
         color = MaterialTheme.colorScheme.background
     ) {
-        Column (
+        LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(16.dp),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Image(
-                painter = painterResource(id = R.drawable.logo_maturant),
-                contentDescription = "Logo Maturant",
-                modifier = Modifier
-                    .height(250.dp)
-                    .width(400.dp)
-            )
-            Spacer(modifier = Modifier.height(1.dp))
-            MenuItem("Gramatické témy", AppColors.LightestGreen)  {navController.navigate("GrammarTopicsScreen")}
-            MenuItem("Literatúrne témy", AppColors.LightGreen) {navController.navigate("LiteratureTopicsScreen")}
-            MenuItem("Maturitné testy", AppColors.Green) {navController.navigate("MaturitaTestsScreen")}
-            Spacer(modifier = Modifier.height(24.dp))
-            MenuItem("Výsledky", AppColors.Orange) {navController.navigate("ResultsScreen")}
-
+            item {
+                Image(
+                    painter = painterResource(id = R.drawable.logo_maturant),
+                    contentDescription = "Logo Maturant",
+                    modifier = Modifier
+                        .height(250.dp)
+                        .width(400.dp)
+                )
+            }
+            item { Spacer(modifier = Modifier.height(1.dp)) }
+            items(listOf("Gramatické témy", "Literatúrne témy", "Maturitné testy", "Výsledky")) { text ->
+                val color = when (text) {
+                    "Gramatické témy" -> AppColors.LightestGreen
+                    "Literatúrne témy" -> AppColors.LightGreen
+                    "Maturitné testy" -> AppColors.Green
+                    "Výsledky" -> AppColors.Orange
+                    else -> AppColors.LightGreen
+                }
+                val navigation = when (text) {
+                    "Gramatické témy" -> "GrammarTopicsScreen"
+                    "Literatúrne témy" -> "LiteratureTopicsScreen"
+                    "Maturitné testy" -> "MaturitaTestScreen"
+                    "Výsledky" -> "ResultsScreen"
+                    else -> "GrammarTopicsScreen"
+                }
+                MenuItem(text, color) {
+                    if (!viewModel.isNavigationLocked.value) {
+                        viewModel.lockNavigation()
+                        navController.navigate(navigation)
+                    }
+                }
+            }
         }
     }
 }
+
 
 @Composable
 fun MenuItem(text: String, backgroundColor: Color, onClick: () -> Unit) {
@@ -83,7 +105,10 @@ fun MenuItem(text: String, backgroundColor: Color, onClick: () -> Unit) {
             Spacer(modifier = Modifier.width(8.dp))
             Text(
                 text = text,
-                style = MaterialTheme.typography.headlineSmall.copy( fontWeight = FontWeight.Bold)
+                style = MaterialTheme.typography.headlineSmall.copy(
+                    fontWeight = FontWeight.Bold,
+                    color = AppColors.White)
+
             )
         }
     }
