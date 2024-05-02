@@ -4,7 +4,6 @@ package com.example.maturant
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -70,7 +69,7 @@ fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewMo
                 val navigation = when (text) {
                     "Gramatické témy" -> "GrammarTopicsScreen"
                     "Literatúrne témy" -> "LiteratureTopicsScreen"
-                    "Maturitné testy" -> "TestsScreen"
+                    "Maturitné testy" -> "MaturitaTestScreen"
                     "Výsledky" -> "ResultsScreen"
                     else -> "GrammarTopicsScreen"
                 }
@@ -80,7 +79,6 @@ fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewMo
                         navController.navigate(navigation)
                     }
                 }
-
             }
         }
     }
