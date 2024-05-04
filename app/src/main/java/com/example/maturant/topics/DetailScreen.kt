@@ -1,4 +1,4 @@
-package com.example.maturant.Topics
+package com.example.maturant.topics
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -25,10 +25,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
-import com.example.maturant.Topics.Loading.AuthorInfo
-import com.example.maturant.Topics.Loading.StyleInfo
-import com.example.maturant.Topics.Loading.authorDetails
-import com.example.maturant.Topics.Loading.styleDetails
+import com.example.maturant.topics.loading.AuthorInfo
+import com.example.maturant.topics.loading.StyleInfo
+import com.example.maturant.topics.loading.authorDetails
+import com.example.maturant.topics.loading.styleDetails
 import com.example.maturant.ui.theme.AppColors
 
 @OptIn(ExperimentalMaterial3Api::class)

@@ -32,7 +32,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.ui.theme.CommonComponents.BulletPoint
-import com.example.maturant.ViewModels.SharedViewModel
+import com.example.maturant.viewModels.SharedViewModel
 
 
 @Composable

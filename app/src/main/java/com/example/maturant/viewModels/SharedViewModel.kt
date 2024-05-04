@@ -1,4 +1,4 @@
-package com.example.maturant.ViewModels
+package com.example.maturant.viewModels
 
 import android.content.Context
 import androidx.compose.runtime.mutableStateOf
