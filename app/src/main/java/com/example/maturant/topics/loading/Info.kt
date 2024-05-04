@@ -1,4 +1,4 @@
-package com.example.maturant.Topics.Loading
+package com.example.maturant.topics.loading
 
 interface Info {
     val about: String

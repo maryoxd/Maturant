@@ -1,6 +1,6 @@
-package com.example.maturant.Topics
+package com.example.maturant.topics
 
-import com.example.maturant.ViewModels.SharedViewModel
+import com.example.maturant.viewModels.SharedViewModel
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
