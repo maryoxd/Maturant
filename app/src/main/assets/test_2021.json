@@ -1,0 +1,97 @@
+{
+  "tests": [
+    {
+      "year": "2022",
+      "sections": [
+        {
+          "sectionId": 1,
+          "text": "TEST – Desiate prikázanie\nMajetok cudzí v úcte mať\nkáže nám zákon vekmi vžitý;\nnemať tak, bože, nežné city,\nvedel by som ho dodržať.\nUkrátiť blížneho, to nikdy,\nnechcem ja jeho statky, dom,\nnevoľníkov, dvor s dobytkom:\nodo mňa nedočká sa krivdy,\nnech si to všetko, všetko má.\nNo ak má doma peknoočku\nnevoľnú, bože, krádež bozku\ndovolí mi hlas svedomia.\nA ak sa zavše aj tak stane,\nže milú družku vidím s ním,\nodpusť mi, že mu závidím\nanjela jeho, kristepane.\nVeď môžeš srdcu rozkázať?\nKto nie je rabom zvodnej chvíle?\nJak nemilovať, čo je milé?\nNa svete raj si nežiadať?\nHľadím a trpím neprestajne,\nno prísny zákon ctiť si viem,\nzavraciam srdce: skrotni, driem –\nmlčím… a vzdychám, blčím tajne.",
+          "questions": [
+            {
+              "questionText": "Básnik v básni desiate prikázanie",
+              "options": [
+                "nepovažuje túžbu po priateľovej družke za porušenie desiateho prikázania",
+                "nevedel odolať pokušeniu a pobozkal priateľovu manželku.",
+                "potlačil svoje osobné city a nenaplnil svoju skrytú túžbu.",
+                "sa rovnako správa k všetkým ženám bez ohľadu na ich postavenie."
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza metafora?",
+              "options": [
+                "nechcem jeho statky",
+                "majetok v úcte mať",
+                "dvor s dobytkom",
+                "hlas svedomia"
+              ],
+              "correctAnswer": "D",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti je uvedený správny počet slabík v nasledujúcom texte?:\nA ak sa zavše aj tak stane, \nže milú družku vidím s ním,\nodpusť mi, že mu závidím\nanjela jeho, kristepane.",
+              "options": [
+                "9, 9, 8, 8",
+                "9, 8, 8, 9",
+                "8, 9, 9, 8",
+                "9, 8, 9, 8"
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza epiteton z básne Desiate prikázanie?",
+              "options": [
+                "anjela jeho",
+                "zvodná chvíľa",
+                "majetok cudzí",
+                "prísny zákon"
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý druh rýmu použil A. S. Puškin v básni Desiate prikázanie? ",
+              "options": [
+                "striedavý",
+                "združený",
+                "prerývaný",
+                "obkročný"
+              ],
+              "correctAnswer": "D",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Do ktorého literárneho smeru sa zaraďuje prevažná časť tvorby A. S. Puškina?",
+              "correctAnswer": "romantizmus | do romantizmu",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z básne Desiate prikázanie plnovýznamové zložené slovo.",
+              "correctAnswer": "peknoočku | peknoočka",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z básne Desiate prikázanie vokalizovanú predložku.",
+              "correctAnswer": "odo",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 2,
+          "text": "Viliam Marčok - Biele miesta v slovenskej literatúre\n(úryvok, upravené)\nNázvom postmoderna sa označuje situácia európskej a americkej literatúry po vyčerpaní\npodnetov tzv. druhých avantgárd (najrôznejšie obmeny konkretizmu v poézii, nový román,\nneorealizmus atď.) alebo modernistických úsilí (ako sa tzv. druhá avantgarda nazýva\nvo Veľkej Británii a v literatúrach oboch Amerík). Toto označenie sa začalo používať v americkej\nliterárnej kritike v šesťdesiatich rokoch (kritik I. Howe začal diskusiu o nových javoch v americkej\nliteratúre v roku 1959), v európskej literárnej kritike sa udomácnilo v 70. rokoch. Predstava\n o postmoderne je veľmi voľná, otvorená aj diskutabilná. Od literárnych smerov avantgardy\nsa postmoderna odlišuje predovšetkýmm tak, že sa nezačala nijakým programovým vyhlásením\na nedosiahla ani ich ideovú a tvarovú vyhranenosť. (Nejde teda o nijaký nový -izmus, a to preto je\naj používanie názvu 'postmodernizmus' mätúce!) Vznikala doslova nepozorovane v dielach neraz veľmi rozdielnych autorov, ktorí o sebe ani nevedeli. (Za jeden z jej prúdov sa dnes považuje aj magický realizmus juhoamerickej prózy.)\nJediným jej jednotiacim znakom je prítomnosť vzbury proti akémukoľvek totalitarizmu\n a manifestácia prularizmu života v literárnom diele. Postmoderna je taká literatúra, ktorá\nvystupuje proti akémukoľvej politickému diktátu a všetkým jeho formám v myslení, t. j. proti\nideológii, historickému determinizmu, strohému racionalizmu, technologickému i konzumnému\n prinucovaniu (napr. pásová výroba a reklama), tradíciám, militantnému kolektivizmu, náboženskému fanatizmu atď.",
+          "questions": [
+            {
+              "questionText": "Odkedy sa podľa ukážky 2 v kontexte európskej literárnej kritiky používa pojem postmoderná? ",
+              "options": ["od 50. rokov 20. storočia", "od 70. rokov 19. storočia", "od 70. rokov 20. storočia", "od 50. rokov 19. storočia"],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

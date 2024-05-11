@@ -2,8 +2,11 @@ package com.example.maturant.maturitaScreens
 
 import android.content.Context
 import android.util.Log
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
@@ -14,14 +17,18 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.example.maturant.R
 import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.viewModels.MaturitaViewModel
 import com.google.gson.Gson
@@ -45,8 +52,13 @@ fun loadTestFromJson(context: Context, fileName: String): Test? {
 
 
 
+
 @Composable
 fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
+    val totalQuestionsCount = test.sections.sumOf { it.questions.size }
+    val answersState = remember { mutableStateListOf<Int?>().apply { addAll(List(totalQuestionsCount) { null }) } }
+    var totalQuestionIndex = 0
+
     Column(modifier = Modifier.padding(16.dp)) {
         test.sections.forEach { section ->
             Text(
@@ -58,46 +70,61 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center
             )
-            section.questions.forEachIndexed { index, question ->
+            section.imageUrl?.let { imageUrl ->
+                val imageRes = when(imageUrl) {
+                    "prijmy_url" -> R.drawable.prijmy_url
+                    else -> null
+                }
+                imageRes?.let {
+                    Image(
+                        painter = painterResource(id = it),
+                        contentDescription = "Ilustračný obrázok",
+                        modifier = Modifier.fillMaxWidth().height(250.dp),
+                        contentScale = ContentScale.Crop
+                    )
+                }
+            }
+
+            section.questions.forEach { question ->
+                val currentQuestionIndex = totalQuestionIndex++
                 Surface(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(vertical = 8.dp),
+                    modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
                     color = MaterialTheme.colorScheme.surfaceVariant,
                     shape = RoundedCornerShape(8.dp)
                 ) {
-                    Column(modifier = Modifier.padding(all = 16.dp)) {
+                    Column(modifier = Modifier.padding(16.dp)) {
                         Text(
-                            text = "${index + 1}. ${question.questionText}",
+                            text = "${currentQuestionIndex + 1}. ${question.questionText}",
                             style = MaterialTheme.typography.bodyMedium
                         )
+
                         if (question.type == "CHOICE") {
-                            var selectedOption by remember { mutableStateOf<Int?>(null) }
                             question.options?.forEachIndexed { idx, option ->
                                 val optionLabel = when (idx) {
                                     0 -> "A)"
                                     1 -> "B)"
                                     2 -> "C)"
                                     3 -> "D)"
-                                    else -> "${idx+1})"
+                                    else -> "${idx + 1})"
                                 }
+                                val isSelected = answersState[currentQuestionIndex] == idx
+
                                 Button(
                                     onClick = {
-                                        if (selectedOption == idx) {
-                                            selectedOption = null
+                                        if (isSelected) {
+                                            answersState[currentQuestionIndex] = null
                                             viewModel.decrementAnsweredQuestions()
                                         } else {
-                                            if (selectedOption == null) {
-                                                viewModel.incrementAnsweredQuestions()
+                                            if (answersState[currentQuestionIndex] != null) {
+                                                viewModel.decrementAnsweredQuestions()
                                             }
-                                            selectedOption = idx
+                                            answersState[currentQuestionIndex] = idx
+                                            viewModel.incrementAnsweredQuestions()
                                         }
                                     },
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .padding(vertical = 4.dp),
+                                    modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
                                     colors = ButtonDefaults.buttonColors(
-                                        if (selectedOption == idx) AppColors.Orange else AppColors.LightBlue
+                                         if (isSelected) AppColors.Orange else AppColors.LightBlue
                                     )
                                 ) {
                                     Text("$optionLabel $option", color = AppColors.White)
@@ -105,20 +132,17 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                             }
                         } else {
                             var answer by remember { mutableStateOf("") }
-                            var answerLogged by remember { mutableStateOf(false) }
                             TextField(
                                 value = answer,
                                 onValueChange = { newAnswer ->
-                                    if (newAnswer.isNotEmpty() && !answerLogged) {
+                                    if (newAnswer.isNotEmpty() && answer.isEmpty()) {
                                         viewModel.incrementAnsweredQuestions()
-                                        answerLogged = true
-                                    } else if (newAnswer.isEmpty() && answerLogged) {
+                                    } else if (newAnswer.isEmpty() && answer.isNotEmpty()) {
                                         viewModel.decrementAnsweredQuestions()
-                                        answerLogged = false
                                     }
                                     answer = newAnswer
                                 },
-                                label = { Text("Your Answer") },
+                                label = { Text("Vaša odpoveď") },
                                 modifier = Modifier.fillMaxWidth()
                             )
                         }
@@ -128,8 +152,6 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
         }
     }
 }
-
-
 
 
 
