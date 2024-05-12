@@ -1,8 +1,14 @@
 package com.example.maturant.viewModels
 
+
+import android.content.Context
+import android.util.Log
+import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.maturant.maturitaScreens.loadTestFromJson
+import com.example.maturant.maturitaScreens.Test
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -19,6 +25,21 @@ class MaturitaViewModel : ViewModel() {
     val remainingTime = _remainingTime.asStateFlow()
     val answeredQuestions = _answeredQuestions.asStateFlow()
     val totalQuestions = _totalQuestions.asStateFlow()
+
+    private val _currentTest = mutableStateOf<Test?>(null)
+    val currentTest: State<Test?> = _currentTest
+
+    fun loadTest(context: Context, fileName: String) {
+        viewModelScope.launch {
+            val loadedTest = loadTestFromJson(context, fileName)
+            if (loadedTest != null) {
+                _currentTest.value = loadedTest
+            } else {
+                Log.d("TestLoading", "No test found or error loading the test")
+            }
+        }
+    }
+
 
     fun onYearClick(year: String) {
         selectedYear.value = year
@@ -59,5 +80,6 @@ class MaturitaViewModel : ViewModel() {
 
     fun resetTimer() {
         _remainingTime.value = 0
+        _answeredQuestions.value = 0
     }
 }

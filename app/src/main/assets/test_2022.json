@@ -1,0 +1,627 @@
+{
+  "tests": [
+    {
+      "year": "2022",
+      "sections": [
+        {
+          "sectionId": 1,
+          "text": "Alexander Sergejevič Puškin – Desiate prikázanie\nMajetok cudzí v úcte mať\nkáže nám zákon vekmi vžitý;\nnemať tak, bože, nežné city,\nvedel by som ho dodržať.\nUkrátiť blížneho, to nikdy,\nnechcem ja jeho statky, dom,\nnevoľníkov, dvor s dobytkom:\nodo mňa nedočká sa krivdy,\nnech si to všetko, všetko má.\nNo ak má doma peknoočku\nnevoľnú, bože, krádež bozku\ndovolí mi hlas svedomia.\nA ak sa zavše aj tak stane,\nže milú družku vidím s ním,\nodpusť mi, že mu závidím\nanjela jeho, kristepane.\nVeď môžeš srdcu rozkázať?\nKto nie je rabom zvodnej chvíle?\nJak nemilovať, čo je milé?\nNa svete raj si nežiadať?\nHľadím a trpím neprestajne,\nno prísny zákon ctiť si viem,\nzavraciam srdce: skrotni, driem –\nmlčím… a vzdychám, blčím tajne.",
+          "questions": [
+            {
+              "questionText": "Básnik v básni desiate prikázanie",
+              "options": [
+                "nepovažuje túžbu po priateľovej družke za porušenie desiateho prikázania",
+                "nevedel odolať pokušeniu a pobozkal priateľovu manželku.",
+                "potlačil svoje osobné city a nenaplnil svoju skrytú túžbu.",
+                "sa rovnako správa k všetkým ženám bez ohľadu na ich postavenie."
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza metafora?",
+              "options": [
+                "nechcem jeho statky",
+                "majetok v úcte mať",
+                "dvor s dobytkom",
+                "hlas svedomia"
+              ],
+              "correctAnswer": "D",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti je uvedený správny počet slabík v nasledujúcom texte?:\nA ak sa zavše aj tak stane, \nže milú družku vidím s ním,\nodpusť mi, že mu závidím\nanjela jeho, kristepane.",
+              "options": [
+                "9, 9, 8, 8",
+                "9, 8, 8, 9",
+                "8, 9, 9, 8",
+                "9, 8, 9, 8"
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza epiteton z básne Desiate prikázanie?",
+              "options": [
+                "anjela jeho",
+                "zvodná chvíľa",
+                "majetok cudzí",
+                "prísny zákon"
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý druh rýmu použil A. S. Puškin v básni Desiate prikázanie? ",
+              "options": [
+                "striedavý",
+                "združený",
+                "prerývaný",
+                "obkročný"
+              ],
+              "correctAnswer": "D",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Do ktorého literárneho smeru sa zaraďuje prevažná časť tvorby A. S. Puškina?",
+              "correctAnswer": "romantizmus | do romantizmu",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z básne Desiate prikázanie plnovýznamové zložené slovo.",
+              "correctAnswer": "peknoočku | peknoočka",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z básne Desiate prikázanie vokalizovanú predložku.",
+              "correctAnswer": "odo",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 2,
+          "text": "Viliam Marčok - Biele miesta v slovenskej literatúre\n(úryvok, upravené)\nNázvom postmoderna sa označuje situácia európskej a americkej literatúry po vyčerpaní\npodnetov tzv. druhých avantgárd (najrôznejšie obmeny konkretizmu v poézii, nový román,\nneorealizmus atď.) alebo modernistických úsilí (ako sa tzv. druhá avantgarda nazýva\nvo Veľkej Británii a v literatúrach oboch Amerík). Toto označenie sa začalo používať v americkej\nliterárnej kritike v šesťdesiatich rokoch (kritik I. Howe začal diskusiu o nových javoch v americkej\nliteratúre v roku 1959), v európskej literárnej kritike sa udomácnilo v 70. rokoch. Predstava\n o postmoderne je veľmi voľná, otvorená aj diskutabilná. Od literárnych smerov avantgardy\nsa postmoderna odlišuje predovšetkýmm tak, že sa nezačala nijakým programovým vyhlásením\na nedosiahla ani ich ideovú a tvarovú vyhranenosť. (Nejde teda o nijaký nový -izmus, a to preto je aj používanie názvu 'postmodernizmus' mätúce!) Vznikala doslova nepozorovane v dielach neraz veľmi rozdielnych autorov, ktorí o sebe ani nevedeli. (Za jeden z jej prúdov sa dnes považuje aj magický realizmus juhoamerickej prózy.)\nJediným jej jednotiacim znakom je prítomnosť vzbury proti akémukoľvek totalitarizmu\n a manifestácia prularizmu života v literárnom diele. Postmoderna je taká literatúra, ktorá\nvystupuje proti akémukoľvej politickému diktátu a všetkým jeho formám v myslení, t. j. proti\nideológii, historickému determinizmu, strohému racionalizmu, technologickému i konzumnému\n prinucovaniu (napr. pásová výroba a reklama), tradíciám, militantnému kolektivizmu, náboženskému fanatizmu atď.",
+          "questions": [
+            {
+              "questionText": "Odkedy sa podľa ukážky 2 v kontexte európskej literárnej kritiky používa pojem postmoderná? ",
+              "options": [
+                "od 50. rokov 20. storočia",
+                "od 70. rokov 19. storočia",
+                "od 70. rokov 20. storočia",
+                "od 50. rokov 19. storočia"
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Z ukážky 2 vyplýva, že postmoderna",
+              "options": [
+                "čerpala svoje podnety najmä z tzv. druhých avantgárd.",
+                "je menej literárne vybrúsená a oceňovaná ako avantgarda.",
+                "má svoje korene v juhoamerickej literatúre, najmä v próze.",
+                "sa formovala v literárnej produkcii viacerých autorov súčasne."
+              ],
+              "correctAnswer": "D",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Postmodernu charakterizuje podľa ukážky 2 aj",
+              "options": [
+                "revolta voči prísnemu racionalizmu.",
+                "obdiv ku konzumnému spôsobu života.",
+                "odpor voči prejavom pluralizmu v literatúre.",
+                "podpora náboženského fanatizmu."
+              ],
+              "correctAnswer": "A",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nenachádza skratka?",
+              "options": [
+                "tzv.",
+                "napr.",
+                "-izmus",
+                "t.j."
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktoré z uvedených interpunkčných znamienok nie je použité v prvom odseku ukážky 2?",
+              "options": [
+                "pomlčka",
+                "spojovník",
+                "úvodzovky",
+                "výkričník"
+              ],
+              "correctAnswer": "A",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý slohový postup prevláda v ukážke 2?",
+              "correctAnswer": "výkladový | úvahový | výkladový a úvahový | úvahový, výkladový | výkladový, úvahový",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Ktorý jazykový štýl sa uplatnil v ukážke 2?",
+              "correctAnswer": "náučný | odborný | populárno-náučný",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Určte druh vedľajšej vety v nasledujúcom súvetí:\nPostmoderna je teda taká literatúra, ktorá vystupuje proti akémukoľvek politickému diktátu.",
+              "correctAnswer": "prívlastková",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 3,
+          "text": "Ken Kesey - Bol som dlho preč\n(úryvok)\n„McMurphy, to je presne taká nerozvážnosť, ako tá vaša stávka na ošetrovateľku.“„\n„Kto chce prehrať päť dolárov? Hop alebo trop...“\nVšetci chlapci odrazu začnú podpisovať dlžobné úpisy; toľko ráz ich pobil v pokeri a očku,\nže sa nemôžu dočkať, aby sa vyvŕšili, a v tom sú si na betón istí. Neviem, čo má McMurphy\nza lubom; je síce statný, ale na to, aby ktosi pohol tým pultom, by museli byť traja takí, ako je on, a on to vie. Stačí, keď naň pozrie, okamžite zistí, že ho ani len neprevalí, a tobôž zdvihne.\nIba obor by ho zodvihol zo zeme. Ale keď všetci prítomní podpíšu dlžobné úpisy, podíde\nk pultu, zosadí z neho Billyho Bibbita, napľuje si do mohutných mozoľnatých dlaní,\ntleskne do nich a napne svaly na pleciach.\n„Okej, ustúpte. Stáva sa, že pri väčšej námahe vydýcham kolkodokola všetok vzduch a dospelí\nmuži pridusení odpadávajú. Ustúpte. Teraz bude pukať betón a lietať oceľ. Odveďte ženy a deti\ndo bezpečia. Ustúpte...“\n„Prisámvačku, možno to aj dokáže,“ zamumle Cheswick.\n„Samozrejme, možno ho tak uhovorí, že sa sám zodvihne,“ odvrkne Fredrickson.\n„Ale pravdepodobnejšie je, že si nadobudne utešenú prietrž,“ poznamená Harding. „Počujte,\n McMurphy, nebláznite; to hebedo nikto nezodvihne.“\n„Ustúpte, cintľavky, vydýchate mi všetok kyslík.“\n[...]\n„Ale aspoň som to skúsil,“ pripomenie. ",
+          "questions": [
+            {
+              "questionText": "Z ukážky vyplýva, že McMurphy ",
+              "options": [
+                "vyhral túto stávku a zhrabol všetky peniaze",
+                "vždy vyhral v kartových hrách nad protihráčmi.",
+                "sa pokúsil o nemožné, ale stávku nevyhral.",
+                "nepohol pultom, ba ešte si spôsobil prietrž."
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorá z postáv v ukážke 3 neveriacky ironizuje?",
+              "options": [
+                "McMurphy",
+                "Fredrickson",
+                "Cheswick",
+                "Harding"
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktoré tvrdenie vyplýva z ukážky 3?",
+              "options": [
+                "Všetci prítomní McMurphymu veria, a preto ho podporujú v jeho stávke.",
+                "Väčšina prítomných McMurphyho zosmiešňuje pre jeho zjavnú nafúkanosť.",
+                "Niektorí prítomní McMurphyho odhovárajú od zjavne zbytočného pokusu.",
+                "Nikto z prítomných sa neobáva, že si McMurphy môže fyzicky ublížiť."
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza združené pomenovanie?",
+              "options": [
+                "mozoľnaté dlane",
+                "dlžobné úpisy",
+                "správny nástroj",
+                "dospelí muži"
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Koľko viet obsahuje súvetie v nasledujúcom texte?:\nAle keď všetci prítomní podpíšu dlžobné úpisy, podíde k pultu, zosadí z neho Billyho Bibbita, napľuje si do mohutných mozoľnatých dlaní, tleskne do nich a napne svaly na pleciach.",
+              "options": [
+                "6",
+                "5",
+                "4",
+                "7"
+              ],
+              "correctAnswer": "A",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý druh melódie na konci vety sa uplatňuje v nasledujúcej vete?:\nTeraz bude pukať betón a lietať oceľ.",
+              "correctAnswer": "klesavá | uspokojivá končiaca | konkkluzívna kadencia",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z ukážky 3 slovo, na ktoré v nej odkazuje nasledujúce slovné spojenie:\nto hebedo.",
+              "correctAnswer": "pult | pultom | pultu",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z ukážky 3 ustálené slovné spojenie/vetu, ktoré/á vyjadruje odvahu riskovať úspech či neúspech.",
+              "correctAnswer": "Hop alebo trop... | Hop alebo trop ",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 4,
+          "text": "Dušan Taragel - Ako vzniká hit: Rozum Rudolfa Slobodu\n(úryvok)\nKeď sa v roku 1982 objavila v kníhkupectvách próza Rozum spisovateľa Rudolfa Slobodu,\nlen málokto tušil že práve vyšlo jedno z kľúčových diel slovenskej literatúry 20. storočia.\nPo desiatich rokoch normalizácie, keď vychádzali len romány plné „pozitívnych“ hrdinov\na budovateľov socializmu či pseudohistorické zlátaniny, sa odrazu vynorilo čosi, čo nebolo\nani pozitívne, ani optimistické, skôr naopak.\nCelý Rozum, až na niekoľko epizód, je silne autobiografický - Sloboda si prestal robiť\nzáznamy vo svojom denníku a namiesto nich voľne písal knihu o svojom živote. Po jej vyjdení sa mnohí neveriacky pýtali: Naozaj ten Sloboda bije svoju ženu? Naozaj býva v akejsi chate nad Devinskou Novou Vsou? Naozaj zabil svojho psa sekerou? Pre mnohých čitateľov bolo toto dielo nestráviteľné a čudovali sa, ako vôbec mohlo vyjsť. Pre iných - a bola to menšina - to bol závan sviežeho vzduchu v slovenskej literatúre.\nJeho rozprávanie je také úprimné a autentické, že slabšie povahy knihu ani nedočítajú, pretože\nsa im zdá nechutná a sebaobnažujúca. Sloboda akoby si v istej chvíli uvedomil, že prekračuje\nhranice, a preto text obzvláštnil vymysleným príbehom akéhosi Jána Hodžu, ktorého zabije manželka Uršuľa. Celý román však stojí na ropzrávaní bezmenného štyridsiatnika, ktorý sa snaží vytvoriť námeť na filmový scenár, pričom rieši rodinné problémy s manželkou trpiacou\nna schizofréniu, dospievajúcou dcérou, susedmi a kolegami v zamestnaní. Samozrejme, že\nnevyrieši nič, skôr naopak - vďaka svojmu „rozumu“ veči ešte viac skomplikuje.",
+          "questions": [
+            {
+              "questionText": "V ktorej možnosti je správne uvedený literárny žáner a nosná téma diela Rozum\nspomínaného v ukážke 4? ",
+              "options": [
+                "denník Slobodu o jeho problémoch v osobnom živote",
+                "filmový scenár analyzujúci Slobodove rodinné problémy",
+                "román detailne zobrazujúci rodinný život muža v strednom veku",
+                "kniha poviedok zachytávajúca úvahy manžela o chorobe manželky"
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Z ukážky 4 vyplýva, že novátorským sa v slovenskej literatúre stalo dielo, ktoré",
+              "options": [
+                "vyzdvihuje rozum ako základnú životnú istotu.",
+                "vykreslilo reálny život Jána Hodžu alias autora",
+                "rieši problém Slobodovho násilného správania.",
+                "zaujalo svojou priamosťou a nefalšovanosťou."
+              ],
+              "correctAnswer": "D",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Normalizačnú literatúru na základe ukážky 4 predstavujú",
+              "options": [
+                "diela zachytávajúce negatíva i pozitíva socializmu.",
+                "optimisticky ladené spoločenské antiromány",
+                "diela s množstvom dobovo kladne chápaných postáv.",
+                "knihy vykresľujúce problémy pri budovaní socializmu."
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádzajú iba prozaici?",
+              "options": [
+                "D. Dušek, A. Bednár, L. Mňačko",
+                "I. Bukovčan, J. D. Salinger, J. Urban",
+                "J. C. Hronský, E. M. Remarque, I. Krasko",
+                "M. Rúfus, M. Válek, P. Jilemnický"
+              ],
+              "correctAnswer": "A",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorá z uvedených možností najlepšie vystihuje slovo „pseudohistorické“ v slovnom spojení\npseudohistorické zlátaniny z ukážky 4?",
+              "options": [
+                "zdanlivo historické",
+                "antihistorické",
+                "skryto historické",
+                "predhistorické"
+              ],
+              "correctAnswer": "A",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Vypíšte z ukážky 4 názov literárneho žánru, ktorý je založený na pravidelných zápisoch.",
+              "correctAnswer": "denník | denníku",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z nasledujúcej časti ukážky 4 činné príčastie:\nCelý román však stojí na rozprávaní bezmenného štyridsiatnika, ktorý sa snaží vytvoriť námet na filmový scenár, pričom rieši rodinné problémy s manželkou trpiacou na schizofréniu.",
+              "correctAnswer": "trpiacou | trpiaca",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z nasledujúcej vety slovo, ktoré sa v nej v prúde reči spodobuje/znelostne asimiluje:\n...bolo to dielo nestráviteľné a čudovali sa, ako vôbec mohlo vyjsť.",
+              "correctAnswer": "vôbec",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 5,
+          "text": "Alfonz Bednár - Kolíska\n(úryvok, upravené)\nV predposlednej lieskovskej chalupe na hornom konci dediny Zita Černeková počúvala\nrádio. Dvere na kuchyni mala otvorené, obrátené k maličkému dvoru a k betónovému mostíku, tým sa ponad potok chodilo na širokú cestu. Dverami jej do teplej kuchyne zavieval\npríjemný chlad. Rádio mala postavené v kuchyni na pevnej drevenej konzole. To bolo!\nSpomenula si zrazu Zita. Kúpili si rádio, aj oni... Usmiala sa nad spomienkami, ako Černek,\njej muž, spravil z bukového dreva konzolu, pribil ju mocnými klincami na stenu nad veľký\nsivý hubáň. Zita naň pozrela, i na „starú dievku“m na smiešnú a skromnú, nikdy nekvitnúcu kvetinu, ako sa z hubáňa hlboko ťahá hnedolilavými stonkami a sivozelenými tučnými lístkami. Čoskoro bude na dlážke, pomyslela si. Deti už spali a Černek nebol doma.\nZita počúvala večerný program, prenos zo súdu (súd sa konal v meste v ten deň popoludní),\n„Obžalovaný Majerský,“ počúvala z rádia pevný prokurátorov hlas, „podľa výpovedí svedkov\nste rozvratník a sabotér, rozvracali ste družstvo, opovržlivo ste sa vyjadrovali o sovietskych kombajnoch a napomáhali ste kulácke bunky, ktorých cieľom je znemožniť v Temešanoch\nprechod od individuálneho ku kolektívnemu hospodáreniu. Priznávate sa?“ - „Družstvo som\nnerozvracal a nič som nesabotoval,“ počula Zita Černeková Majerského známy, už zahriaknutý\nhlas, „nikdy som nevidel sovietsky kombajn, kulácne bunky som nenapomáhal.“.",
+          "questions": [
+            {
+              "questionText": "Ktorú fázu dejovej línie diela Kolíska predstavuje ukážka 5? ",
+              "options": [
+                "úvod",
+                "zauzlenie",
+                "vyvrcholenie",
+                "záver"
+              ],
+              "correctAnswer": "A",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorá historická udalosť je načtrnutá v ukážke 5?",
+              "options": [
+                "politické procesy 50. rokov v Československej republike",
+                "súd s kolaborantmi počas 2. svetovej vojny",
+                "súd so zbehmi počas Slovenského národného povstania",
+                "vojnové procesy so sympatizantmi fašizmu"
+              ],
+              "correctAnswer": "A",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V akom vzťahu bol Majerský k Zite v diele Kolíska?",
+              "options": [
+                "Bývalý snúbenec, s ktorým sa ale rozišla",
+                "Bývalý milenec, ktorý však už bol ženatý.",
+                "Jej prvý manžel, ktorý sa schoval v jej dome",
+                "Jej známy, ktorý však bol aj nepriateľom štátu."
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorá postava v diele Kolíska bola svedkom v procese s Majerským?",
+              "options": [
+                "Paul Hals",
+                "Mišo Černek",
+                "Jano Ragala",
+                "Michal Martinec"
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza nepriamy predmet z nasledujúcej vety?:\nDverami jej do teplej kuchyne zavieval príjemný chlad.",
+              "options": [
+                "dverami",
+                "jej",
+                "do kuchyne",
+                "chlad"
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Zmeňte nezhodný prívlastok z nasledujúcej vety na zhodný a napíšte ho:\nDvere na kuchyni mala otvorené.",
+              "correctAnswer": "kuchynské",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Ktorý kompozičný postup využil autor pri spomienkach Zity Černekovej na Majerského v diele Kolíska?",
+              "correctAnswer": "retrospektívny | spätný | retrospektíva | retrospektívu",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z nasledujúceho časti textu ukážky 5 prístavok:\nV predposlednej lieskovskej chalupe na hornom konci dediny Zita Černeková počúvala\nrádio. Dvere na kuchyni mala otvorené, obrátené k maličkému dvoru a k betónovému\nmostíku, tým sa ponad potok chodilo na širokú cestu. Dverami jej do teplej kuchyne zavieval\npríjemný chlad. Rádio mala postavené v kuchyni na pevnej drevenej konzole. To bolo!\nSpomenula si zrazu Zita. Kúpili si rádio, aj oni... Usmiala sa nad spomienkami, ako Černek,\njej muž, spravil z bukového dreva konzolu, pribil ju mocnými klincami na stenu nad veľký\nsivý hubáň.",
+              "correctAnswer": "jej muž",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 6,
+          "text": "Molière - Mizantrop\n(úryvok)\nALCEST\nTakýto nízky zvyk len odpor vo mne budí,\nhoci mu holduje dosť vašich módnych ľudí,\nveď najviac nenávidím faloš podliakov,\nčo vnucujú sa sľubmi, službou storakou,\nčo v každom objatí sú klzkí, ale sladkí,\nčo z povinnosti trepú samé taľafatky,\nčo bez výberu trúsia vľúdne vyznania,\nči ide o poctivca, či o oplana.\nČo máte z toho, ak vás dneska niekto chváli,\npodkuruje vám, aký ste dokonalý,\na líškavo vám veľkú úctu vysloví,\nkeď zajtra bľaboce to isté lumpovi.\nAk svedomie nám ešte neuspali reči,\ntakáto podlá pocta sa nám prosto prieči.\nStáva sa z nej len lacná, suchá potrava,\nkeď zistíme, že každý tĺk ju dostáva.\nÚcta si žiada výber, schopnosť porovnania –\na nikoho si nectí, kto sa vrtkým klania.\nAj vy ste podľahli tej pliage našich čias,\nnuž medzi priateľov už nechcem rátať vás.\nOdmietam láskavosť, čo na každého padá\na na zásluhy pritom vôbec neprihliada.\nV tom zástupe chcem zostať odlíšený, sám,\npretože ľudským davom zväčša pohŕdam.\nFILINT\nKto žije medzi ľuďmi, musí sa k nim milo\na prívetivo správať – tak už sa to vžilo.\nALCEST\nNemáte, Filint, pravdu: trestal by som hneď\nten obchod s priateľstvom, čo zahanbuje svet..",
+          "questions": [
+            {
+              "questionText": "Ktorú ľudskú vlastnosť vyzdvihuje Alcest podľa ukážky 6? ",
+              "options": [
+                "úprimnosť",
+                "vľúdnosť",
+                "zdvorilosť",
+                "prívetivosť"
+              ],
+              "correctAnswer": "A",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý typ postavy predstavuje hlavná postava v Molièrovej hre Lakomec?",
+              "options": [
+                "autobiografický",
+                "charakterový",
+                "idealizovaný",
+                "sociálny"
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Emotívnosť Alcestovho prvého prehovoru v ukáže 6 umocňujú",
+              "options": [
+                "slangové slová.",
+                "nárečové slová.",
+                "expresívne slová.",
+                "básnické slová."
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza neslovesný (slovesno-menný) prísudok?",
+              "options": [
+                "Úcta si žiada výber.",
+                "Medzi priateľov už nechcem rátať vás.",
+                "V každom objatí sú klzkí.",
+                "Takýto nízky zvyk len odpor vo mne budí."
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ak Molière ako autor zaradil svoju hru do repertoára svojho divadla, tak bol zároveň.",
+              "options": [
+                "scénaristom",
+                "hercom",
+                "režisérom",
+                "dramaturgom"
+              ],
+              "correctAnswer": "D",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Napíšte názov opakovanej figúry uplatnenej v prvom Alcestovom prehovore v ukážke 6.",
+              "correctAnswer": "anafora",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte zo slova „takýto“ slabiku, na ktorej je hlavný slovný prízvuk.",
+              "correctAnswer": "ta- | ta",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z nasledujúceho časti textu ukážky 5 vymedzovacie zámeno:\npodkuruje vám, aký ste dokonalý,\na líškavo vám veľkú úctu vysloví,\nkeď zajtra bľaboce to isté lumpovi.\nAk svedomie nám ešte neuspali reči,\ntakáto podlá pocta sa nám prosto prieči.",
+              "correctAnswer": "to isté",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 7,
+          "text": "Peter Píšťanek - Rivers of Babylon\n(úryvok, upravené)\nTeraz už Rácz nejedáva zvyšky v ústraní tmavej kotolne. Dennodenne raňajkuje, obeduje\na večeria v hotelovej reštaurácii. Strmo tam vojde, v bagandžiach a s kabelou plnou vercajgu\ncez plece. Sadne si na svoje miesto. Má ho rezervované. Čašníci sa idú pretrhnúť. Rácz\nchlípe a divo trhá mäso. Mastnými rukami odštopľuje fľašu beaujolais. Krátkym pohľadom\nsi premeriava jej obsah a leje si ho do úst. Divo podupáva bagandžami. Pohľad na množstvo\npríboru rozloženého okolo taniera ho privádza do zúrivosti. Aj tak používa iba lyžicu. Čašníci\nho obstupujú, podávajú mu korenie, šaláty, mäsá, kečup. Celá reštaurácia sa zhrčila k Ráczovmu\nstolu. Hostia si na to zvykli. Radi počkajú. Pohľad na stolujúceho Rácza je neopakovateľný.\nLen noví, neskúsení, nervózne mrmlú a lúskajú prstami na obsluhu. Ostatní sa usilujú zahriaknuť\nich. I vydesený personál. Všetci bojazlivo zazerajú na Rácza, zápasiaceho s diviačou hlavou v šípkovej omáčke. Ak netrpezlivcov nezahriaknu včas, vyrušený Rácz vzhliadne vypúlenými očami od stola, posiateho mastnými fľakmi, omáčkami, vínovými škvrnami a črepmi. Nespratníkov si premeria pohľadom, ktorý nezabúda. Stačí, aby sa len tak mimochodom zmienil pred hlavným čašníkom, a hosť nie je obslúžený. Môže sa pratať kade ľahšie. Ak Rácza niekto rozzúri, odnesú si to všetci. Ak nechcú zmrznúť, musia mu za teplé radiátory znova zaplatiť.",
+          "questions": [
+            {
+              "questionText": "Podľa ukážky 7 je Rácz najpravdepodobnejšie? ",
+              "options": [
+                "nový direktívny riaditeľ hotela.",
+                "nenahraditeľný kurič v hoteli.",
+                "inšpektor kvality hotelových služieb",
+                "vrchný čašník v hotelovej reštaurácii."
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza jednovýznamové slovo?",
+              "options": [
+                "zmrznúť",
+                "sadnúť",
+                "raňajkovať",
+                "podávať"
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti je správne uvedený skloňovací vzor, podľa ktorého sa skloňuje\nprídavné meno v slovnom spojení zápasiaceho s diviačou hlavou?",
+              "options": [
+                "pekný",
+                "cudzí",
+                "páví",
+                "samostatné skloňovanie"
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "P. Pišťankovi sa podarilo zdynamizovať ukážku 7",
+              "options": [
+                "hromadením krátkych viet.",
+                "prevahou oznamovacích viet.",
+                "prevahou stavových slovies.",
+                "hromadením zložených súvetí."
+              ],
+              "correctAnswer": "A",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti je uvedený správny zápis priamej reči?",
+              "options": [
+                "„Pán hlavný!“ Požiadal hosť, „prineste nám účet!“",
+                "„Pán hlavný“, požiadal hosť, „prineste nám účet“!",
+                "„Prineste nám!“ požiadal hosť, „účet, pán hlavný!“",
+                "„Pán hlavný,“ požiadal hosť, „prineste nám účet!“"
+              ],
+              "correctAnswer": "D",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Vypíšte z ukážky 7 neohybné zložené slovo navodzujúce predstavu pravidelnosti.",
+              "correctAnswer": "dennodenne",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Napíšte názov obrazného pomenovania/prostriedku z nasledujúcej vety, založeného\nna vnútornej súvislosti medzi pomenúvanými javmi:\nCelá reštaurácia sa zhrčila k Ráczovmu stolu.",
+              "correctAnswer": "metonymia",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Pomenujte vetný sklad v nasledujúcej vete:\nČašníci sa idú pretrhnúť.",
+              "correctAnswer": "prisudzovací | prisudzovací sklad",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 8,
+          "text": "Záujem o Slovensko stále rastie!\n(úryvok, upravené)\nSlovensko je bezpečné\nPodľa bezpečnostných analytikov zvýšený záujem domácich, ale aj zahraničných turistov\no Slovensko ako turistickú destináciu súvisí s tým, že patríme do skupiny krajín, ktoré sú\nz hľadiska potenciálneho teroristického útoku najbezpečnejšie na celom svete. Z toho pramení aj jednoznačný pokles záujmu Slovákov o vycestovanie za dovolenkou. Zároveň sa u nás skvalitnili služby, čo ocenia aj mnohí zahraniční návštevníci. \n\nVysoké Tatry: Nápor turistov odhalil problémy\nV Tatrách bude najsilnejšia letná sezóna za posledných 25 rokov. Tento rok vzrástla návštevnosť takmer o 25%. Srdce Slovenska objavili už aj Briti, turisti z Izraela, Ázie, Číny, Japonska a Kórey. Nápor turistov však odhalil problémy. Máme najvyššiu DPH v oblasti služieb v porovnaní\ns okolitými štátmi, chýba nám ministerstvo cestovného ruchu a trápime sa aj s nedostatkom\nzamestnancov. Kuchári či čašníci sú totiž v Tatrách vzácnejší ako kamzíky a svište.\n\nBanská Štiavnica: Turistov pribúda, no chýbajú im cyklotrasy\nPodľa Martina Macharika, predsedu Kalvárskeho fondu, turisti hovoria, že na Slovensku\nsa zlepšujú služby aj pestrosť ponuky, a tak nie je problém naplánovať si u nás kvalitnú týždňovú\ndovolenku. Ale nie všetko je ružové. Chýbajú cyklotrasy, parkoviská či turistické značenia. Zišla by sa aj oprava niektorých pamiatok.\n",
+          "imageUrl": "prijmy_url",
+          "questions": [
+            {
+              "questionText": "Čo by bolo ešte potrebné podľa ukážky 8 zlepšiť pre návštevníkov Slovenska? ",
+              "options": [
+                "ubytovacie zariadenia",
+                "starostlivosť o pamiatky",
+                "kvalitu jedla v reštauráciách",
+                "vybavenie parkovísk"
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktoré tvrdenie je na základe tabuľky z ukážky 8 pravdivé?",
+              "options": [
+                "V roku 2011 sa oproti predchádzajúcemu roku najmenej zvýšili príjmy Slovenska\nz cestovného ruchu.",
+                "V roku 2015 sa oproti predchádzajúcemu roku najviac zvýšili príjmy Slovenska\nz cestovného ruchu.",
+                "V roku 2010 utratili Slováci na dovolenky v cudzine viac peňazí ako na pobyty\nna Slovensku.",
+                "Rozdiel medzi príjmami Slovenska z cestovného ruchu a výdavkami slovenských\ndovolenkárov v cudzine sa každoročne zvyšuje."
+              ],
+              "correctAnswer": "B",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Podľa ktorých vzorov sa skloňujú zvieracie podstatné mená v tvaroch použitých v nasledujúcej vete?\nKuchári či čašníci sú totiž v Tatrách vzácnejší ako kamzíky a svište.",
+              "options": [
+                "chlap, chlap",
+                "chlap, stroj",
+                "dub, stroj",
+                "dub, chlap"
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktoré tvrdenie vyplýva z ukážky 8?",
+              "options": [
+                "Na Slovensku sa skvalitnili služby pre turistov, čo oceňujú najmä dlhoroční\ndomáci zákazníci.",
+                "Pre vysoký počet zahraničných návštevníkov je nevyhnutné na Slovensku\nzriadiť ministerstvo cestovného ruchu.",
+                "Na Slovensku sa nachádzajú turistické oblasti, v ktorých je výrazný nedostatok\npracovníkov v službách.",
+                "Slováci zo strachu pred teroristickými útokmi odkladajú svoje dovolenky\nna nasledujúci rok."
+              ],
+              "correctAnswer": "C",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti majú všetky slovesá z ukážky 8 rovnaký vid?",
+              "options": [
+                "zlepšujú sa, zišla by sa, rastie",
+                "patríme, pramení, skvalitnili",
+                "chyba, trápime sa, prišlo",
+                "naplánovať, objavili, odhalil"
+              ],
+              "correctAnswer": "D",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Vypíšte z časti Vysoké Tatry v ukážke 8 sloveso s neslabičnou predponou",
+              "correctAnswer": "vzrástla",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z ukážky 8 slovo, ktoré má rovnaký význam ako slovné spojenie miesto pobytu.",
+              "correctAnswer": "destináciu | destinácia",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "V ktorom roku podľa ukážky 8 dosiahla návštevnosť Slovenska najnižšiu úroveň za sledované obdobie?",
+              "correctAnswer": "2009",
+              "type": "FILL_IN"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
