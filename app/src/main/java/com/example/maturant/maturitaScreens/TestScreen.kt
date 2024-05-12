@@ -2,11 +2,12 @@ package com.example.maturant.maturitaScreens
 
 
 
-import androidx.compose.foundation.background
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -17,6 +18,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -33,6 +35,7 @@ import com.example.maturant.viewModels.MaturitaViewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = viewModel()) {
+    val isLoading by viewModel.isLoading.collectAsState()
     val test = viewModel.currentTest.value
     val context = LocalContext.current
 
@@ -43,6 +46,7 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
     val callback = rememberUpdatedState(newValue = {
         viewModel.resetTimer()
         navController.navigateUp()
+        viewModel.resetResults()
     })
 
     val minutes = viewModel.remainingTime.collectAsState().value / 60
@@ -81,22 +85,35 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
                 navigationIcon = {
                     IconButton(onClick = { callback.value.invoke() }) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back", Modifier.padding(top = 20.dp))
+
                     }
                 },
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.Blue)
             )
         },
         content = { innerPadding ->
-            LazyColumn(modifier = Modifier.padding(innerPadding)) {
-                item {
-                    if (test != null) {
-                        DisplayTest(test, viewModel)
-                    } else {
-                        Text("Test nebol nájdený", color = AppColors.White, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.padding(16.dp))
+            if (isLoading) {
+                Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                    CircularProgressIndicator(color = AppColors.Blue)
+                }
+            } else {
+                LazyColumn(modifier = Modifier.padding(innerPadding)) {
+                    item {
+                        if (test != null) {
+                            DisplayTest(test, viewModel)
+                        } else {
+                            Text(
+                                "Test nebol nájdený",
+                                color = AppColors.White,
+                                style = MaterialTheme.typography.bodyLarge,
+                                modifier = Modifier.padding(16.dp)
+                            )
+                        }
                     }
                 }
             }
         }
     )
 }
+
 
