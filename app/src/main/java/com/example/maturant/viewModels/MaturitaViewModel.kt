@@ -35,8 +35,10 @@ class MaturitaViewModel : ViewModel() {
     val currentTest: State<Test?> = _currentTest
 
     private val _userAnswers = mutableStateListOf<String?>()
+    val userAnswers: MutableList<String?> = _userAnswers
     private val _testResults = MutableStateFlow<Pair<Int, Int>?>(null)
     val testResults: StateFlow<Pair<Int, Int>?> = _testResults.asStateFlow()
+
 
     fun loadTest(context: Context, fileName: String) {
         _isLoading.value = true
@@ -55,7 +57,7 @@ class MaturitaViewModel : ViewModel() {
 
     fun saveUserAnswer(questionIndex: Int, answer: String) {
         while (questionIndex >= _userAnswers.size) {
-            _userAnswers.add(null)  // Ensure the list is large enough
+            _userAnswers.add(null)
         }
         _userAnswers[questionIndex] = answer
         Log.d("UserAnswers", _userAnswers.size.toString())
@@ -85,8 +87,6 @@ class MaturitaViewModel : ViewModel() {
         _testResults.value = null
         _userAnswers.clear()
     }
-
-
 
     fun onYearClick(year: String) {
         selectedYear.value = year

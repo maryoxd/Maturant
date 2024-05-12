@@ -2,6 +2,7 @@ package com.example.maturant.maturitaScreens
 
 import android.content.Context
 import android.util.Log
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -21,12 +22,12 @@ import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.focus.onFocusChanged
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.painterResource
@@ -63,40 +64,56 @@ fun loadTestFromJson(context: Context, fileName: String): Test? {
 @Composable
 fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
     val totalQuestionsCount = test.sections.sumOf { it.questions.size }
-    val answersState = remember { mutableStateListOf<String?>().apply { addAll(List(totalQuestionsCount) { null }) } }  // Opravené na mutableStateListOf
+    if (viewModel.userAnswers.size < totalQuestionsCount) {
+        viewModel.userAnswers.addAll(List(totalQuestionsCount - viewModel.userAnswers.size) { null })
+    }
+
+    val answersState = viewModel.userAnswers
     var totalQuestionIndex = 0
     val showResultsDialog = remember { mutableStateOf(false) }
 
     Column(modifier = Modifier.padding(16.dp)) {
         test.sections.forEach { section ->
-            Text(
-                text = "Ukážka ${section.sectionId}: \n${section.text}",
-                style = MaterialTheme.typography.bodyLarge.copy(
-                    fontWeight = FontWeight.Bold,
-                    fontStyle = FontStyle.Italic
-                ),
-                modifier = Modifier.fillMaxWidth(),
-                textAlign = TextAlign.Center
-            )
-            section.imageUrl?.let { imageUrl ->
-                val imageRes = when(imageUrl) {
-                    "prijmy_url" -> R.drawable.prijmy_url
-                    else -> null
-                }
-                imageRes?.let {
-                    Image(
-                        painter = painterResource(id = it),
-                        contentDescription = "Ilustračný obrázok",
-                        modifier = Modifier.fillMaxWidth().height(250.dp),
-                        contentScale = ContentScale.Crop
-                    )
+            Surface( modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 8.dp),
+                shape = RoundedCornerShape(8.dp),
+                color = Color.LightGray,
+                border = BorderStroke(2.dp, AppColors.Blue)
+            ) {
+                Text(
+                    text = "Ukážka ${section.sectionId}: \n${section.text}",
+                    style = MaterialTheme.typography.bodyLarge.copy(
+                        fontWeight = FontWeight.Bold,
+                        fontStyle = FontStyle.Italic
+                    ),
+                    modifier = Modifier.fillMaxWidth().padding(16.dp),
+                    textAlign = TextAlign.Center
+                )
+                section.imageUrl?.let { imageUrl ->
+                    val imageRes = when (imageUrl) {
+                        "prijmy_url" -> R.drawable.prijmy_url
+                        else -> null
+                    }
+                    imageRes?.let {
+                        Image(
+                            painter = painterResource(id = it),
+                            contentDescription = "Ilustračný obrázok",
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .height(250.dp),
+                            contentScale = ContentScale.Crop
+                        )
+                    }
                 }
             }
 
             section.questions.forEach { question ->
                 val currentQuestionIndex = totalQuestionIndex++
                 Surface(
-                    modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 8.dp),
                     color = MaterialTheme.colorScheme.surfaceVariant,
                     shape = RoundedCornerShape(8.dp)
                 ) {
@@ -105,7 +122,6 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                             text = "${currentQuestionIndex + 1}. ${question.questionText}",
                             style = MaterialTheme.typography.bodyMedium
                         )
-
                         if (question.type == "CHOICE") {
                             question.options?.forEachIndexed { idx, option ->
                                 val optionLabel = when (idx) {
@@ -132,7 +148,9 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                                             Log.d("Ukladam", "Ukladam odpoved: $optionLabel na index: $currentQuestionIndex")
                                         }
                                     },
-                                    modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(vertical = 4.dp),
                                     colors = ButtonDefaults.buttonColors(
                                         if (isSelected) AppColors.Orange else AppColors.LightBlue
                                     )
@@ -148,17 +166,17 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                 }
             }
         }
-
-        // Pridať tlačidlo na konci testu
         Button(
             onClick = {
                 viewModel.evaluateAnswers(test)
                 showResultsDialog.value = true
             },
-            modifier = Modifier.fillMaxWidth().padding(16.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
             colors = ButtonDefaults.buttonColors(AppColors.Red)
         ) {
-            Text("ODOVZDAŤ TEST", color = AppColors.White, fontSize = MaterialTheme.typography.bodyMedium.fontSize)
+            Text("ODOVZDAŤ TEST", color = AppColors.White, fontWeight = FontWeight.Bold)
         }
         if (showResultsDialog.value) {
             val testResults = viewModel.testResults.collectAsState().value
@@ -178,49 +196,47 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
 
 @Composable
 fun CustomTextField(viewModel: MaturitaViewModel, questionIndex: Int) {
-    var answer by remember { mutableStateOf("") }
-    var lastSavedAnswer by remember { mutableStateOf("") }
-    val keyboardController = LocalSoftwareKeyboardController.current  // Get the keyboard controller
+    val initialAnswer = viewModel.userAnswers.getOrElse(questionIndex) { "" } ?: ""
+    var answer by rememberSaveable { mutableStateOf(initialAnswer) }
+    var lastSavedAnswer by rememberSaveable { mutableStateOf(initialAnswer) }
+    var lastNotEmptyState by rememberSaveable { mutableStateOf(initialAnswer.isNotEmpty()) }
 
-    TextField(
-        value = answer,
-        onValueChange = { newAnswer ->
-            // Handle the case when text is added or completely removed
-            if (newAnswer.isNotEmpty() && answer.isEmpty()) {
-                viewModel.incrementAnsweredQuestions()
-            } else if (newAnswer.isEmpty() && answer.isNotEmpty()) {
-                viewModel.decrementAnsweredQuestions()
-            }
-            answer = newAnswer
-        },
-        label = { Text("Vaša odpoveď") },
+    val keyboardController = LocalSoftwareKeyboardController.current
+    val backgroundColor = if (answer.isNotEmpty()) AppColors.Orange else MaterialTheme.colorScheme.surfaceVariant
+
+    Surface(
         modifier = Modifier
             .fillMaxWidth()
-            .onFocusChanged { focusState ->
-                // Handle the case when focus is lost and there is a change in the answer
-                if (!focusState.isFocused && answer != lastSavedAnswer) {
-                    if (answer.isEmpty()) {
-                        viewModel.saveUserAnswer(questionIndex, "")  // Save as an empty string if cleared
-                    } else {
-                        viewModel.saveUserAnswer(questionIndex, answer)  // Save new non-empty answer
-                    }
-                    lastSavedAnswer = answer
-                    Log.d("FILL_IN", "Saving answer: $answer at index: $questionIndex")
+            .padding(vertical = 4.dp),
+        color = backgroundColor,
+        shape = RoundedCornerShape(4.dp)
+    ) {
+        TextField(
+            value = answer,
+            onValueChange = { newAnswer ->
+                answer = newAnswer
+                if (newAnswer.isNotEmpty() && !lastNotEmptyState) {
+                    viewModel.incrementAnsweredQuestions()
+                    lastNotEmptyState = true
+                } else if (newAnswer.isEmpty() && lastNotEmptyState) {
+                    viewModel.decrementAnsweredQuestions()
+                    lastNotEmptyState = false
                 }
             },
-        keyboardOptions = KeyboardOptions.Default.copy(imeAction = ImeAction.Done),
-        keyboardActions = KeyboardActions(onDone = {
-            // When the Done button is pressed on the keyboard
-            if (answer != lastSavedAnswer) {
-                if (answer.isEmpty()) {
-                    viewModel.saveUserAnswer(questionIndex, "")  // Save as an empty string if cleared
-                } else {
-                    viewModel.saveUserAnswer(questionIndex, answer)  // Save new non-empty answer
+            label = { Text("Vaša odpoveď") },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            keyboardOptions = KeyboardOptions.Default.copy(imeAction = ImeAction.Done),
+            keyboardActions = KeyboardActions(onDone = {
+                if (answer.trim() != lastSavedAnswer) {
+                    viewModel.saveUserAnswer(questionIndex, answer.trim())
+                    lastSavedAnswer = answer.trim()
+                    Log.d("FILL_IN", "Saving answer on Done: ${answer.trim()} at index: $questionIndex")
+                    keyboardController?.hide()
                 }
-                lastSavedAnswer = answer
-                Log.d("FILL_IN", "Saving answer on Done: $answer at index: $questionIndex")
-                keyboardController?.hide()  // Hide the keyboard
             }
-        })
-    )
+            )
+        )
+    }
 }
