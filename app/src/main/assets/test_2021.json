@@ -48,7 +48,7 @@
                 "majetok cudzí",
                 "prísny zákon"
               ],
-              "correctAnswer": "B",
+              "correctAnswer": "B)",
               "type": "CHOICE"
             },
             {
@@ -59,7 +59,7 @@
                 "prerývaný",
                 "obkročný"
               ],
-              "correctAnswer": "D",
+              "correctAnswer": "D)",
               "type": "CHOICE"
             },
             {
@@ -86,7 +86,7 @@
             {
               "questionText": "Odkedy sa podľa ukážky 2 v kontexte európskej literárnej kritiky používa pojem postmoderná? ",
               "options": ["od 50. rokov 20. storočia", "od 70. rokov 19. storočia", "od 70. rokov 20. storočia", "od 50. rokov 19. storočia"],
-              "correctAnswer": "C",
+              "correctAnswer": "C)",
               "type": "CHOICE"
             }
           ]

@@ -47,8 +47,10 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
         viewModel.resetTimer()
         navController.navigateUp()
         viewModel.resetResults()
+        viewModel.isTestSubmitted.value = false
 
     })
+
 
     val minutes = viewModel.remainingTime.collectAsState().value / 60
     val seconds = viewModel.remainingTime.collectAsState().value % 60

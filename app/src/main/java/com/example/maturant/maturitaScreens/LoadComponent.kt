@@ -4,7 +4,10 @@ import android.content.Context
 import android.util.Log
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.IntrinsicSize
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 
@@ -20,6 +23,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -40,6 +44,7 @@ import com.example.maturant.R
 import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.viewModels.MaturitaViewModel
 import com.google.gson.Gson
+import java.util.Locale
 
 fun loadTestFromJson(context: Context, fileName: String): Test? {
     try {
@@ -49,7 +54,6 @@ fun loadTestFromJson(context: Context, fileName: String): Test? {
             inputStream.read(buffer)
             val json = String(buffer, Charsets.UTF_8)
             val testContainer = Gson().fromJson(json, TestContainer::class.java)
-            // Predpokladáme, že každý súbor má len jeden test pre daný rok
             return testContainer.tests.firstOrNull()
         }
     } catch (e: Exception) {
@@ -57,9 +61,6 @@ fun loadTestFromJson(context: Context, fileName: String): Test? {
         return null
     }
 }
-
-
-
 
 @Composable
 fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
@@ -74,40 +75,42 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
 
     Column(modifier = Modifier.padding(16.dp)) {
         test.sections.forEach { section ->
-            Surface( modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 8.dp),
+            Surface(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 8.dp),
                 shape = RoundedCornerShape(8.dp),
                 color = Color.LightGray,
                 border = BorderStroke(2.dp, AppColors.Blue)
             ) {
-                Text(
-                    text = "Ukážka ${section.sectionId}: \n${section.text}",
-                    style = MaterialTheme.typography.bodyLarge.copy(
-                        fontWeight = FontWeight.Bold,
-                        fontStyle = FontStyle.Italic
-                    ),
-                    modifier = Modifier.fillMaxWidth().padding(16.dp),
-                    textAlign = TextAlign.Center
-                )
-                section.imageUrl?.let { imageUrl ->
-                    val imageRes = when (imageUrl) {
-                        "prijmy_url" -> R.drawable.prijmy_url
-                        else -> null
-                    }
-                    imageRes?.let {
-                        Image(
-                            painter = painterResource(id = it),
-                            contentDescription = "Ilustračný obrázok",
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .height(250.dp),
-                            contentScale = ContentScale.Crop
-                        )
+                Column(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
+                    Text(
+                        text = "Ukážka ${section.sectionId}: \n${section.text}",
+                        style = MaterialTheme.typography.bodyLarge.copy(
+                            fontWeight = FontWeight.Bold,
+                            fontStyle = FontStyle.Italic
+                        ),
+                        modifier = Modifier.fillMaxWidth().padding(16.dp),
+                        textAlign = TextAlign.Center
+                    )
+                    section.imageUrl?.let { imageUrl ->
+                        val imageRes = when (imageUrl) {
+                            "prijmy_url" -> R.drawable.prijmy_url
+                            else -> null
+                        }
+                        imageRes?.let {
+                            Image(
+                                painter = painterResource(id = it),
+                                contentDescription = "Ilustračný obrázok",
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .height(IntrinsicSize.Min),
+                                contentScale = ContentScale.Fit
+                            )
+                        }
                     }
                 }
             }
-
             section.questions.forEach { question ->
                 val currentQuestionIndex = totalQuestionIndex++
                 Surface(
@@ -132,28 +135,39 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                                     else -> "${idx + 1})"
                                 }
                                 val isSelected = answersState[currentQuestionIndex] == optionLabel
+                                val isCorrect =
+                                    viewModel.questionResults.getOrElse(currentQuestionIndex) { false }
+                                        ?: false
+
+                                val buttonColor = when {
+                                    viewModel.isTestSubmitted.value && isCorrect && optionLabel == question.correctAnswer -> Color.Green
+                                    viewModel.isTestSubmitted.value && isSelected && optionLabel != question.correctAnswer -> AppColors.Red
+                                    viewModel.isTestSubmitted.value && !isSelected && optionLabel == question.correctAnswer -> AppColors.Green
+                                    isSelected -> AppColors.Orange
+                                    else -> AppColors.LightBlue
+                                }
 
                                 Button(
                                     onClick = {
-                                        if (isSelected) {
-                                            answersState[currentQuestionIndex] = null
-                                            viewModel.decrementAnsweredQuestions()
-                                        } else {
-                                            if (answersState[currentQuestionIndex] != null) {
+                                        if (!viewModel.isTestSubmitted.value) {
+                                            if (isSelected) {
+                                                answersState[currentQuestionIndex] = null
                                                 viewModel.decrementAnsweredQuestions()
+                                            } else {
+                                                if (answersState[currentQuestionIndex] != null) {
+                                                    viewModel.decrementAnsweredQuestions()
+                                                }
+                                                answersState[currentQuestionIndex] = optionLabel
+                                                viewModel.incrementAnsweredQuestions()
+                                                viewModel.saveUserAnswer(
+                                                    currentQuestionIndex,
+                                                    optionLabel
+                                                )
                                             }
-                                            answersState[currentQuestionIndex] = optionLabel
-                                            viewModel.incrementAnsweredQuestions()
-                                            viewModel.saveUserAnswer(currentQuestionIndex, optionLabel)
-                                            Log.d("Ukladam", "Ukladam odpoved: $optionLabel na index: $currentQuestionIndex")
                                         }
                                     },
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .padding(vertical = 4.dp),
-                                    colors = ButtonDefaults.buttonColors(
-                                        if (isSelected) AppColors.Orange else AppColors.LightBlue
-                                    )
+                                    modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
+                                    colors = ButtonDefaults.buttonColors(buttonColor)
                                 ) {
                                     Text("$optionLabel $option", color = AppColors.White)
                                 }
@@ -168,7 +182,7 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
         }
         Button(
             onClick = {
-                viewModel.evaluateAnswers(test)
+                viewModel.submitTest()
                 showResultsDialog.value = true
             },
             modifier = Modifier
@@ -176,20 +190,79 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                 .padding(16.dp),
             colors = ButtonDefaults.buttonColors(AppColors.Red)
         ) {
-            Text("ODOVZDAŤ TEST", color = AppColors.White, fontWeight = FontWeight.Bold)
+            Text(
+                "ODOVZDAŤ TEST",
+                color = AppColors.White,
+                fontWeight = FontWeight.Bold
+            )
         }
         if (showResultsDialog.value) {
             val testResults = viewModel.testResults.collectAsState().value
             AlertDialog(
                 onDismissRequest = { showResultsDialog.value = false },
                 title = { Text("Výsledky testu") },
-                text = { Text("Správne odpovede: ${testResults?.first ?: 0} z $totalQuestionsCount") },
+                text = {
+                    Column {
+                        Text(
+                            "SPRÁVNE ODPOVEDE: ",
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            "${testResults?.first ?: 0} z $totalQuestionsCount",
+                            color = if ((testResults?.first
+                                    ?: 0) >= 36
+                            ) AppColors.Green else Color.Red,
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text(
+                            "% ÚSPEŠNOSŤ:",
+                            fontWeight = FontWeight.Bold
+                        )
+                        val successPercentage = ((testResults?.first
+                            ?: 0).toDouble() / totalQuestionsCount.toDouble() * 100)
+                        val successPercentageString = "%.2f".format(Locale.US, successPercentage)
+
+                        Text(
+                            "$successPercentageString%",
+                            color = if (successPercentage >= 70) Color.Green else if (successPercentage >= 50) AppColors.Orange else AppColors.Red,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                },
                 confirmButton = {
-                    Button(onClick = { showResultsDialog.value = false }) {
-                        Text("Zavrieť")
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceEvenly
+                    ) {
+                        Button(
+                            onClick = {
+                                viewModel.restartTest()
+                                showResultsDialog.value = false
+                            },
+                            colors = ButtonDefaults.buttonColors(Color.Red)
+                        ) {
+                            Text("Reset")
+                        }
+                        Button(
+                            onClick = {
+                                showResultsDialog.value = false
+                            },
+                            colors = ButtonDefaults.buttonColors(AppColors.Green)
+                        ) {
+                            Text("Uložiť")
+                        }
+                        Button(
+                            onClick = {
+                                showResultsDialog.value = false
+                            },
+                            colors = ButtonDefaults.buttonColors(AppColors.Black)
+                        ) {
+                            Text("Zavrieť")
+                        }
                     }
                 }
             )
+
         }
     }
 }
@@ -202,41 +275,53 @@ fun CustomTextField(viewModel: MaturitaViewModel, questionIndex: Int) {
     var lastNotEmptyState by rememberSaveable { mutableStateOf(initialAnswer.isNotEmpty()) }
 
     val keyboardController = LocalSoftwareKeyboardController.current
-    val backgroundColor = if (answer.isNotEmpty()) AppColors.Orange else MaterialTheme.colorScheme.surfaceVariant
+
+    LaunchedEffect(viewModel.lastResetTimestamp.value) {
+        answer = ""
+        lastSavedAnswer = ""
+        lastNotEmptyState = false
+    }
 
     Surface(
         modifier = Modifier
             .fillMaxWidth()
             .padding(vertical = 4.dp),
-        color = backgroundColor,
+        color = if (viewModel.isTestSubmitted.value) {
+            if (viewModel.questionResults.getOrNull(questionIndex) == true) Color.Green
+            else Color.Red
+        } else if (answer.isNotEmpty()) AppColors.Orange
+        else MaterialTheme.colorScheme.surfaceVariant,
         shape = RoundedCornerShape(4.dp)
     ) {
         TextField(
             value = answer,
             onValueChange = { newAnswer ->
-                answer = newAnswer
-                if (newAnswer.isNotEmpty() && !lastNotEmptyState) {
-                    viewModel.incrementAnsweredQuestions()
-                    lastNotEmptyState = true
-                } else if (newAnswer.isEmpty() && lastNotEmptyState) {
-                    viewModel.decrementAnsweredQuestions()
-                    lastNotEmptyState = false
+                if (!viewModel.isTestSubmitted.value) {
+                    answer = newAnswer
+                    if (newAnswer.isNotEmpty() && !lastNotEmptyState) {
+                        viewModel.incrementAnsweredQuestions()
+                        lastNotEmptyState = true
+                    } else if (newAnswer.isEmpty() && lastNotEmptyState) {
+                        viewModel.decrementAnsweredQuestions()
+                        lastNotEmptyState = false
+                    }
                 }
             },
             label = { Text("Vaša odpoveď") },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp),
+            enabled = !viewModel.isTestSubmitted.value,
             keyboardOptions = KeyboardOptions.Default.copy(imeAction = ImeAction.Done),
             keyboardActions = KeyboardActions(onDone = {
-                if (answer.trim() != lastSavedAnswer) {
+                if (!viewModel.isTestSubmitted.value && answer.trim() != lastSavedAnswer) {
                     viewModel.saveUserAnswer(questionIndex, answer.trim())
                     lastSavedAnswer = answer.trim()
-                    Log.d("FILL_IN", "Saving answer on Done: ${answer.trim()} at index: $questionIndex")
                     keyboardController?.hide()
                 }
-            }
-            )
+            })
         )
     }
 }
+
+
