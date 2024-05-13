@@ -3,18 +3,24 @@ package com.example.maturant.viewModels
 
 import android.content.Context
 import android.util.Log
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.maturant.maturitaScreens.loadTestFromJson
 import com.example.maturant.maturitaScreens.Test
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+
 
 class MaturitaViewModel : ViewModel() {
     val showDialog = mutableStateOf(false)
@@ -39,6 +45,24 @@ class MaturitaViewModel : ViewModel() {
     private val _testResults = MutableStateFlow<Pair<Int, Int>?>(null)
     val testResults: StateFlow<Pair<Int, Int>?> = _testResults.asStateFlow()
 
+    private var _isTestSubmitted = mutableStateOf(false)
+    var isTestSubmitted: MutableState<Boolean> = _isTestSubmitted
+
+    private val _questionResults = mutableStateListOf<Boolean?>()
+    val questionResults: List<Boolean?> = _questionResults
+
+    private var _testDurationMinutes = mutableIntStateOf(0)
+    private var _testDurationSeconds = mutableIntStateOf(0)
+
+    private var timerJob: Job? = null
+
+    private val _lastResetTimeStamp = mutableLongStateOf(System.currentTimeMillis())
+    val lastResetTimestamp: State<Long> = _lastResetTimeStamp
+
+    fun submitTest() {
+        _isTestSubmitted.value = true
+        evaluateAnswers(currentTest.value!!)
+    }
 
     fun loadTest(context: Context, fileName: String) {
         _isLoading.value = true
@@ -63,25 +87,39 @@ class MaturitaViewModel : ViewModel() {
         Log.d("UserAnswers", _userAnswers.size.toString())
     }
 
-    fun evaluateAnswers(test: Test) {
+
+
+
+    fun restartTest() {
+        _isTestSubmitted.value = false
+        _userAnswers.clear()
+        _questionResults.clear()
+        _testResults.value = null
+        _answeredQuestions.value = 0
+        resetTimer()
+        _lastResetTimeStamp.longValue = System.currentTimeMillis()
+        initTimerAndStart(selectedYear.value, _testDurationMinutes.intValue, _testDurationSeconds.intValue)
+    }
+
+    private fun evaluateAnswers(test: Test) {
         var correctCount = 0
         var questionIndex = 0
+        _questionResults.clear()
+
         test.sections.forEach { section ->
             section.questions.forEach { question ->
                 val userAnswer = _userAnswers.getOrNull(questionIndex)?.trim()?.lowercase()
-                val correctAnswers = when (question.type) {
-                    "CHOICE" -> listOf(question.correctAnswer.lowercase())
-                    "FILL_IN" -> question.correctAnswer.split("|").map { it.trim().lowercase() }
-                    else -> emptyList()
-                }
-                if (userAnswer in correctAnswers) {
-                    correctCount++
-                }
+                val correctAnswers = question.correctAnswer.lowercase().split("|").map { it.trim() }
+                val isCorrect = correctAnswers.contains(userAnswer)
+                _questionResults.add(isCorrect)
+                if (isCorrect) correctCount++
                 questionIndex++
             }
         }
-        _testResults.value = Pair(correctCount, _userAnswers.size)
+        _testResults.value = Pair(correctCount, _userAnswers.size) // Aktualizujeme celkový počet správnych odpovedí
     }
+
+
 
     fun resetResults() {
         _testResults.value = null
@@ -98,6 +136,8 @@ class MaturitaViewModel : ViewModel() {
     }
 
     fun initTimerAndStart(year: String, minutes: Int, seconds: Int) {
+        _testDurationMinutes.intValue = minutes
+        _testDurationSeconds.intValue = seconds
         selectedYear.value = year
         val totalSeconds = minutes * 60 + seconds
         startTimer(totalSeconds)
@@ -105,7 +145,8 @@ class MaturitaViewModel : ViewModel() {
 
     private fun startTimer(totalSeconds: Int) {
         _remainingTime.value = totalSeconds
-        viewModelScope.launch {
+        timerJob?.cancel()  // Zruší predchádzajúcu coroutine, ak existuje
+        timerJob = viewModelScope.launch {
             while (_remainingTime.value > 0) {
                 delay(1000)
                 _remainingTime.value -= 1
@@ -126,7 +167,8 @@ class MaturitaViewModel : ViewModel() {
     }
 
     fun resetTimer() {
-        _remainingTime.value = 0
-        _answeredQuestions.value = 0
+        viewModelScope.launch {
+            timerJob?.cancelAndJoin()
+        }
     }
 }
