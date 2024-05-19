@@ -18,6 +18,8 @@ class SharedViewModel : ViewModel() {
 
     private val _isNavigatiomLocked = mutableStateOf(false)
     val isNavigationLocked = _isNavigatiomLocked
+
+
     suspend fun loadStyles(context: Context, resourceId: Int) {
         _isLoading.value = true
         viewModelScope.launch {

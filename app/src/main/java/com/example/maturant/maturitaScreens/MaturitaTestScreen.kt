@@ -86,7 +86,7 @@ fun MaturitaTestScreen(navController: NavController, viewModel: MaturitaViewMode
         },
         content = { innerPadding ->
             LazyColumn(modifier = Modifier.padding(innerPadding)) {
-                items(listOf("2016", "2017", "2018", "2019", "2020", "2021", "2022")) { year ->
+                items(listOf("2017", "2018", "2019", "2022", "2023", "2024")) { year ->
                     YearItem(year = year, onClick = {
                         viewModel.onYearClick(year)
                     })

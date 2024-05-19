@@ -33,6 +33,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
@@ -96,6 +97,7 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                     section.imageUrl?.let { imageUrl ->
                         val imageRes = when (imageUrl) {
                             "prijmy_url" -> R.drawable.prijmy_url
+                            "zoe_url" -> R.drawable.zoe_url
                             else -> null
                         }
                         imageRes?.let {
@@ -249,6 +251,8 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                             },
                             colors = ButtonDefaults.buttonColors(AppColors.Green)
                         ) {
+                            val context = LocalContext.current
+                            viewModel.saveTestResults(context)
                             Text("Uložiť")
                         }
                         Button(
@@ -269,19 +273,29 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
 
 @Composable
 fun CustomTextField(viewModel: MaturitaViewModel, questionIndex: Int) {
-    val initialAnswer = viewModel.userAnswers.getOrElse(questionIndex) { "" } ?: ""
-    var answer by rememberSaveable { mutableStateOf(initialAnswer) }
-    var lastSavedAnswer by rememberSaveable { mutableStateOf(initialAnswer) }
-    var lastNotEmptyState by rememberSaveable { mutableStateOf(initialAnswer.isNotEmpty()) }
+    // Použitie rememberSaveable na ukladanie stavu
+    var answer by rememberSaveable { mutableStateOf(viewModel.userAnswers.getOrElse(questionIndex) { "" } ?: "") }
+    var lastSavedAnswer by rememberSaveable { mutableStateOf(answer) }
+    var lastNotEmptyState by rememberSaveable { mutableStateOf(answer.isNotEmpty()) }
 
+    // Klávesnicový ovládač pre skrytie klávesnice
     val keyboardController = LocalSoftwareKeyboardController.current
 
+    // LaunchedEffect na resetovanie odpovede pri resete testu
     LaunchedEffect(viewModel.lastResetTimestamp.value) {
         answer = ""
         lastSavedAnswer = ""
         lastNotEmptyState = false
     }
 
+    // LaunchedEffect na inicializáciu odpovede pri každej rekompozícii
+    LaunchedEffect(key1 = viewModel.userAnswers, key2 = questionIndex) {
+        answer = viewModel.userAnswers.getOrElse(questionIndex) { "" } ?: ""
+        lastSavedAnswer = answer
+        lastNotEmptyState = answer.isNotEmpty()
+    }
+
+    // Povrch pre TextField
     Surface(
         modifier = Modifier
             .fillMaxWidth()
@@ -293,11 +307,13 @@ fun CustomTextField(viewModel: MaturitaViewModel, questionIndex: Int) {
         else MaterialTheme.colorScheme.surfaceVariant,
         shape = RoundedCornerShape(4.dp)
     ) {
+        // TextField s logikou na ukladanie odpovedí a spracovanie klávesnice
         TextField(
             value = answer,
             onValueChange = { newAnswer ->
                 if (!viewModel.isTestSubmitted.value) {
                     answer = newAnswer
+                    viewModel.saveUserAnswer(questionIndex, newAnswer)
                     if (newAnswer.isNotEmpty() && !lastNotEmptyState) {
                         viewModel.incrementAnsweredQuestions()
                         lastNotEmptyState = true
@@ -323,5 +339,6 @@ fun CustomTextField(viewModel: MaturitaViewModel, questionIndex: Int) {
         )
     }
 }
+
 
 
