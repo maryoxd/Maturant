@@ -19,6 +19,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -48,9 +50,9 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
         navController.navigateUp()
         viewModel.resetResults()
         viewModel.isTestSubmitted.value = false
-
     })
 
+    val showExitDialog = remember { mutableStateOf(false) }
 
     val minutes = viewModel.remainingTime.collectAsState().value / 60
     val seconds = viewModel.remainingTime.collectAsState().value % 60
@@ -86,9 +88,18 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
                     }
                 },
                 navigationIcon = {
-                    IconButton(onClick = { callback.value.invoke() }) {
+                    IconButton(onClick = {
+                        if (answered > 0) {
+                            viewModel.pauseTimer()
+                            showExitDialog.value = true
+                            if (viewModel.wasSaved.value) {
+                                navController.navigateUp()
+                            }
+                        } else {
+                            callback.value.invoke()
+                        }
+                    }) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back", Modifier.padding(top = 20.dp))
-
                     }
                 },
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.Blue)
@@ -117,6 +128,38 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
             }
         }
     )
+    if (showExitDialog.value && !viewModel.wasSaved.value) {
+        AlertDialog(
+            onDismissRequest = { showExitDialog.value = false },
+            title = { Text("Potvrdenie") },
+            text = { Text("Naozaj chcete odísť? Vaše odpovede nebudú uložené.") },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        viewModel.resetTimer()
+                        navController.navigateUp()
+                        viewModel.resetResults()
+                        viewModel.isTestSubmitted.value = false
+                        showExitDialog.value = false
+                    },
+                    colors = ButtonDefaults.buttonColors(AppColors.Red)
+                ) {
+                    Text("Odísť")
+                }
+            },
+            dismissButton = {
+                Button(
+                    onClick = {
+                        showExitDialog.value = false
+                        viewModel.resumeTimer()
+                    },
+                    colors = ButtonDefaults.buttonColors(AppColors.Green)
+                ) {
+                    Text("Pokračovať")
+                }
+            }
+        )
+    }
 }
 
 

@@ -20,6 +20,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import java.io.File
 
 
 class MaturitaViewModel : ViewModel() {
@@ -59,6 +60,9 @@ class MaturitaViewModel : ViewModel() {
     private val _lastResetTimeStamp = mutableLongStateOf(System.currentTimeMillis())
     val lastResetTimestamp: State<Long> = _lastResetTimeStamp
 
+    private val _wasSaved = mutableStateOf<Boolean>(false)
+    val wasSaved: State<Boolean> = _wasSaved
+
     fun submitTest() {
         _isTestSubmitted.value = true
         evaluateAnswers(currentTest.value!!)
@@ -97,6 +101,7 @@ class MaturitaViewModel : ViewModel() {
         _testResults.value = null
         _answeredQuestions.value = 0
         resetTimer()
+        _wasSaved.value = false
         _lastResetTimeStamp.longValue = System.currentTimeMillis()
         initTimerAndStart(selectedYear.value, _testDurationMinutes.intValue, _testDurationSeconds.intValue)
     }
@@ -116,13 +121,14 @@ class MaturitaViewModel : ViewModel() {
                 questionIndex++
             }
         }
-        _testResults.value = Pair(correctCount, _userAnswers.size) // Aktualizujeme celkový počet správnych odpovedí
+        _testResults.value = Pair(correctCount, _userAnswers.size)
     }
 
 
 
     fun resetResults() {
         _testResults.value = null
+        _answeredQuestions.value = 0
         _userAnswers.clear()
     }
 
@@ -171,4 +177,48 @@ class MaturitaViewModel : ViewModel() {
             timerJob?.cancelAndJoin()
         }
     }
+
+    fun pauseTimer() {
+        timerJob?.cancel()
+    }
+
+    fun resumeTimer() {
+        startTimer(_remainingTime.value)
+    }
+
+    fun saveTestResults(context: Context) {
+        _wasSaved.value = true
+        val resultsFile = File(context.filesDir, "test_results.txt")
+        val testYear = selectedYear.value
+        val correctAnswers = testResults.value?.first ?: 0
+        val totalQuestions = testResults.value?.second ?: 0
+        val successPercentage = (correctAnswers.toDouble() / totalQuestions * 100).toString()
+        Log.d("ResultsScreen", "halo")
+        // Načítanie existujúcich výsledkov
+        val existingResults = if (resultsFile.exists()) {
+            resultsFile.readLines().toMutableList()
+        } else {
+            mutableListOf()
+        }
+
+        // Nájdeme a prepíšeme existujúci záznam pre daný rok
+        val newResult = "$testYear,$correctAnswers,$totalQuestions,$successPercentage"
+        var resultUpdated = false
+
+        for (i in existingResults.indices) {
+            if (existingResults[i].startsWith("$testYear,")) {
+                existingResults[i] = newResult
+                resultUpdated = true
+                break
+            }
+        }
+
+        if (!resultUpdated) {
+            existingResults.add(newResult)
+        }
+
+        // Uloženie aktualizovaných výsledkov do súboru
+        resultsFile.writeText(existingResults.joinToString("\n"))
+    }
+
 }

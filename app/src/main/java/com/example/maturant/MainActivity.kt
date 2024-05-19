@@ -1,8 +1,10 @@
 package com.example.maturant
 
+import com.example.maturant.maturitaScreens.ResultsScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.example.maturant.maturitaScreens.MaturitaTestScreen
@@ -14,6 +16,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.composable
 import com.example.maturant.topics.DetailScreen
 import com.example.maturant.viewModels.MaturitaViewModel
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +41,7 @@ class MainActivity : ComponentActivity() {
                             navController = navController
                         )
                     }
+                    composable("ResultsScreen") { ResultsScreen(navController, LocalContext.current) }
                 }
             }
         }
