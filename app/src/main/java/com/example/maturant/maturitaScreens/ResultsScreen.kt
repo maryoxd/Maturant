@@ -9,11 +9,14 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.maturant.ui.theme.AppColors
 import java.io.File
 import java.text.DateFormat
 import java.util.Date
@@ -25,8 +28,8 @@ fun ResultsScreen(navController: NavController, context: Context) {
     val resultsFile = File(context.filesDir, "test_results.txt")
     val results = remember { mutableStateListOf<String>() }
     var showDialog by remember { mutableStateOf(false) }
-    Log.d("ResultsScreen", "Results: $results")
-    Log.d("ResultsScreen", "som tu")
+
+
     LaunchedEffect(Unit) {
         if (resultsFile.exists()) {
             resultsFile.forEachLine { line ->
@@ -45,12 +48,27 @@ fun ResultsScreen(navController: NavController, context: Context) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Výsledky testov") },
+                title = {
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(end = 40.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            "VÝSLEDKY TESTOV",
+                            fontSize = 30.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = AppColors.White
+                        )
+                    }
+                },
                 navigationIcon = {
                     IconButton(onClick = { navController.navigateUp() }) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
                     }
-                }
+                },
+                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.Azul)
             )
         },
         content = { innerPadding ->

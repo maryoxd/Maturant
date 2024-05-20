@@ -61,7 +61,9 @@ fun MaturitaTestScreen(navController: NavController, viewModel: MaturitaViewMode
             TopAppBar(
                 title = {
                     Box(
-                        modifier = Modifier.fillMaxWidth().padding(end = 40.dp),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(end = 40.dp),
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
@@ -74,14 +76,10 @@ fun MaturitaTestScreen(navController: NavController, viewModel: MaturitaViewMode
                 },
                 navigationIcon = {
                     IconButton(onClick = { navController.navigateUp() }) {
-                        Icon(
-                            Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Go Back",
-                            tint = Color.White
-                        )
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
                     }
                 },
-                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.LightYellow)
+                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.TuftsBlue)
             )
         },
         content = { innerPadding ->
