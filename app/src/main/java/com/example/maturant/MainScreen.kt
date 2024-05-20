@@ -2,8 +2,10 @@ package com.example.maturant
 
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,7 +18,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -27,6 +28,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
@@ -37,10 +39,17 @@ import com.example.maturant.viewModels.SharedViewModel
 
 @Composable
 fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewModel()) {
-    Surface(
-        modifier = Modifier.fillMaxSize(),
-        color = MaterialTheme.colorScheme.background
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(MaterialTheme.colorScheme.background)
     ) {
+        Image(
+            painter = painterResource(id = R.drawable.main_background),
+            contentDescription = "Pozadie",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
@@ -50,11 +59,11 @@ fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewMo
         ) {
             item {
                 Image(
-                    painter = painterResource(id = R.drawable.logo_maturant),
+                    painter = painterResource(id = R.drawable.main_logo),
                     contentDescription = "Logo Maturant",
                     modifier = Modifier
                         .height(250.dp)
-                        .width(400.dp)
+                        .width(600.dp)
                 )
             }
             item { Spacer(modifier = Modifier.height(1.dp)) }
@@ -62,7 +71,7 @@ fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewMo
                 val color = when (text) {
                     "Gramatické témy" -> AppColors.LightestGreen
                     "Literatúrne témy" -> AppColors.LightGreen
-                    "Maturitné testy" -> AppColors.Green
+                    "Maturitné témy" -> AppColors.Green
                     "Výsledky" -> AppColors.Orange
                     else -> AppColors.LightGreen
                 }
@@ -84,13 +93,12 @@ fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewMo
     }
 }
 
-
 @Composable
 fun MenuItem(text: String, backgroundColor: Color, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable (onClick = onClick)
+            .clickable(onClick = onClick)
             .padding(vertical = 0.dp),
         colors = CardDefaults.cardColors(containerColor = backgroundColor),
         shape = RectangleShape,
@@ -108,10 +116,10 @@ fun MenuItem(text: String, backgroundColor: Color, onClick: () -> Unit) {
                 style = MaterialTheme.typography.headlineSmall.copy(
                     fontWeight = FontWeight.Bold,
                     color = AppColors.White)
-
             )
         }
     }
 }
+
 
 

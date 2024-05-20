@@ -1,0 +1,42 @@
+[
+  {
+    "name": "ADMINISTRATÍVNY ŠTÝL",
+    "about": "Administratívny štýl sa vyznačuje formálnym jazykom, ktorý je jasne štrukturovaný a zodpovedá profesionálnemu prostrediu. Je určený pre písanie oficiálnych dokumentov, správ, zápisníc a podobne.",
+    "features": "Vecnosť, stručnosť, Adresnosť, Prehľadnosť"
+  },
+  {
+    "name": "VEDECKÝ ŠTÝL",
+    "about": "Vedecký štýl je určený pre písanie vedeckých prác, odborných článkov a podobne.",
+    "features": "Objektívnosť, presnosť, logickosť, formálnosť"
+  },
+  {
+    "name": "PUBLICISTICKÝ ŠTÝL",
+    "about": "Publicistický štýl je určený pre písanie novinových článkov, blogov a podobne.",
+    "features": "Aktuálnosť, zrozumiteľnosť, zaujímavosť, emotívnosť"
+  },
+  {
+    "name": "HOVOROVÝ ŠTÝL",
+    "about": "Hovorový štýl je určený pre bežnú komunikáciu, napríklad v rozhovoroch, dialógoch a podobne.",
+    "features": "Neformálnosť, prirodzenosť, emotívnosť, spontánnosť"
+  },
+  {
+    "name": "NÁUČNÝ ŠTÝL",
+    "about": "Náučný štýl je určený pre učebnice, učebné texty a podobne.",
+    "features": "Jasnosť, zrozumiteľnosť, prehľadnosť, vecnosť"
+  },
+  {
+    "name": "REČNÍCKY ŠTÝL",
+    "about": "Rečnícky štýl je určený pre prednášky a verejné prejavy.",
+    "features": "Expresívnosť, emotívnosť, priama komunikácia"
+  },
+  {
+    "name": "UMELECKÝ ŠTÝL",
+    "about": "Umelecký štýl je určený pre literárne diela, básne, prózy a podobne.",
+    "features": "Kreativita, emotívnosť, obraznosť, originalita"
+  },
+  {
+    "name": "CITOSLOVCIA",
+    "about": "Citoslovcia sú slová, ktoré napodobňujú zvuky, ktoré vydávajú rôzne predmety, živočíchy a podobne.",
+    "features": "Zvuková napodobňovnosť"
+  }
+]
