@@ -339,6 +339,3 @@ fun CustomTextField(viewModel: MaturitaViewModel, questionIndex: Int) {
         )
     }
 }
-
-
-

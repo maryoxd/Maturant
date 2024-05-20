@@ -177,5 +177,3 @@ fun TimerSetupDialog(year: String, navController: NavController, viewModel: Matu
         }
     )
 }
-
-

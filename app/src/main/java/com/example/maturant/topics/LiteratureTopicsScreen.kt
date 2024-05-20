@@ -43,7 +43,7 @@ fun LiteratureTopicsScreen(navController: NavController, viewModel: SharedViewMo
                             "LITERATÚRA",
                             fontSize = 30.sp,
                             fontWeight = FontWeight.Bold,
-                            color = AppColors.White
+                            color = AppColors.SeaGreen
                         )
                     }
                 },
@@ -52,7 +52,7 @@ fun LiteratureTopicsScreen(navController: NavController, viewModel: SharedViewMo
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
                     }
                 },
-                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.LightYellow)
+                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.White)
             )
         },
         content = { innerPadding ->
@@ -64,8 +64,8 @@ fun LiteratureTopicsScreen(navController: NavController, viewModel: SharedViewMo
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 itemsIndexed(viewModel.authors.value.entries.toList()) { index, (authorName, _) ->
-                    val colorName = if (index % 2 == 0) "Blue" else "Green"
-                    MenuItemContent(authorName, AppColors.colorsMap[colorName] ?: AppColors.Green) {
+                    val colorName = if (index % 2 == 0) "Malachite" else "PigmentGreen"
+                    MenuItemContent(authorName, AppColors.colorsMap[colorName] ?: AppColors.Malachite) {
                         if (!viewModel.isNavigationLocked.value) {
                             viewModel.lockNavigation()
                             navController.navigate("DetailScreen/$authorName/literary/$colorName")

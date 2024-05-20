@@ -1,6 +1,7 @@
 package com.example.maturant
 
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -15,6 +16,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
@@ -28,8 +30,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material3.Icon
+import androidx.compose.material3.OutlinedCard
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.example.maturant.ui.theme.AppColors
@@ -63,29 +69,22 @@ fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewMo
                     contentDescription = "Logo Maturant",
                     modifier = Modifier
                         .height(250.dp)
-                        .width(600.dp)
+                        .width(650.dp)
                 )
             }
-            item { Spacer(modifier = Modifier.height(1.dp)) }
-            items(listOf("Gramatické témy", "Literatúrne témy", "Maturitné testy", "Výsledky")) { text ->
-                val color = when (text) {
-                    "Gramatické témy" -> AppColors.LightestGreen
-                    "Literatúrne témy" -> AppColors.LightGreen
-                    "Maturitné témy" -> AppColors.Green
-                    "Výsledky" -> AppColors.Orange
-                    else -> AppColors.LightGreen
-                }
-                val navigation = when (text) {
-                    "Gramatické témy" -> "GrammarTopicsScreen"
-                    "Literatúrne témy" -> "LiteratureTopicsScreen"
-                    "Maturitné testy" -> "MaturitaTestScreen"
-                    "Výsledky" -> "ResultsScreen"
-                    else -> "GrammarTopicsScreen"
-                }
-                MenuItem(text, color) {
+            item { Spacer(modifier = Modifier.height(32.dp)) }
+            items(
+                listOf(
+                    MenuItemInfo("GRAMATICKÉ TÉMY", AppColors.UranianBlue, "GrammarTopicsScreen"),
+                    MenuItemInfo("LITERATÚRNE TÉMY", AppColors.SeaGreen, "LiteratureTopicsScreen"),
+                    MenuItemInfo("MATURITNÉ TESTY", AppColors.TuftsBlue, "MaturitaTestScreen"),
+                    MenuItemInfo("VÝSLEDKY", AppColors.Azul, "ResultsScreen")
+                )
+            ) { menuItem ->
+                MenuItem(menuItem) {
                     if (!viewModel.isNavigationLocked.value) {
                         viewModel.lockNavigation()
-                        navController.navigate(navigation)
+                        navController.navigate(menuItem.navigationDestination)
                     }
                 }
             }
@@ -93,32 +92,50 @@ fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewMo
     }
 }
 
+data class MenuItemInfo(val text: String, val backgroundColor: Color, val navigationDestination: String)
+
 @Composable
-fun MenuItem(text: String, backgroundColor: Color, onClick: () -> Unit) {
-    Card(
+fun MenuItem(menuItem: MenuItemInfo, onClick: () -> Unit) {
+    OutlinedCard(
         modifier = Modifier
             .fillMaxWidth()
             .clickable(onClick = onClick)
-            .padding(vertical = 0.dp),
-        colors = CardDefaults.cardColors(containerColor = backgroundColor),
-        shape = RectangleShape,
+            .padding(vertical = 8.dp),
+        colors =  CardDefaults.cardColors(menuItem.backgroundColor),
+        shape = RoundedCornerShape(16.dp),
+        border = BorderStroke(1.dp, Color.Black)
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(25.dp),
+                .padding(horizontal = 16.dp, vertical = 8.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            BulletPoint(Icons.AutoMirrored.Filled.KeyboardArrowRight, 50)
-            Spacer(modifier = Modifier.width(8.dp))
+            Bullet(
+                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                contentDescription = "Arrow",
+                tint = AppColors.White
+            )
+            Spacer(modifier = Modifier.width(16.dp))
             Text(
-                text = text,
-                style = MaterialTheme.typography.headlineSmall.copy(
+                text = menuItem.text,
+                fontSize = 20.sp,
+                style = MaterialTheme.typography.bodyLarge.copy(
                     fontWeight = FontWeight.Bold,
-                    color = AppColors.White)
+                    color = AppColors.White,
+                )
             )
         }
     }
+}
+
+@Composable
+fun Bullet(imageVector: ImageVector, contentDescription: String, tint: Color) {
+    Icon(
+        imageVector = imageVector,
+        contentDescription = contentDescription,
+        tint = tint,
+    )
 }
 
 

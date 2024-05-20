@@ -21,8 +21,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 object CommonComponents {
 
@@ -32,7 +35,8 @@ object CommonComponents {
             imageVector = icon,
             contentDescription = "Bullet point",
             modifier = Modifier.size(size.dp),
-            tint = MaterialTheme.colorScheme.onSurface
+            tint = AppColors.White
+
         )
     }
     @Composable
@@ -54,7 +58,12 @@ object CommonComponents {
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
                     text = text,
-                    style = MaterialTheme.typography.headlineSmall.copy(fontWeight = FontWeight.Bold)
+                    style = TextStyle(
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 20.sp
+                    ),
+                    color = AppColors.White,
+                    modifier = Modifier.fillMaxWidth()
                 )
             }
         }

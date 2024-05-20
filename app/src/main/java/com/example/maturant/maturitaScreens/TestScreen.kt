@@ -94,6 +94,7 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
                             showExitDialog.value = true
                             if (viewModel.wasSaved.value) {
                                 navController.navigateUp()
+                                viewModel.resetResults()
                             }
                         } else {
                             callback.value.invoke()
@@ -161,5 +162,3 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
         )
     }
 }
-
-

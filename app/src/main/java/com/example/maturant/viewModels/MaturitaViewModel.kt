@@ -92,8 +92,6 @@ class MaturitaViewModel : ViewModel() {
     }
 
 
-
-
     fun restartTest() {
         _isTestSubmitted.value = false
         _userAnswers.clear()
