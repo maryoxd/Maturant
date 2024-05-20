@@ -17,7 +17,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
-import com.example.maturant.R
 import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.ui.theme.CommonComponents.MenuItemContent
 
@@ -26,65 +25,55 @@ import com.example.maturant.ui.theme.CommonComponents.MenuItemContent
 @Composable
 fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel = viewModel()) {
     val context = LocalContext.current
-    val resourceId = R.raw.grammar_styles
 
-    LaunchedEffect(key1 = resourceId) {
-        viewModel.loadStyles(context, resourceId)
+    LaunchedEffect(Unit) {
+        viewModel.loadStyles(context)
     }
-
-    if (viewModel.isLoading.value) {
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            CircularProgressIndicator()
-        }
-    } else {
-        Scaffold(
-            topBar = {
-                TopAppBar(
-                    title = {
-                        Box(
-                            modifier = Modifier.fillMaxWidth().padding(end = 40.dp),
-                            contentAlignment = Alignment.Center
-                        ) {
-                            Text(
-                                "GRAMATIKA",
-                                fontSize = 30.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = AppColors.White
-                            )
-                        }
-                    },
-                    navigationIcon = {
-                        IconButton(onClick = { navController.navigateUp() }) {
-                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
-                        }
-                    },
-                    colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.LightYellow)
-                )
-            },
-            content = { innerPadding ->
-                LazyColumn(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .padding(top = innerPadding.calculateTopPadding()),
-                    verticalArrangement = Arrangement.Top,
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ) {
-                    itemsIndexed(viewModel.styles.value) { index, style ->
-                        val colorName = if (index % 2 == 0) "Blue" else "Green"
-                        MenuItemContent(style, AppColors.colorsMap[colorName] ?: AppColors.Green) {
-                            if (!viewModel.isNavigationLocked.value) {
-                                viewModel.lockNavigation()
-                                navController.navigate("DetailScreen/$style/grammatical/$colorName")
-                            }
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(end = 40.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            "GRAMATIKA",
+                            fontSize = 30.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = AppColors.White
+                        )
+                    }
+                },
+                navigationIcon = {
+                    IconButton(onClick = { navController.navigateUp() }) {
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                    }
+                },
+                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.LightYellow)
+            )
+        },
+        content = { innerPadding ->
+            LazyColumn(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(top = innerPadding.calculateTopPadding()),
+                verticalArrangement = Arrangement.Top,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                itemsIndexed(viewModel.styles.value.entries.toList()) { index, (styleName, _) ->
+                    val colorName = if (index % 2 == 0) "Blue" else "Green"
+                    MenuItemContent(styleName, AppColors.colorsMap[colorName] ?: AppColors.Green) {
+                        if (!viewModel.isNavigationLocked.value) {
+                            viewModel.lockNavigation()
+                            navController.navigate("DetailScreen/$styleName/grammatical/$colorName")
                         }
                     }
                 }
             }
-        )
-    }
+        }
+    )
 }
-
-
-
-
 
