@@ -43,7 +43,7 @@ fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel
                             "GRAMATIKA",
                             fontSize = 30.sp,
                             fontWeight = FontWeight.Bold,
-                            color = AppColors.White
+                            color = AppColors.UranianBlue
                         )
                     }
                 },
@@ -52,7 +52,7 @@ fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
                     }
                 },
-                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.LightYellow)
+                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = AppColors.White)
             )
         },
         content = { innerPadding ->
@@ -64,8 +64,8 @@ fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 itemsIndexed(viewModel.styles.value.entries.toList()) { index, (styleName, _) ->
-                    val colorName = if (index % 2 == 0) "Blue" else "Green"
-                    MenuItemContent(styleName, AppColors.colorsMap[colorName] ?: AppColors.Green) {
+                    val colorName = if (index % 2 == 0) "LapisLazuli" else "TuftsBlue"
+                    MenuItemContent(styleName, AppColors.colorsMap[colorName] ?: AppColors.LapisLazuli) {
                         if (!viewModel.isNavigationLocked.value) {
                             viewModel.lockNavigation()
                             navController.navigate("DetailScreen/$styleName/grammatical/$colorName")

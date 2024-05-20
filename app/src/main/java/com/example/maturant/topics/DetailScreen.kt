@@ -135,6 +135,7 @@ fun CategoryBox(title: String, content: String, appColors: Color) {
         Text(
             text = title,
             fontSize = 20.sp,
+            color = AppColors.White,
             fontWeight = FontWeight.Bold,
             modifier = Modifier
                 .background(appColors)

@@ -27,6 +27,8 @@ class MaturitaViewModel : ViewModel() {
     val showDialog = mutableStateOf(false)
     val selectedYear = mutableStateOf("")
 
+    val isTimeUpDialogShown = mutableStateOf(false)
+
     private val _isLoading = MutableStateFlow(true)
     val isLoading: StateFlow<Boolean> = _isLoading.asStateFlow()
 
@@ -60,8 +62,8 @@ class MaturitaViewModel : ViewModel() {
     private val _lastResetTimeStamp = mutableLongStateOf(System.currentTimeMillis())
     val lastResetTimestamp: State<Long> = _lastResetTimeStamp
 
-    private val _wasSaved = mutableStateOf<Boolean>(false)
-    val wasSaved: State<Boolean> = _wasSaved
+    private val _wasSaved = mutableStateOf(false)
+    var wasSaved: MutableState<Boolean> = _wasSaved
 
     fun submitTest() {
         _isTestSubmitted.value = true
@@ -95,6 +97,7 @@ class MaturitaViewModel : ViewModel() {
 
 
     fun restartTest() {
+        isTimeUpDialogShown.value = false
         _isTestSubmitted.value = false
         _userAnswers.clear()
         _questionResults.clear()
@@ -130,6 +133,8 @@ class MaturitaViewModel : ViewModel() {
         _testResults.value = null
         _answeredQuestions.value = 0
         _userAnswers.clear()
+
+
     }
 
     fun onYearClick(year: String) {

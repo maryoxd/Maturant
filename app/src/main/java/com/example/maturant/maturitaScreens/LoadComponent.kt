@@ -70,6 +70,8 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
         viewModel.userAnswers.addAll(List(totalQuestionsCount - viewModel.userAnswers.size) { null })
     }
 
+    val context = LocalContext.current
+
     val answersState = viewModel.userAnswers
     var totalQuestionIndex = 0
     val showResultsDialog = remember { mutableStateOf(false) }
@@ -248,11 +250,11 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                         Button(
                             onClick = {
                                 showResultsDialog.value = false
+
+                                viewModel.saveTestResults(context)
                             },
                             colors = ButtonDefaults.buttonColors(AppColors.Green)
                         ) {
-                            val context = LocalContext.current
-                            viewModel.saveTestResults(context)
                             Text("Uložiť")
                         }
                         Button(
@@ -339,6 +341,3 @@ fun CustomTextField(viewModel: MaturitaViewModel, questionIndex: Int) {
         )
     }
 }
-
-
-
