@@ -1,4 +1,4 @@
-package com.example.maturant
+package com.example.maturant.main
 
 import com.example.maturant.maturitaScreens.ResultsScreen
 import android.os.Bundle
@@ -42,6 +42,7 @@ class MainActivity : ComponentActivity() {
                         )
                     }
                     composable("ResultsScreen") { ResultsScreen(navController, LocalContext.current) }
+                    composable("InfoScreen") { InfoScreen(navController) }
                 }
             }
         }

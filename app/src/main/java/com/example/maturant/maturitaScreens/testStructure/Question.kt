@@ -1,4 +1,4 @@
-package com.example.maturant.maturitaScreens
+package com.example.maturant.maturitaScreens.testStructure
 
 data class Question(
     val questionText: String,

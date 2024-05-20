@@ -1,4 +1,4 @@
-package com.example.maturant.topics.loading
+package com.example.maturant.topics.dataInfoStructure
 
 import android.content.Context
 import com.google.gson.Gson

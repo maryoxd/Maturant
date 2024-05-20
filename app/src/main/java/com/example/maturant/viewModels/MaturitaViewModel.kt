@@ -2,7 +2,6 @@ package com.example.maturant.viewModels
 
 
 import android.content.Context
-import android.util.Log
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableIntStateOf
@@ -12,7 +11,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.maturant.maturitaScreens.loadTestFromJson
-import com.example.maturant.maturitaScreens.Test
+import com.example.maturant.maturitaScreens.testStructure.Test
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.delay
@@ -21,6 +20,9 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import java.io.File
+import java.text.DateFormat
+import java.util.Date
+import java.util.Locale
 
 
 class MaturitaViewModel : ViewModel() {
@@ -78,8 +80,6 @@ class MaturitaViewModel : ViewModel() {
             if (loadedTest != null) {
                 _currentTest.value = loadedTest
                 _totalQuestions.value = loadedTest.sections.sumOf { it.questions.size }
-            } else {
-                Log.d("TestLoading", "No test found or error loading the test")
             }
             _isLoading.value = false
         }
@@ -90,11 +90,7 @@ class MaturitaViewModel : ViewModel() {
             _userAnswers.add(null)
         }
         _userAnswers[questionIndex] = answer
-        Log.d("UserAnswers", _userAnswers.size.toString())
     }
-
-
-
 
     fun restartTest() {
         isTimeUpDialogShown.value = false
@@ -106,7 +102,11 @@ class MaturitaViewModel : ViewModel() {
         resetTimer()
         _wasSaved.value = false
         _lastResetTimeStamp.longValue = System.currentTimeMillis()
-        initTimerAndStart(selectedYear.value, _testDurationMinutes.intValue, _testDurationSeconds.intValue)
+        initTimerAndStart(
+            selectedYear.value,
+            _testDurationMinutes.intValue,
+            _testDurationSeconds.intValue
+        )
     }
 
     private fun evaluateAnswers(test: Test) {
@@ -127,14 +127,10 @@ class MaturitaViewModel : ViewModel() {
         _testResults.value = Pair(correctCount, _userAnswers.size)
     }
 
-
-
     fun resetResults() {
         _testResults.value = null
         _answeredQuestions.value = 0
         _userAnswers.clear()
-
-
     }
 
     fun onYearClick(year: String) {
@@ -156,7 +152,7 @@ class MaturitaViewModel : ViewModel() {
 
     private fun startTimer(totalSeconds: Int) {
         _remainingTime.value = totalSeconds
-        timerJob?.cancel()  // Zruší predchádzajúcu coroutine, ak existuje
+        timerJob?.cancel()
         timerJob = viewModelScope.launch {
             while (_remainingTime.value > 0) {
                 delay(1000)
@@ -198,16 +194,15 @@ class MaturitaViewModel : ViewModel() {
         val correctAnswers = testResults.value?.first ?: 0
         val totalQuestions = testResults.value?.second ?: 0
         val successPercentage = (correctAnswers.toDouble() / totalQuestions * 100).toString()
-        Log.d("ResultsScreen", "halo")
-        // Načítanie existujúcich výsledkov
+        val currentDate =
+            DateFormat.getDateInstance(DateFormat.SHORT, Locale.getDefault()).format(Date())
         val existingResults = if (resultsFile.exists()) {
             resultsFile.readLines().toMutableList()
         } else {
             mutableListOf()
         }
 
-        // Nájdeme a prepíšeme existujúci záznam pre daný rok
-        val newResult = "$testYear,$correctAnswers,$totalQuestions,$successPercentage"
+        val newResult = "$testYear,$correctAnswers,$totalQuestions,$successPercentage,$currentDate"
         var resultUpdated = false
 
         for (i in existingResults.indices) {
@@ -222,8 +217,6 @@ class MaturitaViewModel : ViewModel() {
             existingResults.add(newResult)
         }
 
-        // Uloženie aktualizovaných výsledkov do súboru
         resultsFile.writeText(existingResults.joinToString("\n"))
     }
-
 }

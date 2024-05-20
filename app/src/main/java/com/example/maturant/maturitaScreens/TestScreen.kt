@@ -18,6 +18,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -43,7 +44,6 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
     val test = viewModel.currentTest.value
     val context = LocalContext.current
 
-
     LaunchedEffect(Unit) {
         viewModel.loadTest(context, "test_" + viewModel.selectedYear.value + ".json")
         viewModel.isTimeUpDialogShown.value = false
@@ -55,12 +55,10 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
         viewModel.resetResults()
         viewModel.isTestSubmitted.value = false
         viewModel.wasSaved.value = false
-
     })
 
     val showExitDialog = remember { mutableStateOf(false) }
     val showTimeUpDialog = remember { mutableStateOf(false) }
-
 
     val minutes = viewModel.remainingTime.collectAsState().value / 60
     val seconds = viewModel.remainingTime.collectAsState().value % 60
@@ -74,7 +72,10 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
         viewModel.pauseTimer()
         showTimeUpDialog.value = true
         viewModel.isTimeUpDialogShown.value = true
+    }
 
+    if(viewModel.isTestSubmitted.value) {
+        viewModel.pauseTimer()
     }
 
     Scaffold(
@@ -171,6 +172,16 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
             }
         }
     )
+    ExitConfirmationDialog(showExitDialog, navController, viewModel)
+    TimeUpDialog(showTimeUpDialog, viewModel)
+}
+
+@Composable
+fun ExitConfirmationDialog(
+    showExitDialog: MutableState<Boolean>,
+    navController: NavController,
+    viewModel: MaturitaViewModel
+) {
     if (showExitDialog.value) {
         AlertDialog(
             onDismissRequest = { showExitDialog.value = false },
@@ -204,6 +215,13 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
             }
         )
     }
+}
+
+@Composable
+fun TimeUpDialog(
+    showTimeUpDialog: MutableState<Boolean>,
+    viewModel: MaturitaViewModel
+) {
     if (showTimeUpDialog.value) {
         AlertDialog(
             onDismissRequest = { showTimeUpDialog.value = false },
@@ -214,7 +232,6 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
                     onClick = {
                         showTimeUpDialog.value = false
                         viewModel.submitTest()
-
                     },
                     colors = ButtonDefaults.buttonColors(AppColors.Green)
                 ) {

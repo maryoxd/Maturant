@@ -1,7 +1,6 @@
 package com.example.maturant.maturitaScreens
 
 import android.content.Context
-import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -18,8 +17,6 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.maturant.ui.theme.AppColors
 import java.io.File
-import java.text.DateFormat
-import java.util.Date
 import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -28,7 +25,6 @@ fun ResultsScreen(navController: NavController, context: Context) {
     val resultsFile = File(context.filesDir, "test_results.txt")
     val results = remember { mutableStateListOf<String>() }
     var showDialog by remember { mutableStateOf(false) }
-
 
     LaunchedEffect(Unit) {
         if (resultsFile.exists()) {
@@ -78,7 +74,7 @@ fun ResultsScreen(navController: NavController, context: Context) {
                     .padding(16.dp)
             ) {
                 results.forEach { result ->
-                    val (year, correct, total, percentage) = result.split(",")
+                    val (year, correct, total, percentage, date) = result.split(",")
                     Box(
                         modifier = Modifier
                             .fillMaxWidth()
@@ -88,14 +84,10 @@ fun ResultsScreen(navController: NavController, context: Context) {
                     ) {
                         Column {
                             val successPercentageString = "%.2f".format(Locale.US, percentage.toDouble())
-                            val currentLocale = Locale.getDefault() // Get system locale
-                            val formatter = DateFormat.getDateInstance(DateFormat.SHORT, currentLocale) // Formatter for date with locale
-                            val formattedDate = formatter.format(Date()) // Format current date with locale
                             Text("Rok: $year", fontWeight = FontWeight.Bold)
                             Text("Správne odpovede: $correct z $total")
                             Text("Úspešnosť: $successPercentageString%")
-                            Text("Dátum: $formattedDate")
-
+                            Text("Dátum: $date")
                         }
                     }
                 }
@@ -103,7 +95,7 @@ fun ResultsScreen(navController: NavController, context: Context) {
                 if (results.isNotEmpty()) {
                     Button(
                         onClick = { showDialog = true },
-                        colors = ButtonDefaults.buttonColors(Color.Red),
+                        colors = ButtonDefaults.buttonColors(AppColors.Red),
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         Text("Vymazať výsledky")
@@ -124,7 +116,7 @@ fun ResultsScreen(navController: NavController, context: Context) {
                         deleteResults()
                         showDialog = false
                     },
-                    colors = ButtonDefaults.buttonColors(Color.Green)
+                    colors = ButtonDefaults.buttonColors(AppColors.SystemGreen)
                 ) {
                     Text("Áno")
                 }
@@ -132,7 +124,7 @@ fun ResultsScreen(navController: NavController, context: Context) {
             dismissButton = {
                 Button(
                     onClick = { showDialog = false },
-                    colors = ButtonDefaults.buttonColors(Color.Red)
+                    colors = ButtonDefaults.buttonColors(AppColors.Red)
                 ) {
                     Text("Nie")
                 }

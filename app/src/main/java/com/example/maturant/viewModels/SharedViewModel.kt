@@ -6,10 +6,10 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.maturant.topics.loading.AuthorInfo
-import com.example.maturant.topics.loading.StyleInfo
-import com.example.maturant.topics.loading.loadAuthorsFromJson
-import com.example.maturant.topics.loading.loadStylesFromJson
+import com.example.maturant.topics.dataInfoStructure.AuthorInfo
+import com.example.maturant.topics.dataInfoStructure.StyleInfo
+import com.example.maturant.topics.dataInfoStructure.loadAuthorsFromJson
+import com.example.maturant.topics.dataInfoStructure.loadStylesFromJson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -33,16 +33,14 @@ class SharedViewModel : ViewModel() {
 
     fun loadStyles(context: Context) {
         if (_styles.value.isNotEmpty()) return
-
         _isLoadingStyles.value = true
         viewModelScope.launch {
             val data = withContext(Dispatchers.IO) {
                 loadStylesFromJson(context)
             }
-            delay(150)
+            delay(250)
             _styles.value = data.associateBy { it.name }
             _isLoadingStyles.value = false
-            Log.d("SharedViewModel", "Loaded styles: ${_styles.value.keys}")
         }
     }
 
@@ -54,10 +52,9 @@ class SharedViewModel : ViewModel() {
             val data = withContext(Dispatchers.IO) {
                 loadAuthorsFromJson(context)
             }
-            delay(150)
+            delay(250)
             _authors.value = data.associateBy { it.name }
             _isLoadingAuthors.value = false
-            Log.d("SharedViewModel", "Loaded authors: ${_authors.value.keys}")
         }
     }
 

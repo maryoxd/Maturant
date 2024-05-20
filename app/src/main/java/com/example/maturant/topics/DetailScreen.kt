@@ -1,5 +1,4 @@
 package com.example.maturant.topics
-import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -8,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.CircularProgressIndicator
@@ -21,11 +21,13 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -38,7 +40,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DetailScreen(style: String, source: String, colorName: String, navController: NavController, viewModel: SharedViewModel = viewModel()) {
-    val color = AppColors.colorsMap[colorName] ?: Color.Green
+    val color = AppColors.colorsMap[colorName] ?: AppColors.SystemGreen
 
     val context = LocalContext.current
 
@@ -56,10 +58,9 @@ fun DetailScreen(style: String, source: String, colorName: String, navController
         viewModel.authors.value[style]
     }
 
-    Log.d("DetailScreen", "DetailScreen params - style: $style, source: $source, colorName: $colorName")
-    Log.d("DetailScreen", "Available styles keys: ${viewModel.styles.value.keys}")
-    Log.d("DetailScreen", "Available authors keys: ${viewModel.authors.value.keys}")
-    Log.d("DetailScreen", "Loaded info: $styleInfo")
+    val listState = rememberSaveable(saver = LazyListState.Saver) {
+        LazyListState()
+    }
 
     Scaffold(
         topBar = {
@@ -85,7 +86,9 @@ fun DetailScreen(style: String, source: String, colorName: String, navController
                     CircularProgressIndicator()
                 }
             } else {
-                LazyColumn(modifier = Modifier.padding(innerPadding)) {
+                LazyColumn(
+                    state = listState,
+                    modifier = Modifier.padding(innerPadding)) {
                     item {
                         Box(
                             modifier = Modifier

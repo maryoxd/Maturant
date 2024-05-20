@@ -1,4 +1,4 @@
-package com.example.maturant.maturitaScreens
+package com.example.maturant.maturitaScreens.testStructure
 
 data class Test(
     val year: String,

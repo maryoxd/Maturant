@@ -1,0 +1,3 @@
+Aplikácia MATURANT slúži najmä pre študentov maturitného ročníka, pričom poskytuje informácie o základných aspektoch Slovenského jazyka a literatúry. Aplikácia taktiež disponuje jednoduchým testerom na oficiálne maturitné testy.
+
+Aplikácia vznikla ako semestrálna práca z predmetu VAMZ na Žilinskej univerzite v Žiline pod vedením doc. Ing. Patrika Hrkúta, PhD. a Ing. Michala Ďuračíka, PhD.
