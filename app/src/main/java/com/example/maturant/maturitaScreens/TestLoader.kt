@@ -57,6 +57,13 @@ import com.google.gson.Gson
 
 import java.util.Locale
 
+/**
+ * LoadTestFromJson
+ * LoadTestFromJson slúži na načítanie testu z JSON súboru, pričom používame knižnicu GSON.
+ * @param context - Parameter context slúži na získanie súboru s testom.
+ * @param fileName - Parameter fileName slúži na získanie názvu súboru s testom.
+ * @return - Funkcia vráti test, ktorý sa načíta z JSON súboru.
+ */
 fun loadTestFromJson(context: Context, fileName: String): Test? {
     try {
         context.assets.open(fileName).use { inputStream ->
@@ -73,6 +80,14 @@ fun loadTestFromJson(context: Context, fileName: String): Test? {
     }
 }
 
+/**
+ * DisplayTest
+ * DisplayTest slúži na samotné zobrazenie testu so všetkými jeho prvkami. Jedná sa o najdôležitejšiu funkciu,
+ * ktorá zobrazuje jednotlivé otázky, odpovede, obrázky a tlačidlá pre odozvu.
+ * Úzko spolupracuje s MaturitaViewModel ktorému posiela všetky stavy ktoré sa dejú pri odpovedaní na otázky.
+ * @param test - Parameter test slúži na zobrazenie konkrétneho testu.
+ * @param viewModel - Parameter viewModel slúži na zdieľanie dát medzi jednotlivými obrazovkami, načítavanie testov, či uchovávanie viacerých stavov, zároveň aj ukladá odpovede a vyhodnocuje ich.
+ */
 @Composable
 fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
     val totalQuestionsCount = test.sections.sumOf { it.questions.size }
@@ -84,6 +99,7 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
     val answersState = viewModel.userAnswers
     var totalQuestionIndex = 0
     val showResultsDialog = remember { mutableStateOf(false) }
+    var isImageFullScreen by remember { mutableStateOf(false)}
 
     Column(modifier = Modifier.padding(16.dp)) {
         test.sections.forEach { section ->
@@ -113,6 +129,9 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                         val imageRes = when (imageUrl) {
                             "prijmy_url" -> R.drawable.prijmy_url
                             "zoe_url" -> R.drawable.zoe_url
+                            "b_url" -> R.drawable.b_url
+                            "vzdelavanie_url" -> R.drawable.vzdelavanie_url
+                            "odhad_url" -> R.drawable.odhad_url
                             else -> null
                         }
                         imageRes?.let {
@@ -121,8 +140,9 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
                                 contentDescription = "Obrázok maturitného testu",
                                 modifier = Modifier
                                     .fillMaxWidth()
-                                    .height(IntrinsicSize.Min),
-                                contentScale = ContentScale.Fit
+                                    .height(if (isImageFullScreen) IntrinsicSize.Max else IntrinsicSize.Min)
+                                    .clickable {isImageFullScreen = !isImageFullScreen},
+                                contentScale = if(isImageFullScreen) ContentScale.FillWidth else ContentScale.Fit
                             )
                         }
                     }
@@ -207,6 +227,14 @@ fun DisplayTest(test: Test, viewModel: MaturitaViewModel) {
 }
 
 
+/**
+ * SubmitTestButtonAndResultsDialog
+ * SubmitTestButtonAndResultsDialog slúži na zobrazenie tlačidla na "odovzdanie" testu a zobrazenie výsledkov testu.
+ * @param viewModel - Parameter viewModel slúži na zdieľanie dát medzi jednotlivými obrazovkami, načítavanie testov, či uchovávanie viacerých stavov, zároveň aj ukladá odpovede a vyhodnocuje ich.
+ * @param showResultsDialog - Parameter showResultsDialog slúži na zobrazenie výsledkov testu, uchováva si svoj stav a zobrazuje sa v prípade, že je hodnota true.
+ * @param totalQuestionsCount - Parameter totalQuestionsCount slúži na získanie celkového počtu otázok v teste.
+ * @param context - Parameter context slúži na získanie kontextu aplikácie.
+ */
 @Composable
 fun SubmitTestButtonAndResultsDialog(
     viewModel: MaturitaViewModel,
@@ -298,6 +326,10 @@ fun SubmitTestButtonAndResultsDialog(
     }
 }
 
+/**
+ * ClickableLegend
+ * ClickableLegend slúži na zobrazenie legendy, ktorá obsahuje informácie o farbách a význame jednotlivých tlačidiel.
+ */
 @Composable
 fun ClickableLegend() {
     var showLegend by remember { mutableStateOf(false) }
@@ -329,6 +361,12 @@ fun ClickableLegend() {
     }
 }
 
+/**
+ * LegendBox
+ * LegendBox slúži na zobrazenie legendy, ktorá obsahuje informácie o farbách a význame jednotlivých tlačidiel.
+ * @param onClick
+ * @receiver
+ */
 @Composable
 fun LegendBox(onClick: () -> Unit) {
     Column(
@@ -363,6 +401,13 @@ fun LegendBox(onClick: () -> Unit) {
     }
 }
 
+/**
+ * LegendItem
+ * LegendItem slúži ako samostatný "item" (políčko) v legende.
+ * @param color - Parameter color slúži na zmenu farby políčka.
+ * @param text - Parameter text slúži na zobrazenie textu v políčku.
+ * @param textColor - Parameter textColor slúži na zmenu farby textu v políčku.
+ */
 @Composable
 fun LegendItem(color: Color, text: String, textColor: Color) {
     Box(
@@ -382,6 +427,12 @@ fun LegendItem(color: Color, text: String, textColor: Color) {
 }
 
 
+/**
+ * CustomTextField
+ * CustomTextField je composable element ktorý slúži na políčka, kde užívateľ môže zadať svoju odpoveď na maturitné otázky.
+ * @param viewModel - Parameter MaturitaViewModel slúži na ukladanie odpovedí, aby neboli vymazané napríklad pri pretočení obrazovky.
+ * @param questionIndex - Parameter questionIndex slúži na získanie konkrétnej otázky z testu.
+ */
 @Composable
 fun CustomTextField(viewModel: MaturitaViewModel, questionIndex: Int) {
     var answer by rememberSaveable { mutableStateOf(viewModel.userAnswers.getOrElse(questionIndex) { "" } ?: "") }

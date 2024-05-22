@@ -1,0 +1,627 @@
+{
+  "tests": [
+    {
+      "year": "2019",
+      "sections": [
+        {
+          "sectionId": 1,
+          "text": "Július Lomenčík – Sládkovičova Marína v „oku duše“ rovesníkov\n(úryvok, skrátené)\nPo vyjdení Maríny tlačou v auguste 1846 sa študujúca mládež veršami o láske, kráse a mladosti nadchýnala. V myšlienkovej i citovej oblasti jej vlastne nahradila Kollárovu ___________. Teraz už nemusela srdce rozpolťovať, pretože národnobuditeľské poslanie mohla prejavovať aj cez vnútorné poryvy duše. Potvrdzuje to i odporúčanie z pera dobového kritika Mikuláša Dohnányho v Orle tatranskom 1847: „Tu sa vám svety otvoria, po ktorých ste dávno túžili, a nájdete sa v nich ako vo svojich vlastných.“ Vo vynikajúcej recenzii vyzdvihol Sládkovičovo „vystúpenie z kože“ biblickej češtiny, čím položil slovenským slovom pevné základy slovenskej poézie: „Poďte sa prizrieť kráse reči našej, vy posmievači, keď ona v kráse spieva a k chórom anjelov božích sa približuje, a srdce vaše musí k nej zahorieť láskou. Ukázal on, k akej dokonalosti slovenčina naša prísť môže!“ Z prvého kriticky nastaveného zrkadla pre obrazotvornosťou hýriacu poéziu Maríny jasne vidieť, že Dohnány si zobral na „mušku“ hlavne estetické kvality. Oceňujúc túto stránku vidí v tomto peknom kvete základný „... výtvor najčistejšej poézie veku budúceho“. Do kritického zrkadlenia prispel vo „svojich“ Slovenských pohľadoch (1847) i Jozef Miloslav Hurban, ktorý báseň nečítal šablónovito, zdôrazňujúc hlavne slobodu tvorenia naozaj originálneho výrazu. Záverom recenzie optimisticky Sládkoviča vyprevádza na cestu literárnym životom slovami: „My mu cestu jeho, tak pekne nastúpivšiemu všetku slávu a všetok prospech prajeme s túžbou nádejnou ďalšie jeho práce očakávajúc.“",
+          "questions": [
+            {
+              "questionText": "Autor ukážky 1 sa v nej zameriava",
+              "options": [
+                "na vlastné hodnotenie prínosu Maríny pre slovenskú literatúru.",
+                "na štylistickú analýzu jazykových kvalít básnického diela Marína",
+                "na zhrnutie názorov Sládkovičových súčasníkov na dielo Marína.",
+                "na kritiku subjektívneho pohľadu literárnych recenzentov Maríny."
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Básnickú skladbu Marína zaraďujeme",
+              "options": [
+                "k príkladom dobového zápasu autora za národné ideály.",
+                "k najrevolučnejším dielam v slovenskej poézii.",
+                "k dielam, ktorými sa vo svojej tvorbe inšpiroval Ján Kollár",
+                "k vrcholom slovenskej romantickej poézie."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý umelecký prostriedok využil Mikuláš Dohnány v ukážke 1 na označenie zmeny\nv používaní literárneho jazyka?",
+              "options": [
+                "metonymiu",
+                "metaforu",
+                "epiteton",
+                "prirovnanie"
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý slohový postup prevláda v ukážke 1?",
+              "options": [
+                "rozprávací slohový postup",
+                "opisný slohový postup",
+                "výkladový slohový postup",
+                "informačný slohový postup"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Orol tatranský boL",
+              "options": [
+                "súčasťou časopisu Slovenské pohľady.",
+                "prílohou novín Slovenské národné noviny.",
+                "časopisom, ktorý vydával spolok Tatrín.",
+                "novinami, ktoré vydával Mikuláš Dohnány."
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Napíšte názov diela Jána Kollára, na ktoré sa odvolával J. Lomenčík v úvode ukážky 1\na ktorého názov patrí na zakryté miesto v nej?",
+              "correctAnswer": "Slávy dcera | Slávy dcéra | Dcéra Slávy | Slavy dcera | Dcera slavy",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z nasledujúceho odseku ukážky 1 prvé slovo z vety, v ktorej sa nachádza prechodník i príčastie.:\nDo kritického zrkadlenia prispel vo „svojich“ Slovenských pohľadoch (1847) i Jozef Miloslav Hurban, ktorý báseň nečítal šablónovito, zdôrazňujúc hlavne slobodu tvorenia naozaj originálneho výrazu. Záverom recenzie optimisticky Sládkoviča vyprevádza na cestu literárnym životom slovami: „My mu cestu jeho, tak pekne nastúpivšiemu všetku slávu a všetok prospech prajeme s túžbou nádejnou ďalšie jeho práce očakávajúc.“",
+              "correctAnswer": "My",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z nasledujúceho odseku ukážky 1 vybrané slovo, ktoré označuje prudký prejav citov alebo silnú emóciu.:\nPo vyjdení Maríny tlačou v auguste 1846 sa študujúca mládež veršami o láske, kráse a mladosti nadchýnala. V myšlienkovej i citovej oblasti jej vlastne nahradila Kollárovu. Teraz už nemusela srdce rozpolťovať, pretože národnobuditeľské poslanie mohla prejavovať aj cez vnútorné poryvy duše. Potvrdzuje to i odporúčanie z pera dobového kritika Mikuláša Dohnányho v Orle tatranskom 1847: „Tu sa vám svety otvoria, po ktorých ste dávno túžili, a nájdete sa v nich ako vo svojich vlastných.“ Vo vynikajúcej recenzii vyzdvihol Sládkovičovo „vystúpenie z kože“ biblickej češtiny, čím položil slovenským slovom pevné základy slovenskej poézie: „Poďte sa prizrieť kráse reči našej, vy posmievači, keď ona v kráse spieva a k chórom anjelov božích sa približuje, a srdce vaše musí k nej zahorieť láskou. Ukázal on, k akej dokonalosti slovenčina naša prísť môže!“ Z prvého kriticky nastaveného zrkadla pre obrazotvornosťou hýriacu poéziu Maríny jasne vidieť, že Dohnány si zobral na „mušku“ hlavne estetické kvality. Oceňujúc túto stránku vidí v tomto peknom kvete základný „... výtvor najčistejšej poézie veku budúceho“.",
+              "correctAnswer": "Poryvy | poryv",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 2,
+          "text": "Oscar Wilde – Portrét Doriana Graya\n(úryvok, upravené)\n„K nesúladu dochádza, keď sa musíme prispôsobovať druhým. Vlastný život – to je dôležité. Čo sa týka života našich blížnych, ak niekto chce byť mravokárcom alebo puritánom, nech sa nad nich vyvyšuje so svojimi morálnymi názormi, ale nie je to jeho vec, nemá sa do ničoho starať. Okrem toho, individualizmus má naozaj vyšší cieľ. Moderná morálka žiada prijať štandard našej doby. Podľa mňa, keď kultúrny človek prijme štandard svojej doby, je to najhrubšia nemorálnosť.“\n„Ale predsa, Harry, keď človek žije iba pre seba, platí za to strašnú cenu,“ nadhodil maliar.\n„Áno, za všetko dnes musíme draho platiť. Myslím, že najväčšou tragédiou chudobných je, že si nemôžu dovoliť nič, iba sebazapieranie. Krásne hriechy, ako krásne veci, Basil, sú výsadou bohatých.“\n„Človek musí platiť aj iným ako peniazmi.“\n„Čím iným, Basil?\n„Nuž, vari výčitkami svedomia, utrpením aj... no, vedomím poníženia.“\nLord Wotton pokrčil plecom. „Kamarát drahý, stredoveké umenie je krásne, ale stredoveké pocity sú už nemoderné. Možno ich, pravda, použiť v románoch. No ale v románoch možno použiť iba to, čo sa už prestalo používať v skutočnosti. Ver mi, že civilizovaný človek nikdy neoľutuje svoje radosti a necivilizovaný nevie, čo je radosť.“\n„Ja viem, čo je radosť,“ zvolal Dorian Gray. „Zbožňovať niekoho.“",
+          "questions": [
+            {
+              "questionText": "Z ukážky 2 vyplýva, že podľa lorda Wottona v danej dobe",
+              "options": [
+                "kultúrny človek má žiť podľa spoločnosťou akceptovaných pravidiel morálky.",
+                "harmónia zaniká vtedy, keď sa ľudia prispôsobujú jeden druhému",
+                "neprispôsobovanie sa všeobecným pravidlám je výsadou bohatých ľudí",
+                "radostné prežívanie osobného života je dostupné pre každého."
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Koľko postáv vystupuje v ukážke 2?",
+              "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý žáner dominoval v stredovekej literatúre?",
+              "options": [
+                "tragédia",
+                "román.",
+                "legenda",
+                "epos"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej vete sa nachádza priamy predmet?",
+              "options": [
+                "Lord Wotton pokrčil plecom.",
+                "Nemôžu si dovoliť nič, iba sebazapieranie",
+                "Človek musí platiť aj iným ako peniazmi.",
+                "Človek žije iba pre seba."
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Čo nepokladá Lord Wotton v ukážke 2 za stredoveké?",
+              "options": [
+                "výčitky svedomia",
+                "sebazapieranie",
+                "nemorálnosť",
+                "poníženie"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": " Z ukážky 2 vypíšte dvojslovné oslovenie.",
+              "correctAnswer": "Kamarát drahý | Kamarat drahý | Kamarat drahy",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Ako sa nazýva typ komunikácie, v ktorej komunikanti vyjadrujú svoj nesúhlas bez\nagresivity a manipulácie?",
+              "correctAnswer": "Asertívna | Asertivna | Asertivita ",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z nasledujúceho odseku ukážky 2 zložené slovo domáceho pôvodu.:\n„K nesúladu dochádza, keď sa musíme prispôsobovať druhým. Vlastný život – to je dôležité. Čo sa týka života našich blížnych, ak niekto chce byť mravokárcom alebo puritánom, nech sa nad nich vyvyšuje so svojimi morálnymi názormi, ale nie je to jeho vec, nemá sa do ničoho starať. Okrem toho, individualizmus má naozaj vyšší cieľ. Moderná morálka žiada prijať štandard našej doby. Podľa mňa, keď kultúrny človek prijme štandard svojej doby, je to najhrubšia nemorálnosť.“",
+              "correctAnswer": "Mravokárcom | Mravokárca | Mravokarcom | Mravokarca",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 3,
+          "text": "Ovídius – Daidalos a Ikaros\n(úryvok, upravené)\nJe múdry Daidalos a Ikara má syna.\nVynájde zvláštnu vec: hľa, z krehkých vtáčích pier\nsi krídla zostrojí a k pleciam popripína;\nsyna tiež priúča, jak letieť cez éter.\n\n„Nech Minos vševládny ohradí zem i more,\nktoré nás zoviera a nedá uniknúť –\nje nebo nad Krétou, je šíra cesta hore,\ndo Grécka rodného nás volá voľná púť!”\n\nBol z Atén rodákom a v srdci mocnej Kréty\nbludisko zbudoval, v ňom toľko rôznych ciel\ni chodieb spletitých, že ledva z tejto spleti –\nledva z nej vyplietol sa i sám staviteľ!\n[…]\nkeď chlapca pochytí chuť stúpať hor a hor,\nsprievodcu opustí a len sa túži vtápať\nčím vyššie do výšin, až k slnku, nad obzor – –\nAle tá prudká slasť sa skoro zmení na pád.\n[…]\nZvať budú po tebe tú šíravinu vôd,\nkde otec – ktorý už viac nebol otcom – vzlykal:\n„Môj Ikar, kde si mi? Sem za mnou, Ikar, poď!\nV ktorej už končine ťa nájdem, biedny Ikar?“\n\nVtom uzrie hŕbku pier sa plaviť na ostrov.\nPrekľaje umenie, čo synáčka mu zmára.\nZ vĺn si ho vyloví, vykope mu rov.\nTen ostrov obdrží tiež meno od Ikara.",
+          "questions": [
+            {
+              "questionText": "Ktoré tvrdenie o ukážke 3 je pravdivé?",
+              "options": [
+                "Ukážka tvorí úvod (propozíciu) eposu, v ktorom vystupujú antickí bohovia.",
+                "Ukážka je časťou báje o pôvode prírodných útvarov a ich názvov.",
+                "Ukážka predstavuje bájku s mravným ponaučením",
+                "Ukážka má podobu balady, v ktorej vystupujú nadprirodzené bytosti."
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý literárny druh predstavuje ukážka 3?",
+              "options": [
+                "veršovanú lyriku",
+                "lyrizovanú epiku",
+                "veršovanú epiku",
+                "lyrizovanú drámu"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktoré tvrdenie vyplýva z ukážky 3?",
+              "options": [
+                "Vládca Minos túžil ovládnuť celé Grécko.",
+                "Daidalos sa opájal letom vo výškach.",
+                "Na pamiatku slávneho staviteľa pomenujú ostrov.",
+                "Vládca Kréty väznil autora labyrintu."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý pád nie je použitý pri skloňovaní zámen v piatej strofe ukážky 3?",
+              "options": [
+                "datív",
+                "genitív",
+                "nominatív",
+                "inštrumentál"
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádzajú iba slová so slabikotvornými hláskami r/ŕ, l/ĺ?",
+              "options": [
+                "spletitých, srdce, priúča",
+                "pier, zmára, vĺn",
+                "slnku, hŕbku, obdrží",
+                "vzlykal, bludisko, hľa"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Vypíšte z ukážky 3 jedno slovo, v ktorom je porušené pravidlo o rytmickom krátení.",
+              "correctAnswer": "vtáčích | vtáčí | vtáčie | vtacich | vtaci | vtacie ",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Utvorte privlastňovacie prídavné meno od podstatného mena Ikaros v tvare\nN singuláru mužského rodu.",
+              "correctAnswer": "Ikarov",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z ukážky 3 slovo, ktoré má rovnaký význam ako slovo zabíjať",
+              "correctAnswer": "zmára | zmárať | zmara | zmarat",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 4,
+          "text": "Jozef Gregor Tajovský – Statky-zmätky\n(úryvok)\nĎURKO. Aj si ho prepíšem! Ak mi nezaplatíte, čo som vám robil.\nPALČÍK. Prepíšeš?! Oprobujte sa. Ani babky! Dosť si ma skazil do roka! Ja ťa vyplatím.\nDones, žena, nejaký kôl! Ja mu vyplatím – keď mu nakladiem. Ožranský lump!\nMARA. Preboha ťa prosím!... A ty už choď niekam v peklo!\nĎURKO. (odchádza z kroka na krok). Nefrflite mi! Naučím ťa!\nPALČÍK. Už sa pakuj! Keď ty mňa na žobrotu chceš doniesť...\nĎURKO. I skazím ťa, aby si vedel!\nPALČÍK. Ty mňa? Hneď ti skončenie tu spravím! (Berie revolver.)\nĎURKO (vyjde rýchlejšie, dvere otvorené).\nMARA (skočí k Palčíkovi). Preboha, neber si ho na svedomie!\nPALČÍK. Keď ma ty na žobrotu chceš doniesť, radšej ťa ja budem žobrákom chovať! (Von;\nv pitvore strelí.)\nMARA. Matička Kristova! (Klesne na prahu.)\nPALČÍK (dnu; trasie sa). I tá fľandra von! A viac nevkročí do môjho domu! – Bolo načase\nchliev očistiť.",
+          "questions": [
+            {
+              "questionText": "Z ktorej časti vnútornej kompozície diela Statky-zmätky je ukážka 4?",
+              "options": [
+                "z úvodu/z expozície",
+                "zo zápletky/z kolízie",
+                "z obratu/z peripetie",
+                "z rozuzlenia/z katastrofy"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sú všetky slová z ukážky 4 neutrálne?",
+              "options": [
+                "A ty už choď niekam v peklo!",
+                "I tá fľandra von!",
+                "Už sa pakuj!",
+                "Nefrflite mi!"
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Pri ktorej postave z diela Statky-zmätky je správne uvedená jej charakteristika?",
+              "options": [
+                "Ondrej Palčík – gazda, ktorý nesúhlasil s Ďurkovou voľbou manželky.",
+                "Ďurko Ľavko – prelietavý mládenec, ktorý sa so Zuzkou rozišiel z vypočítavosti.",
+                "Tomáš Kamenský – starostlivý otec, ktorý chce šťastie pre svoje deti.",
+                "Jano Ľavko – pracovitý gazda, ktorý vidí v synovej svadbe zisk aj pre seba."
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza jednočlenná veta z ukážky 4?",
+              "options": [
+                "Ty mňa?",
+                "Chceš doniesť.",
+                "Budem chovať.",
+                "Matička Kristova!"
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorá veta z ukážky 4 neobsahuje frazeologizmus?",
+              "options": [
+                "Dones, žena, nejaký kôl!",
+                "Bolo načase chliev očistiť.",
+                "A ty už choď niekam v peklo!",
+                "Keď ma ty na žobrotu chceš doniesť."
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Koľko replík patrí v ukážke 4 Ďurkovi?",
+              "correctAnswer": "tri | 3",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Koľko autorských poznámok sa nachádza v ukážke 4?",
+              "correctAnswer": "7 | sedem",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Na základe poznania celého diela, z ktorého je ukážka 4, napíšte krstné meno ženskej postavy, o ktorej hovorí Palčík vo svojej poslednej replike.",
+              "correctAnswer": "Beta | Betka",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 5,
+          "text": "Čo prináša duálne vzdelávanie zamestnávateľovi?\n(skrátené, upravené)\nDUÁLNE VZDELÁVANIE je systém odborného vzdelávania a prípravy na výkon povolania, ide o prepojenie všeobecného a odborného teoretického vzdelávania v strednej odbornej škole s praktickou prípravou u konkrétneho zamestnávateľa.\nPRAKTICKÉ VYUČOVANIE v systéme duálneho vzdelávania sa vykonáva na pracovisku praktického vyučovania u zamestnávateľa, ktorému bolo vydané osvedčenie zamestnávateľa poskytovať praktické vyučovanie žiakom, s ktorými zamestnávateľ uzatvorí učebnú zmluvu podľa § 19 zákona č. 61/2015 Z. z. o odbornom vzdelávaní a príprave a o zmene a doplnení niektorých zákonov na základe zmluvnej spolupráce s vybranou strednou odbornou školou vo forme zmluvy o duálnom vzdelávaní podľa § 16 zákona č. 61/2015 Z. z.\nPrečo systém duálneho vzdelávania:\n1. Získate vyššiu odbornú pripravenosť zamestnancov, reálne kopírujúcu vaše požiadavky.\n2. Ušetríte náklady na nábor zamestnancov.\n3. Ušetríte náklady na rekvalifikáciu zamestnancov.\n4. Získate možnosť vyberať si v prípade potreby nových zamestnancov.\n5. Zvýšite lojalitu vašich zamestnancov.\n6. Znížite mieru fluktuácie.\n7. Zlepšíte pracovné návyky zamestnancov.\n8. Zlepšíte imidž vašej firmy.\n9. Zlepšíte firemnú kultúru.\n10. Posilníte spoločenský status vašej firmy.\n11. Zlepšíte pozitívne vnímanie vašej firmy v regióne.\n12. Zvýšite stabilitu vašej firmy.\n13. Zvýšite záujem nových odberateľov.\n14. Zvýšite zisky vašej firmy",
+          "imageUrl": "vzdelavanie_url",
+          "questions": [
+            {
+              "questionText": "Ktoré tvrdenie vyplýva z ukážky 5?",
+              "options": [
+                "Zamestnávateľské zväzy odmietajú spoluúčasť na duálnom vzdelávaní.",
+                "Teoretická príprava nemusí byť povinnou súčasťou duálneho systému.",
+                "Odborná prax prebieha vo firmách, ktoré majú aspoň 250 zamestnancov.",
+                "Duálne vzdelávanie znižuje výdavky na preškolenie zamestnancov."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti nie je uvedená výhoda, ktorú podľa ukážky 5 prinesie firmám zapojenie sa do duálneho systému vzdelávania?",
+              "options": [
+                "zatraktívnenie statusu firmy",
+                "zvýšená aktivita zamestnancov",
+                "nižšia miera odchodov pracovníkov",
+                "zlepšená pracovná morálka"
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Z koľkých viet sa skladá súvetie v nasledujúcom odseku ukážky 5?:\nPRAKTICKÉ VYUČOVANIE v systéme duálneho vzdelávania sa vykonáva na pracovisku praktického vyučovania u zamestnávateľa, ktorému bolo vydané osvedčenie zamestnávateľa poskytovať praktické vyučovanie žiakom, s ktorými zamestnávateľ uzatvorí učebnú zmluvu podľa § 19 zákona č. 61/2015 Z. z. o odbornom vzdelávaní a príprave a o zmene a doplnení niektorých zákonov na základe zmluvnej spolupráce s vybranou strednou odbornou školou vo forme zmluvy o duálnom vzdelávaní podľa § 16 zákona č. 61/2015 Z. z.",
+              "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Časť ukážky 5 Prečo systém duálneho vzdelávania je napísaná vo forme",
+              "options": [
+                "osnovy.",
+                "konspektu.",
+                "konceptu",
+                "téz"
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti je uvedená výhoda, ktorú podľa ukážky 5 získa študent absolvovaním duálneho vzdelávania?",
+              "options": [
+                "Cestovanie za prácou na náklady zamestnávateľa v regióne, v ktorom býva.",
+                "Cestovanie za prácou po celom Slovensku na náklady zamestnávateľa.",
+                "Získanie doživotnej pracovnej zmluvy od firmy, v ktorej sa učil.",
+                "Spoznanie reálnych podmienok na konkrétnom pracovisku."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Koľko zmlúv podľa ukážky 5 uzatvorí žiak so zamestnávateľom v rámci duálneho vzdelávania?",
+              "correctAnswer": "jednu | 1 | jedna",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z časti ukážky 5 Prečo systém duálneho vzdelávania nezhodný prívlastok, ktorý je vyjadrený tvarom neurčitku slovesa.",
+              "correctAnswer": "vyberať si | vyberať | vyberat si | vyberat",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "V ktorom jazykovom štýle sa vypracúva text pracovnej zmluvy?",
+              "correctAnswer": "v administratívnom | v administrativnom | administratívny | administrativny | úradnom | uradnom | úradný | uradny",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 6,
+          "text": "Michelangelo Buonarroti – Som ako mesiac\n(skrátené)\nCez váš zrak ku mne sladké svetlo prúdi,\nktoré už slepý zrak môj nezahliadne.\nNa vašich nohách nesiem bremä riadne,\npod ktorým k zemi klesli by mi údy.\n\nLen s vaším krídlom vzlietam z čiernej hrudy,\naž do neba môj duch sa s vaším vkradne.\nV hmle horúco a v slnci mi je chladne,\nak vaša duša príkro o mne súdi.\n\nJedinou vôľou je mi prianie vaše,\nvo vašom srdci myšlienky mám skryté\na z vášho dychu plynú moje vety.\n\nSom ako mesiac, ktorý oči naše\nnespozorujú dotiaľ na blankyte,\npokým ho jasné slnce neosvieti.",
+          "questions": [
+            {
+              "questionText": "Ktorá charakteristika básnického subjektu/autora nevystihuje jeho pocity v poslednej\nstrofe básne v ukážke 6?",
+              "options": [
+                "Cíti sa ako bezvýznamný človek.",
+                "Cíti sa ako záhadný človek.",
+                "Cíti sa ako neviditeľný človek.",
+                "Cíti sa ako nezaujímavý človek."
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorým slovom označuje básnik v ukážke 6 milovanú osobu?",
+              "options": [
+                "svetlo",
+                "blankyt",
+                "zem",
+                "slnce"
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Na ktorý zmysel čitateľa autor v básni Som ako mesiac priamo nepôsobí?",
+              "options": [
+                "na chuť",
+                "na zrak",
+                "na čuch",
+                "na hmat"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza epiteton/básnický prívlastok?",
+              "options": [
+                "duša príkro o mne súdi",
+                "pokým ho jasné slnce neosvieti",
+                "len s vaším krídlom vzlietam",
+                "ku mne sladké svetlo prúdi"
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej strofe ukážky 6 sa nachádza veršový presah?",
+              "options": [
+                "v prvej",
+                "vo štvrtej",
+                "v tretej",
+                "v druhej"
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ako sa volá básnická forma, ktorú predstavuje ukážka 6?",
+              "correctAnswer": "sonet | znelka",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z ukážky 6 synonymum k slovu prianie.",
+              "correctAnswer": "vôľou | vôľa | volou | vola",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Podľa ktorého vzoru sa skloňuje podstatné meno slnce?",
+              "correctAnswer": "srdce",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 7,
+          "text": "Jerome David Salinger – Kto chytá v žite\n(úryvok)\nAk to fakt chcete počúvať, predovšetkým asi budete chcieť vedieť, kde som sa narodil, aké som mal detstvo, čo robili moji rodičia pred mojím narodením a podobné kraviny podľa vzoru Davida Copperfielda, ale aby som vám pravdu povedal, vôbec sa mi o tom nechce rozprávať. Je to, po prvé, otrava a po druhé, moji rodičia by najmenej dva razy za sebou zinfarktovali, keby som niečo prezradil z ich súkromného života. Na také voľačo sú veľmi citliví, najmä otec. Inak sú celkom fajn – to nevravím – ale sú hrozne citliví. Okrem toho vám nemienim rozprávať celý svoj mizerný životopis od a po zet. Porozprávam vám len o tých bláznivých dňoch vlani okolo Vianoc, keď som sa zosypal, musel prísť sem a dať si pohov.",
+          "questions": [
+            {
+              "questionText": "Ktoré lexikálne prostriedky využil Salinger v ukážke 7, aby sa priblížil študentskému prostrediu?",
+              "options": [
+                "vulgárne slová",
+                "hovorové slová",
+                "eufemizmy",
+                "neologizmy"
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Tvorbu J. D. Salingera zaraďujeme",
+              "options": [
+                "do realistickej literatúry.",
+                "do literatúry po roku 1945.",
+                "do naturalistickej literatúry.",
+                "do medzivojnovej literatúry."
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorým slovným druhom je zvýraznené slovo v nasledujúcej vete z ukážky 7?:\nPorozprávam vám len o tých bláznivých dňoch vlani „okolo“ Vianoc.",
+              "options": [
+                "predložka",
+                "príslovka",
+                "častica",
+                "zámeno"
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Na základe poznania celého diela, z ktorého je ukážka 7, vyberte možnosť, ktorá\nvysvetľuje, prečo rozprávač príbehu odišiel zo školy",
+              "options": [
+                "Rodičia nesúhlasili s jeho komisionálnym preskúšaním.",
+                "Odišiel na protest proti vyučovacím metódam dejepisára.",
+                "Musel opustiť školu pre hádku so spolužiačkou.",
+                "Prepadol zo štyroch vyučovacích predmetov."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V nasledujúcej vete v ukážke 7 je pomlčkami oddelený/oddelená:\nInak sú celkom fajn – to nevravím – ale sú hrozne citliví",
+              "options": [
+                "vedľajšia veta.",
+                "prístavok.",
+                "elipsa.",
+                "vsuvka."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý druh čísloviek/číslovkových výrazov sa v ukážke 7 vyskytuje opakovane?",
+              "correctAnswer": "radová | radové | radova | radove",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Výslovnosť ktorej hlásky slovenskej abecedy je v ukážke 7 zapísaná tromi grafémami?",
+              "correctAnswer": "*",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Ktorý typ rozprávača sa nachádza v ukážke 7?",
+              "correctAnswer": "priamy",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 8,
+          "text": "Bublinková sezóna\nAj vy/Vy máte počas leta často chuť na sýtené nápoje? Zatiaľ čo sladené malinovky z obchodu obsahujú veľké množstvo cukru, všelijakých/všeliakých farbív a konzervantov, na pohári čistej perlivej vody ochutenej napríklad kúskami ovocia či byliniek nie je nič zlé. S prístrojmi SodaStreamSPIRIT to s prehľadom zvládnete v pohodlí domova, a rovnako tak aj najmladší či, naopak, najstarší členovia rodiny. Stačí naplniť fľašu, zakliknúť do prístroja a stlačením tlačítka/tlačidla nasýtiť podľa vlastných predstáv. Bombička s obsahom CO2 vystačí na prípravu až 70 litrov perlivej vody, čo zodpovedá približne 47 fľašiam s objemom 1,5 litra, ktoré by ste inak museli vláčiť z obchodu. Prístroj SodaStreamSPIRIT je dostupný v troch farbách – bielej, čiernej a červenej. Navyše, o všetkých benefitoch prípravy perlivej vody v pohodlí domova sa teraz môžete presvedčiť sami/samy a bez rizika. V prípade, že s prístrojom SodaStreamSPIRIT nebudete spokojní, do 60 dní od zakúpenia vám vrátia peniaze. Viac na www.sodastream.sk.\nInzercia NB1955",
+          "questions": [
+            {
+              "questionText": "Ukážka 8 predstavuje",
+              "options": [
+                "inzerát propagujúci nový výrobok.",
+                "reklamu na predaj perlivej vody.",
+                "reklamu na prístroj vyrábajúci sýtené nápoje.",
+                "anotáciu odporúčajúcu požívanie nesladených nápojov."
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza združené pomenovanie?",
+              "options": [
+                "sladené malinovky",
+                "pohodlie domova",
+                "sýtené nápoje",
+                "vlastné predstavy"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti je uvedené slovo, ktoré sa z hľadiska citového zafarbenia/expresívnosti\nodlišuje od ostatných troch?",
+              "options": [
+                "bylinka",
+                "malinovka",
+                "bublinka",
+                "kúsok"
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ukážke 8 sa nachádza aj",
+              "options": [
+                "informácia o dostupnosti nákupu prístroja SodaStreamSPIRIT.",
+                "zdôvodnenie výhodnosti nakupovania sladkých nápojov.",
+                "informácia o nevýhodách domácej prípravy perlivej vody.",
+                "opis pracovného postupu na prípravu perlivej vody."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sú uvedené len správne tvary slov zo zvýraznených dvojíc slov\nv ukážke 8?",
+              "options": [
+                "vy, všelijakých, tlačidla, sami",
+                "Vy, všeliakých, tlačidla, samy",
+                "Vy, všelijakých, tlačítka, sami",
+                "vy, všeliakých, tlačítka, samy"
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorá spoluhláska má v nasledujúcej vete z ukážky 8 trojakú výslovnosť?:\nZatiaľ čo sladené malinovky z obchodu obsahujú veľké množstvo cukru, všelijakých/všeliakých farbív a konzervantov, na pohári čistej perlivej vody ochutenej napríklad kúskami ovocia či byliniek nie je nič zlé.",
+              "correctAnswer": "V",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Napíšte slovom pravopisne správne číslovku z nasledujúcej vety.:\nZodpovedá približne 47 fľašiam.",
+              "correctAnswer": "štyridsiatim siedmim | styridsiatim siedmim",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": " Nahraďte v nasledujúcej vete jedno slovesné podstatné meno abstraktným podstatným menom tak, aby sa význam vety nezmenil.:\nDo 60 dní od zakúpenia výrobku vám vrátia peniaze.",
+              "correctAnswer": "kúpy | kúpa | nákupu | nákup | kupy | kupa | nakupu | kupy",
+              "type": "FILL_IN"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+

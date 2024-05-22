@@ -1,11 +1,11 @@
 {
   "tests": [
     {
-      "year": "2022",
+      "year": "2023",
       "sections": [
         {
           "sectionId": 1,
-          "text": "Rozhovor so spisovateľom, prekladateľom, výtvarníkom a... Danielom Hevierom\nAlebo čuším, alebo kričím\n(úryvok)\n[…]\nMnoho ľudí sa ma pýtalo, či ešte vôbec píšeš, že si sa ako spisovateľ stratil z očí. Opak je\nvšak paradoxne pravdou…\n— Niekedy je písanie ponorná riečka – text sa vynorí až po dlhom plynutí v skrytosti. Mám\nniekoľko takých knižiek, ktoré sú doteraz ponorené. Ale píšu sa. Alebo: píšu ma. A okrem toho:\nliteratúra je iba jedna z mojich živností. Okrem toho sa venujem hudbe, intenzívne maľujem\n(čoraz viac), hrám divadlo, filmujem, príležitostne učím i učím sa, mám za sebou dizertáciu a jej\nobhajobu, stretávam sa s ľuďmi, pohybujem sa v rôznych spoločenstvách…\n[…]\nV novej reedícii vyšli aj niektoré tvoje staršie detské tituly (Básnička ti pomôže, Hovorníček,\nHeviho diktátor).\n— Deti sa rodia, dorastajú, učia sa chodiť, písať, čítať… Ak je moja staršia knižka použiteľná\naj do dnešných čias, som, prirodzene, rád.\n[…]\nPre teba bol veľký zlom v živote, keď si začal maľovať. Maľuješ teraz dokonca intenzívnejšie\nnež na začiatku tohto tvojho „objavu“.\n— Áno, zlom, ktorý sa stal dobrom. Výtvarno silno vnímam od malička, rovnako ako hudbu či\npohyb. Pred desiatimi rokmi som si už prestal iba kupovať farby a prestal iba hromadiť výtvarné\nmonografie, začal som aj maľovať na vlastnej koži. Prvé dva roky to bolo ako horúčka, nerobil\nsom nič iné. Dnes už maľujem miernejšie, ale toto leto sa mi napríklad podarilo spôsobiť si\n„maliarsky lakeť“; tak veľa a silno som maľoval, že som potom celé týždne nemohol pohnúť\nrukou.\nS otcom sa zhováral Daniel Hevier ml.\nKnižná revue\n",
+          "text": "Rozhovor so spisovateľom, prekladateľom, výtvarníkom a... Danielom Hevierom\nAlebo čuším, alebo kričím\n(úryvok)\n[…]\nMnoho ľudí sa ma pýtalo, či ešte vôbec píšeš, že si sa ako spisovateľ stratil z očí. Opak je však paradoxne pravdou…\n— Niekedy je písanie ponorná riečka – text sa vynorí až po dlhom plynutí v skrytosti. Mám niekoľko takých knižiek, ktoré sú doteraz ponorené. Ale píšu sa. Alebo: píšu ma. A okrem toho:\nliteratúra je iba jedna z mojich živností. Okrem toho sa venujem hudbe, intenzívne maľujem (čoraz viac), hrám divadlo, filmujem, príležitostne učím i učím sa, mám za sebou dizertáciu a jej obhajobu, stretávam sa s ľuďmi, pohybujem sa v rôznych spoločenstvách…\n[…]\nV novej reedícii vyšli aj niektoré tvoje staršie detské tituly (Básnička ti pomôže, Hovorníček,\nHeviho diktátor).\n— Deti sa rodia, dorastajú, učia sa chodiť, písať, čítať… Ak je moja staršia knižka použiteľná aj do dnešných čias, som, prirodzene, rád.\n[…]\nPre teba bol veľký zlom v živote, keď si začal maľovať. Maľuješ teraz dokonca intenzívnejšie než na začiatku tohto tvojho „objavu“.\n— Áno, zlom, ktorý sa stal dobrom. Výtvarno silno vnímam od malička, rovnako ako hudbu či\npohyb. Pred desiatimi rokmi som si už prestal iba kupovať farby a prestal iba hromadiť výtvarné monografie, začal som aj maľovať na vlastnej koži. Prvé dva roky to bolo ako horúčka, nerobil som nič iné. Dnes už maľujem miernejšie, ale toto leto sa mi napríklad podarilo spôsobiť si „maliarsky lakeť“; tak veľa a silno som maľoval, že som potom celé týždne nemohol pohnúť\nrukou.\nS otcom sa zhováral Daniel Hevier ml.\nKnižná revue\n",
           "questions": [
             {
               "questionText": "Ktoré tvrdenie vyplýva z ukážky 1?",
@@ -64,24 +64,24 @@
             },
             {
               "questionText": "Vypíšte z otázok pre Daniela Heviera neplnovýznamové fázové sloveso.",
-              "correctAnswer": "začať | začal | si začal | začal si",
+              "correctAnswer": "začať | začal | si začal | začal si | zacal | zacat | si zacal | zacal si",
               "type": "FILL_IN"
             },
             {
               "questionText": "Vypíšte z odpovedí Daniela Heviera termín označujúci všetky druhy písaných\na tlačených textov.",
-              "correctAnswer": "literatúra",
+              "correctAnswer": "literatúra | literatura",
               "type": "FILL_IN"
             },
             {
               "questionText": "Napíšte cudzí názov žánru ukážky 1.",
-              "correctAnswer": "interview | Interview | interviu",
+              "correctAnswer": "interview | interviu",
               "type": "FILL_IN"
             }
           ]
         },
         {
           "sectionId": 2,
-          "text": "Jean Arthur Rimbaud – Spáč v údolí\nHľa, diera zelene, kam sa spev rieky norí,\nbláznivo rozšantiac zdrap striebra na tráve,\nkde slnce jagá sa z vrcholu divej hory,\nhľa, malé údolie v kypiacej páľave.\nSpí, ústa dokorán, vojačik prostovlasý,\nšiju mu obmýva žerucha belasá,\nspí, bledý, pod mráčkom, tam kde zem trávu tasí,\nv zelenej posteli, kde svetlo zlieva sa.\nS nohami v kosatcoch spí, tvár mu smiechom svieti,\ntakýmto úsmevom smejú sa choré deti.\nPríroda, zahrej ho, to už chlad ide naň.\nVôňa mu k záchvevu nozdry už neprebudí,\nspí v slnku s rukami na svojej tichej hrudi,\nbok sa mu červenie z dvoch otvorených rán.\n",
+          "text": "Jean Arthur Rimbaud – Spáč v údolí\nHľa, diera zelene, kam sa spev rieky norí, bláznivo rozšantiac zdrap striebra na tráve,\nkde slnce jagá sa z vrcholu divej hory,\nhľa, malé údolie v kypiacej páľave.\n\nSpí, ústa dokorán, vojačik prostovlasý,\nšiju mu obmýva žerucha belasá,\nspí, bledý, pod mráčkom, tam kde zem trávu tasí,\nv zelenej posteli, kde svetlo zlieva sa.\n\nS nohami v kosatcoch spí, tvár mu smiechom svieti,\ntakýmto úsmevom smejú sa choré deti.\nPríroda, zahrej ho, to už chlad ide naň.\n\nVôňa mu k záchvevu nozdry už neprebudí,\nspí v slnku s rukami na svojej tichej hrudi,\nbok sa mu červenie z dvoch otvorených rán.\n",
           "questions": [
             {
               "questionText": "V ktorom verši básne Spáč v údolí sa nachádza personifikácia?",
@@ -144,7 +144,7 @@
               "type": "FILL_IN"
             },
             {
-              "questionText": "Jean Arthur Rimbaud bol predstaviteľom francúzskej literárnej moderny. Napíšte meno\na priezvisko, pod ktorým je známy hlavný predstaviteľ slovenskej literárnej moderny",
+              "questionText": "Jean Arthur Rimbaud bol predstaviteľom francúzskej literárnej moderny. Napíšte meno\na priezvisko, pod ktorým je známy hlavný predstaviteľ slovenskej literárnej moderny\n\n[Národný inštitút vzdelávania a mládeže na základe rozhodnutia validačnej komisie anuloval položku (všetkým žiakom bude pridelený jeden bod bez ohľadu na odpoveď)",
               "correctAnswer": "*",
               "type": "FILL_IN"
             },
@@ -157,7 +157,7 @@
         },
         {
           "sectionId": 3,
-          "text": "Z webovej poradne\n(upravené)\nSlovo rozmerný má iný význam ako jednorozmerný, dvojrozmerný a pod., preto sú tieto\nprídavné mená logicky nesprávne, dokonca nezmyselné. Nemalo by byť jednorozmerový,\ndvojrozmerový? – Vychádzajúc z významu prídavného mena rozmerný „majúci veľký rozmer“\nmožno zložené prídavné mená vyjadrujúce počet rozmerov jednorozmerný, dvojrozmerný,\ntrojrozmerný, viacrozmerný vnímať ako významovo nepresné, no ich používanie v slovenčine\nsa takto ustálilo (podobne napríklad prídavné meno smerný má význam „udávajúci smer vývoja“\na prídavné mená jednosmerný, dvojsmerný vyjadrujú počet smerov). Neznamená to však,\nže podoby prídavných mien s príponou -ový – jednorozmerový, dvojrozmerový, trojrozmerový,\nviacrozmerový, mnohorozmerový, ktoré sa v slovenských kodifikačných príručkách neuvádzajú,\nsú nesprávne. Podľa dokladov z internetu sa používajú, a to najmä v odborných textoch, napr.\njednorozmerová chromatografia, trojrozmerový problém, viacrozmerový prístup, viacrozmerové\nchápanie, mnohorozmerový regulačný obvod.\nVariantnosť synonymných prídavných mien s odlišnými príponami je v slovenčine bežná\na niektoré podoby sa do lexikografických diel dostávali postupne, napr. v 1. zväzku Slovníka\nslovenského jazyka z r. 1959 alebo v prvých dvoch vydaniach Krátkeho slovníka slovenského\njazyka (1987, 1989) sa uvádzalo iba prídavné meno krátkovlnný, no od 3. vydania KSSJ (1997)\nsa doplnila aj podoba krátkovlnový.\nKultúra slova, 2018",
+          "text": "Z webovej poradne\n(upravené)\nSlovo rozmerný má iný význam ako jednorozmerný, dvojrozmerný a pod., preto sú tieto prídavné mená logicky nesprávne, dokonca nezmyselné. Nemalo by byť jednorozmerový, dvojrozmerový? – Vychádzajúc z významu prídavného mena rozmerný „majúci veľký rozmer“ možno zložené prídavné mená vyjadrujúce počet rozmerov jednorozmerný, dvojrozmerný, trojrozmerný, viacrozmerný vnímať ako významovo nepresné, no ich používanie v slovenčine sa takto ustálilo (podobne napríklad prídavné meno smerný má význam „udávajúci smer vývoja“ a prídavné mená jednosmerný, dvojsmerný vyjadrujú počet smerov). Neznamená to však, že podoby prídavných mien s príponou -ový – jednorozmerový, dvojrozmerový, trojrozmerový, viacrozmerový, mnohorozmerový, ktoré sa v slovenských kodifikačných príručkách neuvádzajú, sú nesprávne. Podľa dokladov z internetu sa používajú, a to najmä v odborných textoch, napr. jednorozmerová chromatografia, trojrozmerový problém, viacrozmerový prístup, viacrozmerové chápanie, mnohorozmerový regulačný obvod. Variantnosť synonymných prídavných mien s odlišnými príponami je v slovenčine bežná a niektoré podoby sa do lexikografických diel dostávali postupne, napr. v 1. zväzku Slovníka slovenského jazyka z r. 1959 alebo v prvých dvoch vydaniach Krátkeho slovníka slovenského jazyka (1987, 1989) sa uvádzalo iba prídavné meno krátkovlnný, no od 3. vydania KSSJ (1997) sa doplnila aj podoba krátkovlnový.\nKultúra slova, 2018",
           "questions": [
             {
               "questionText": "Ktorá možnosť môže byť ďalším príkladom javu, o ktorom je reč v druhom odseku\nukážky 3?",
@@ -226,14 +226,14 @@
             },
             {
               "questionText": "Vypíšte z ukážky 3 prechodník.",
-              "correctAnswer": "Vychádzajúc | vychádzajúc",
+              "correctAnswer": "Vychádzajúc | vychadzajuc",
               "type": "FILL_IN"
             }
           ]
         },
         {
           "sectionId": 4,
-          "text": "Martin Kukučín – Keď báčik z Chochoľova umrie…\n(úryvok, upravené)\nPrirodzená vec, že málo bývaval doma. Výročité alebo iné sviatky, nedele a tu i tu deň alebo\ndva odpočinku, ale ináč vždy na vozíku, na železnici alebo na jarmoku. Najmä po jarmokoch\nchodil nielen do blízkeho okolia, ale i po druhých vidiekoch. Nie div, že naďaleko poznalo\nho každé dieťa. Ale on – ako všetci vychytení ľudia – málokoho poznal dôkladne, alebo podľa\nmena: zato každému dával sa do známosti ako starému známemu. A často podarilo sa mu\noklamať ľudí, lebo podľa kroja a výrečnosti hneď sa vynašiel, kto z ktorej dediny a akého je stavu\na povolania, a podľa toho vedel sa i držať.\n„Daj Boh šťastia, Ondrej!“ počul volať chlapa v čiernej umastenej košeli.\nOndrej hneď vedel, že to skadesi valach, ale nevedel skade, ani kedy s ním bol na slove.\n„Pán Boh uslyš, Ďuro! Akože sa máš?“ poďakoval mu, a hneď ho i obdaril menom len tak\nnaslepo.\n„Len tak, len tak. Ale ma ešte znáte?“ tešil sa valach. „Ja že ste ma od zalanska zabudli.\nČo som vám tú vlnu predal, už sme sa viac nesňali…“\n„Kdeže by ťa neznal, Juríčko! Dobre, ako vlastného brata.“\nA podával mu usmiaty ruku.\n„No, keď ma tak znáte – no!“ divil sa natešený valach. „Ale ja som Mišo, nie Ďuro!“\n„Ľaľa! Bodajže ťa i s hlavou!“ A pľasol sa širokou dlaňou po čele. „Pravdaže, Mišo, teraz mi\nhuplo do hlavy.“\n„To sa vám plietol náš bača – to je Ďuro.“\n„To-to-to – teraz už viem, už viem.“\n",
+          "text": "Martin Kukučín – Keď báčik z Chochoľova umrie…\n(úryvok, upravené)\nPrirodzená vec, že málo bývaval doma. Výročité alebo iné sviatky, nedele a tu i tu deň alebo dva odpočinku, ale ináč vždy na vozíku, na železnici alebo na jarmoku. Najmä po jarmokoch chodil nielen do blízkeho okolia, ale i po druhých vidiekoch. Nie div, že naďaleko poznalo ho každé dieťa. Ale on – ako všetci vychytení ľudia – málokoho poznal dôkladne, alebo podľa mena: zato každému dával sa do známosti ako starému známemu. A často podarilo sa mu oklamať ľudí, lebo podľa kroja a výrečnosti hneď sa vynašiel, kto z ktorej dediny a akého je stavu a povolania, a podľa toho vedel sa i držať.\n„Daj Boh šťastia, Ondrej!“ počul volať chlapa v čiernej umastenej košeli.\nOndrej hneď vedel, že to skadesi valach, ale nevedel skade, ani kedy s ním bol na slove.\n„Pán Boh uslyš, Ďuro! Akože sa máš?“ poďakoval mu, a hneď ho i obdaril menom len tak naslepo.\n„Len tak, len tak. Ale ma ešte znáte?“ tešil sa valach. „Ja že ste ma od zalanska zabudli. Čo som vám tú vlnu predal, už sme sa viac nesňali…“ „Kdeže by ťa neznal, Juríčko! Dobre, ako vlastného brata.“\nA podával mu usmiaty ruku.\n„No, keď ma tak znáte – no!“ divil sa natešený valach. „Ale ja som Mišo, nie Ďuro!“\n„Ľaľa! Bodajže ťa i s hlavou!“ A pľasol sa širokou dlaňou po čele. „Pravdaže, Mišo, teraz mi\nhuplo do hlavy.“\n„To sa vám plietol náš bača – to je Ďuro.“\n„To-to-to – teraz už viem, už viem.“\n",
           "questions": [
             {
               "questionText": "Ktorá črta necharakterizuje Ondreja v ukážke 4?",
@@ -297,7 +297,7 @@
             },
             {
               "questionText": "Vypíšte z ukážky 4 slovo, ktorým sa v nej začína pásmo rozprávača.",
-              "correctAnswer": "Prirodzená | prirodzená",
+              "correctAnswer": "Prirodzená | prirodzena",
               "type": "FILL_IN"
             },
             {
@@ -309,7 +309,7 @@
         },
         {
           "sectionId": 5,
-          "text": "Richard Pupala – Zrkadlo\n(úryvok, upravené)\nZaparkoval pred domom, vypol motor. Zostal sedieť, niekoľko minút, hľadel pred seba. Mal\npocit, že si nepamätá cestu, ktorú práve absolvoval; bol v dome po pradedovi a teraz je medzi\npanelákmi sídliska, kde býva. Pohľad mu padol na sedadlo spolujazdca, na prázdny rám zrkadla,\nčierny pletenec divých makov. Nepamätal sa, že by ho bral so sebou.\n[…]\nVošiel do kúpeľne, aby sa osprchoval, najprv si však musel opláchnuť tvár. Zahľadel sa\ndo zrkadla nad umývadlom. Triasol sa; nie navonok, hoci by bolo príhodnejšie, keby mu\naspoň drkotali zuby. Zajtra sa oholím, napadlo mu. Nabral do dlaní tečúcu vodu a sklonil sa.\nKeď zase zodvihol zrak, spozoroval pomalý, kradmý pohyb. Na stene za jeho chrbtom viselo\nmalé zrkadlo, ktoré tam dala namontovať Klára, aby si pri česaní vlasov videla temeno hlavy.\nZ nekonečne rozloženého priestoru na neho hľadel premenený Kizek. Už sa nebál; nič ho nebolelo.\nHľadel mu priamo do očí, nemilosrdným pohľadom, s takou nenávisťou, až mu zimomriavky\nprenikli do srdca ako črepy.\nObzrel sa. Nikto tam nebol…",
+          "text": "Richard Pupala – Zrkadlo\n(úryvok, upravené)\nZaparkoval pred domom, vypol motor. Zostal sedieť, niekoľko minút, hľadel pred seba. Mal pocit, že si nepamätá cestu, ktorú práve absolvoval; bol v dome po pradedovi a teraz je medzi panelákmi sídliska, kde býva. Pohľad mu padol na sedadlo spolujazdca, na prázdny rám zrkadla, čierny pletenec divých makov. Nepamätal sa, že by ho bral so sebou.\n[…]\nVošiel do kúpeľne, aby sa osprchoval, najprv si však musel opláchnuť tvár. Zahľadel sa do zrkadla nad umývadlom. Triasol sa; nie navonok, hoci by bolo príhodnejšie, keby mu aspoň drkotali zuby. Zajtra sa oholím, napadlo mu. Nabral do dlaní tečúcu vodu a sklonil sa. Keď zase zodvihol zrak, spozoroval pomalý, kradmý pohyb. Na stene za jeho chrbtom viselo malé zrkadlo, ktoré tam dala namontovať Klára, aby si pri česaní vlasov videla temeno hlavy. Z nekonečne rozloženého priestoru na neho hľadel premenený Kizek. Už sa nebál; nič ho nebolelo. Hľadel mu priamo do očí, nemilosrdným pohľadom, s takou nenávisťou, až mu zimomriavky prenikli do srdca ako črepy.\nObzrel sa. Nikto tam nebol…",
           "questions": [
             {
               "questionText": "Ktoré tvrdenie vyplýva z ukážky 5?",
@@ -385,7 +385,7 @@
         },
         {
           "sectionId": 6,
-          "text": "Najkrajšie na Slovensku\n(úryvok)\nSlovensko je výnimočná krajina. Dajte sa očariť jej krásami a užite si neopakovateľnú atmosféru,\nktorú vám ponúka.\nBanská Bystrica a okolie\n1. tip: História a okolie Medeného mesta\nCentrom regiónu s najvýznamnejšími banskými pamiatkami a banskou tradíciou na území\nbývalých stredoslovenských banských miest je Banská Bystrica. Preslávila sa ťažbou ,\npreto ju aj nazývali Medené mesto.\n2. tip: Tam, kde razia mince\nUrčite príjemnou zastávkou pre vás bude Bazilika minor v Starých Horách, kam kvôli nálezom\nstriebra uhorský kráľ Belo IV. pozval banských odborníkov z Nemecka. V Kremnici, Zlatom\nmeste, sa už sedemsto rokov razia mince v najstaršej nepretržite fungujúcej prevádzke\nna svete.\n3. tip: Strieborné mesto\nĎalším skvostom, ktorý nesmiete vynechať, je Strieborné mesto – Banská Štiavnica. Mesto\na okolie boli v roku 1993 zapísané do Zoznamu svetového dedičstva UNESCO.\n4. tip: Retro kúpalisko aj UNESCO pamiatka\nZvolen s dominantou Zvolenský zámok patrí medzi najstaršie mestá na Slovensku. Pred\nnávratom do Banskej Bystrice ešte navštívte kúpeľné mesto Sliač. Okrem retro kúpaliska\ns liečivou minerálnou vodou sa ochladíte aj v miestnom Kostole sv. Mikuláša z 13. storočia.\nZastavte sa aj v pamiatke UNESCO – drevenom evanjelickom kostole v Hronseku.\nslovakia.travel, upravené.",
+          "text": "Najkrajšie na Slovensku\n(úryvok)\nSlovensko je výnimočná krajina. Dajte sa očariť jej krásami a užite si neopakovateľnú atmosféru,\nktorú vám ponúka.\n\nBanská Bystrica a okolie\n1. tip: História a okolie Medeného mesta\nCentrom regiónu s najvýznamnejšími banskými pamiatkami a banskou tradíciou na území bývalých stredoslovenských banských miest je Banská Bystrica. Preslávila sa ťažbou _________, preto ju aj nazývali Medené mesto.\n2. tip: Tam, kde razia mince\nUrčite príjemnou zastávkou pre vás bude Bazilika minor v Starých Horách, kam kvôli nálezom striebra uhorský kráľ Belo IV. pozval banských odborníkov z Nemecka. V Kremnici, Zlatom meste, sa už sedemsto rokov razia mince v najstaršej nepretržite fungujúcej prevádzke na svete.\n3. tip: Strieborné mesto\nĎalším skvostom, ktorý nesmiete vynechať, je Strieborné mesto – Banská Štiavnica. Mesto a okolie boli v roku 1993 zapísané do Zoznamu svetového dedičstva UNESCO.\n4. tip: Retro kúpalisko aj UNESCO pamiatka\nZvolen s dominantou Zvolenský zámok patrí medzi najstaršie mestá na Slovensku. Pred návratom do Banskej Bystrice ešte navštívte kúpeľné mesto Sliač. Okrem retro kúpaliska s liečivou minerálnou vodou sa ochladíte aj v miestnom Kostole sv. Mikuláša z 13. storočia. Zastavte sa aj v pamiatke UNESCO – drevenom evanjelickom kostole v Hronseku.\nslovakia.travel, upravené.",
           "questions": [
             {
               "questionText": "V ktorom tipe sa spomína svetový rekord Slovenska?",
@@ -461,7 +461,7 @@
         },
         {
           "sectionId": 7,
-          "text": "William Shakespeare – Veľa kriku pre nič\n(úryvok, upravené)\npiate _________\nClaudio: A ja dám krk, že on ju takisto.\nMám v ruke list. Hľa – jeho rukopis!\nMizerný sonet – jeho úroveň.\nA múza – Beatrice.\nHero: Mám tu druhý,\nčo vypadol z jej vrecka. Hľa, jej písmo!\nPísala to, ten list som našla u nej.\nVyznanie lásky – Benedikovi.\nBenedik: Zázrak! Naše ruky čosi píšu a naše srdcia\no tom nevedia. Tak dobre, chcem ťa za ženu.\nNo prisahám, že iba zo súcitu.\nBeatrice: Aj ja ťa neodmietnem, ale, namojhriešnu,\nmuseli ma dlho presviedčať, a čiastočne\nto robím aj preto, aby som ti zachránila\nživot. Vraj sa z lásky ku mne ideš uzožierať.\nLeonato: No tak! (Beatrice.) Uzožieranie zastaví len\nbozk. (Podá jej ruku Benedikovi.)",
+          "text": "William Shakespeare – Veľa kriku pre nič\n(úryvok, upravené)\npiate _________\nClaudio: A ja dám krk, že on ju takisto.\nMám v ruke list. Hľa – jeho rukopis!\nMizerný sonet – jeho úroveň.\nA múza – Beatrice.\nHero: Mám tu druhý, čo vypadol z jej vrecka. Hľa, jej písmo!\nPísala to, ten list som našla u nej.\nVyznanie lásky – Benedikovi.\nBenedik: Zázrak! Naše ruky čosi píšu a naše srdcia o tom nevedia. Tak dobre, chcem ťa za ženu. No prisahám, že iba zo súcitu.\nBeatrice: Aj ja ťa neodmietnem, ale, namojhriešnu, museli ma dlho presviedčať, a čiastočne\nto robím aj preto, aby som ti zachránila život. Vraj sa z lásky ku mne ideš uzožierať.\nLeonato: No tak! (Beatrice.) Uzožieranie zastaví len bozk. (Podá jej ruku Benedikovi.)",
           "questions": [
             {
               "questionText": "Ktoré tvrdenie vyplýva z ukážky 7?",
@@ -537,7 +537,7 @@
         },
         {
           "sectionId": 8,
-          "text": "Peter Jilemnický – Muzika\n(úryvok, upravené)\nTeda už zas prišiel utorok, ešte nebol dobre po nedeli vyspatý, kravatu mal kdesi pri ľavom\nuchu a sivú tvár. Doviedol Zoé do kancelárie pred ôsmou hodinou, sadol s ňou k písaciemu stroju\na teraz sa díval – hu, aké mal ošklivé oči. Poradové čísla začali tancovať a nebola to už muzika,\nten tanec zaváňal potrebným chlebom, každé z nich sa škerilo hladnými zubami a chceli Zoé\nzožrať. Preto ona pre svoju osobu zaviedla si nový exhibit a začala:",
+          "text": "Peter Jilemnický – Muzika\n(úryvok, upravené)\nTeda už zas prišiel utorok, ešte nebol dobre po nedeli vyspatý, kravatu mal kdesi pri ľavom uchu a sivú tvár. Doviedol Zoé do kancelárie pred ôsmou hodinou, sadol s ňou k písaciemu stroju a teraz sa díval – hu, aké mal ošklivé oči. Poradové čísla začali tancovať a nebola to už muzika, ten tanec zaváňal potrebným chlebom, každé z nich sa škerilo hladnými zubami a chceli Zoé zožrať. Preto ona pre svoju osobu zaviedla si nový exhibit a začala:",
           "imageUrl": "zoe_url",
           "questions": [
             {
@@ -597,12 +597,12 @@
             },
             {
               "questionText": "Vypíšte z listu z ukážky 8 zámeno, ktoré v ňom možno považovať za napísané chybne.",
-              "correctAnswer": "ti | ťa | ty ",
+              "correctAnswer": "ti | ťa | ty | ta",
               "type": "FILL_IN"
             },
             {
               "questionText": "Ktorý slohový postup sa uplatnil v tabuľkovej časti ukážky 8?",
-              "correctAnswer": "informačný",
+              "correctAnswer": "informačný | informacny",
               "type": "FILL_IN"
             },
             {

@@ -37,6 +37,12 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.maturant.viewModels.MaturitaViewModel
 
 
+/**
+ * TestScreen
+ * TestScreen slúži ako obrazovka s maturitným testom.
+ * @param navController - Parameter navController slúži na navigáciu pomocou NavControllera, aby bolo možné sa presúvať zo screeny naspäť a sem.
+ * @param viewModel - Parameter MaturitaViewModel slúži na zdieľanie dát medzi jednotlivými obrazovkami, načítavanie testov, či uchovávanie viacerých stavov, zároveň aj ukladá odpovede a vyhodnocuje ich.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = viewModel()) {
@@ -176,6 +182,13 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
     TimeUpDialog(showTimeUpDialog, viewModel)
 }
 
+/**
+ * ExitConfirmationDialog
+ * ExitConfirmationDialog slúži na zobrazenie dialógu, či chce užívateľ naozaj odísť, pokiaľ odpovedal aspoň na 1 otázku.
+ * @param showExitDialog - Parameter showExitDialog slúži na zobrazenie dialógu, pričom si uchováva svoj stav.
+ * @param navController - Parameter navController slúži na navigáciu pomocou NavControllera, aby bolo možné sa presúvať zo screeny naspäť a sem.
+ * @param viewModel - Parameter MaturitaViewModel slúži na zdieľanie dát medzi jednotlivými obrazovkami, načítavanie testov, či uchovávanie viacerých stavov, zároveň aj ukladá odpovede a vyhodnocuje ich.
+ */
 @Composable
 fun ExitConfirmationDialog(
     showExitDialog: MutableState<Boolean>,
@@ -217,6 +230,12 @@ fun ExitConfirmationDialog(
     }
 }
 
+/**
+ * TimeUpDialog
+ * TimeUpDialog slúži na zobrazenie dialógu, v prípade, že užívateľovi došiel čas. Vtedy sa automaticky vyhodnotí test a pozastaví sa čas.
+ * @param showTimeUpDialog
+ * @param viewModel
+ */
 @Composable
 fun TimeUpDialog(
     showTimeUpDialog: MutableState<Boolean>,

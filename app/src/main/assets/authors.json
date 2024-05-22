@@ -1,42 +1,47 @@
 [
   {
-    "name": "ANDREJ SLÁDKOVIČ",
-    "about": "Andrej Sládkovič bol slovenský básnik, ktorý sa narodil v roku 1820 a zomrel v roku 1872.",
-    "features": "Romantizmus, láska, príroda"
+    "name": "ANDREJ SLÁDKOVIČ (1820 - 1872)",
+    "about": "Patrí k najkultivovanejším slovenským básnikom. Jemu prvému sa podarilo v novej spisovnej slovenčine vytvoriť ucelené básnické skladby. Jeho básnické skladby Marína a Detvan sa vyznačujú dokonale prepracovanou formou, bohatými a pôsobivými básnickými obrazmi.\n  Marína je vrcholným dielom Andreja Sládkoviča. Je to spev o láske, kráse a mladosti. Básnik v tejto rozsiahlej skladbe oslávil lásku a úprimne vyslovil svoje city.\n  Skladba sa dá rozdeliť na dve časti. V prvej autor vyjadruje túžbu po kráse a spomína na dni plné lásky. Stelesnením krásy je preňho jeho Marína. Jeho láska k dievčine sa postupne prelína s láskou k vlasti:\n\nVlasť drahú ľúbiť v peknej Maríne,\nMarínu drahú v peknej otčine,\na obe v jedno objímať!\n \nĎalšie strofy už vyjadrujú smútok, pretože básnik Marínu stráca. Mladosť nechápe ako fyzický vek, ale ako mladosť duše, túžbu človeka po kráse. Marína sa postupne mení na vidinu, na vílu. Na vrchu Čertova svadba slávia víly tajomnú slávnosť.\n\nPrichádza medzi ne aj Marína, ktorá nemôže zabudnúť na svoju lásku. Zúfalý hrdina blúdi popri Hrone a Marína-víla ho vábi do vodných hlbín. Básnik však premôže žiaľ, zvíťazí v ňom láska k rodnému kraju a k pozemskému životu. Záver skladby nevyznieva tragicky, nie je v nej už ani bolesť, ani trpkosť, iba spomienka na krásnu lásku.",
+    "features": "Romantizmus, láska a vlastenectvo, reflexia slovenského národného obrodenia"
   },
   {
-    "name": "DOBROSLAV CHROBÁK",
-    "about": "Dobroslav Chrobák bol slovenský spisovateľ, ktorý sa narodil v roku 1928 a zomrel v roku 2010.",
-    "features": "Príbehy, poviedky, rozprávky"
+    "name": "DOBROSLAV CHROBÁK (1907 - 1951)",
+    "about": "Pochádza z Liptova. Bol elektrotechnický inžinier. Pracoval v rozhlase a učil na Vysokej škole technickej v Bratislave. Písal poviedky, zaoberal sa aj o teóriu literatúry. Bol spoluautorom diela Rukoväť dejín slovenskej literatúry. Z jeho prvotín je najznámejšia zbierka ôsmich noviel Kamarát Jašek. Tieto poviedky nesú prvky reality a dávnych mýtov vidieckeho sveta prírody.\n\nAutor sa ponoril do vnútorného sveta postavy a jej vzťah k okolitému svetu. Ďalším dielom je Návrat Ondreja Baláža. Najlepším Chrobákovím dielom je rozsiahla novela Drak sa vracia. Mestskú tematiku spracoval v dielach Silueta, Učenlivá Marta a starostlivá Mária.",
+    "features": "Realizmus s lyrickými prvkami, dedinské prostredie, psychologická hĺbka postáv"
   },
   {
-    "name": "DUŠAN DUŠEK",
-    "about": "Dušan Dušek bol slovenský spisovateľ, ktorý sa narodil v roku 1928 a zomrel v roku 2007. Bol známy svojimi príbehmi, poviedkami a rozprávkami.",
-    "features": "Príbehy, poviedky, rozprávky"
+    "name": "DUŠAN DUŠEK (1946)",
+    "about": "Predstaviteľ modernej prózy 20. storočia, jeden zo spisovateľov, ktorý odmieta opisný, nie však magický realizmus. Inšpiráciu hľadal v J. D. Salingerovi, J. L. Borgesovi, J. Cortázarovi, J. Joyceovi a ďalších, s ktorými ho spája nekonformnosť.\n\nD. Dušek zostavil antalógiu Srdcovky o svojich obľúbených autoroch, ktorými sa inšpiroval. Boli to napr. Joyce, Salinger, Borges, Cortázar. Aj u Dušeka, podobne ako u Joycea, sa stretávame s formou vnútorného monológu, nazývaným prúd vedomia. Jeho podstatou je zachytenie myšlienok v okamihu ich zrodu na princípe asociácií. Charakteristické pre oboch bolo oslabovanie deja, nebol pre nich dôležitý iba celok, ale aj časti, detaily, fragmenty. Obaja spisovatelia sú predstaviteľmi modernej prózy 20. storočia. So Salingerom mali spoločnú nonkonformnosť - Dušek sa tiež nevenoval požadovaným témam, ale písal napr. o súkromí, intimite. Podobne ako Borges bol aj Dušek náruživým čitateľom kníh a pozeral sa na svet ich očami. S Cortázarom mali spoločné to, že odmietali opisný realizmus a boli predstaviteľmi magického realizmu, v ktorom je dôležitá fantázia, snovosť, imaginácia.",
+    "features": "Humor a irónia, každodenný život, lyrická próza, prírodné motívy"
   },
   {
-    "name": "EMIL BOLESLAV LUKÁČ",
-    "about": "Emil Boleslav Lukáč bol slovenský spisovateľ, ktorý sa narodil v roku 1928 a zomrel v roku 2007.",
-    "features": "Príbehy, poviedky, rozprávky"
+    "name": "EMIL BOLESLAV LUKÁČ (1900 - 1979)",
+    "about": "Predstaviteľ novej generácie. Jeho prvotina Spoveď sa niesla v znamení smútku, ktorý pramenil zo závislosti na domove. Jeho sklony k pesimizmu vyvierali aj z osobného založenia a vlastnej životnej skúsenosti. Druhá Lukáčova zbierka Dunaj a Seina je významovo osnovaná na protiklade domova a sveta, dediny a mesta, rodného kraja a cudziny. V básni Taedium urbis (Hnus z mesta) sa napätie medzi oboma pólmi vystupňuje na maximum. Tretia zbierka O láske neláskavej. V tejto zbierke sa uviedol ako básnik silného erotického citu a vášne. Jeho ľúbostná lyrika je obrazom lásky i nenávisti, očarenia i blúdenia, sebatríznenia plnej paradoxov. Vnútorný dramatizmus silnel u Lukáča každou zbierkou. Vyvrcholil v zbierke básní Križovatky. V zbierke Spev vlkov vyslovil svoj protest proti rozbíjačom republiky spoza hraníc. V zbierke Moloch priniesol obraz buržoázie. Zbierka Bábel je zameraná protifašisticky.  ",
+    "features": "Symbolizmus a expresionizmus, náboženské a filozofické témy, vlastenectvo a národná identita"
   },
   {
-    "name": "EŽO VLKOLÍNSKY",
-    "about": "Ežo Vlkolínsky bol slovenský spisovateľ, ktorý sa narodil v roku 1928 a zomrel v roku 2007.",
-    "features": "Príbehy, poviedky, rozprávky"
+    "name": "MARTIN KUKUČÍN (1860 - 1928)",
+    "about": "Martin Kukučín: Narodil sa v sedliackej rodine ako syn Jána Bencúra Juriša a Zuzany, rodenej Paškovej. Mal dvoch bratov a jednu sestru. Vzdelanie získal na slovenskom gymnáziu v Revúcej, Martine a v Banskej Bystrici, gymnázium navštevoval v Kežmarku a dokončil v Šoproni. Chcel sa prihlásiť na teologickú fakultu v Bratislave, no kvôli protislovenskej atmosfére, ktorá na fakulte vládla, sa napokon rozhodol pre štúdium na lekárskej fakulte v Prahe.\nSvojim dielom „Dom v stráni“ založil tradíciu dedinského románu. V začiatkoch tvorby bola pre jeho diela charakteristická groteskno-humoristická štylizácia príbehov, no po roku 1918 sa jeho diela napĺňajú skôr tragicko-nostalgickými a exitencionálnymi starosťami o osud vlastného národa a ľudstva. Pre Kukučínovo dielo je charakteristická viera v človeka - i keď sa Kukučín často posmieva nad obyčajným človekom, či kritizuje spoločenské pomery, stále verí v možnosť nápravy svojich postáv.",
+    "features": "Realizmus, sociálna a psychologická analýza, humor a irónia, humanizmus"
   },
   {
-    "name": "IVAN KRASKO",
-    "about": "Ivan Krasko bol slovenský básnik, ktorý sa narodil v roku 1876 a zomrel v roku 1958.",
-    "features": "Romantizmus, láska, príroda"
+    "name": "IVAN KRASKO (1876 - 1958)",
+    "about": "Ivan Krasko: Ivan Krasko sa stal vedúcim zjavom Slovenskej moderny, básnickej generácie vstupujúcej do slovenskej literatúry začiatkom 20. storočia. Stal sa ním preto, že najhlbšie a umelecky najpriebojnejšie vyslovil drámu moderného človeka. V slovenských časopisoch sa začali objavovať prvé verše neznámeho básnika, podpisujúceho sa skratkou Janko C., neskôr Janko Cigáň, avšak v skutočnosti čítajúce obecenstvo nevedelo, kto sa za týmto pseudonymom skrýva.\n\nBásnické meno Ivan Krasko mu vybral S. H. Vajanský pri uverejnení debutu Nox et solitudo, podľa dediny v blízkosti jeho rodiska. Ivan Krasko, vlastným menom Ing. Ján Botto, sa narodil 12. júla 1876 v gemerskej dedinke Lukovištia. Tvoriť začal už počas stredoškolských štúdií. Navštevoval najprv maďarské gymnázium v Rimavskej Sobote, potom nemecké gymnázium v Sibiu a nakoniec maturoval na rumunskom gymnáziu v Brašove. V r. 1900 – 1905 študoval Krasko odbor technickej chémie na Českej vysokej škole technickej v Prahe.\n\nKaždá jeho lyrická výpoveď mala vo svojom jadre konkrétny zážitok. Lyrickosť, piesňovitosť, baladickosť a hudobnosť sú charakteristickými znakmi Kraskovej lyriky. V jeho veršoch síce stretávame „momenty epičnosti a dramatičnosti“, no majú svojráznu podobu a výrazný lyrický akcent.",
+    "features": "Symbolizmus, intimita a retrospekcia, spoločenská a národná tématika, cit pre prírodu"
   },
   {
-    "name": "JANKO KRÁĽ",
-    "about": "Janko Kráľ bol slovenský básnik, ktorý sa narodil v roku 1822 a zomrel v roku 1876.",
-    "features": "Romantizmus, láska, príroda"
+    "name": "JANKO KRÁĽ (1822 - 1876)",
+    "about": "Narodil sa v 182, zomrel v 1876. Bol to najrevolučnejší básnik, narodil sa v Liptovskom Mikuláši, študoval v Kežmarku, Bratislave, Levoči, pôsobil ako advokátsky pomocník v Budapešti, kde ho zasiahla revolúcia, odišiel do Horných Príbeliec za priateľom Jankom Rottaridesom, spolu burcovali ľud proti šľachte.\n\nStoličný úrad ich dal zlapať a uväzniť, ohlasom na túto skutočnosť je báseň Šahy. Básne Jarná pieseň, Krajinská, Duma dvoch bratov sú ohlasom na revolúciu. Po povstaní bol úradníkom v Balážskych Ďarmotách, v Zlatých Moravciach pôsobil ako sirotský sudca, ako právnik mal na starosti opustené deti. Zomrel tam na týfus.",
+    "features": "Revolučná poézia, téma slobody a spravodlivosti, lyrickosť a dramatickosť"
   },
   {
-    "name": "JOZEF CÍGER HRONSKÝ",
-    "about": "Jozef Cíger Hronský bol slovenský spisovateľ, ktorý sa narodil v roku 1896 a zomrel v roku 1960.",
-    "features": "Príbehy, poviedky, rozprávky"
+    "name": "JOZEF CÍGER HRONSKÝ (1896 - 1960)",
+    "about": "Narodil sa v stredoslovenskej rodine tesárovi Petrovi Pavlovi Cígerovi a Jozefíne Cígerovej, rodenej Markovej. Pochádzal zo siedmich detí, boli štyria bratia a tri sestry. Za manželku si vzal Annu Valériu, rodenú Ružinákovú, s ktorou mal syna Juraja. V rokoch 1902 – 1907 navštevoval ľudový školský odbor vo Zvolene, neskôr pokračoval v rokoch 1907 – 1910 na meštianskej škole v Krupine, a napokon v rokoch 1910 – 1914 dokončil svoje vzdelanie na maďarskom učiteľskom ústave v Leviciach.\n\nZačínal písaním noviel a krátkych próz, ktoré neskôr vyšli v zbierkach U nás, Domov, Medové srdce alebo Podpolianske rozprávky. Vo svojich dielach často opisuje obyčajných slovenských ľudí, často sa vracia i k spomienkam na detstvo, takže niektoré jeho diela sú silne autobiografické. Do svojich diel pre deti zas vkladá dobrodružstvá a učenie o kresťanskej láske.\n\nČasto sa sústreďoval na historickú látku, no väčšinou skĺzol do oblasti legiend, hoci v jeho príbehoch vystupujú reálne postavy z histórie. Taktiež upravoval slovenské ľudové rozprávky, no vytváral aj svoje vlastné, ktoré úplne odbočujú od klasickej schémy ľudových rozprávok, ale skôr dávajú vyniknúť fantázii, humoru, ktoré vytvárajú pre deti svoj vlastný príťažlivý svet. Niektoré jeho diela vyšli v angličtine, maďarčine, češtine, poľštine alebo ruštine.",
+    "features": "Rôznorodý literárny žáner, psychologická hĺbka, národná tématika, exilová literatúra"
+  },
+  {
+    "name": "JÁN BOTTO (1829 - 1881)",
+    "about": "Bol najmladším zo skupiny štúrovských básnikov.\nJeho poézia nadväzuje najmä na tvorbu Sama Chalupku a Janka Kráľa a završuje etapu romantizmu v slovenskej literatúre.\n\nRozsahom jeho dielo nie je veľké, tematicky je však veľmi pestré. Písal alegorické básne, príležitostné básne, ponášky na ľudové piesne, revolučné piesne, balady, veršované rozprávky a povesti i rozsiahlejšie básnické skladby.\n\nHlavným zdrojom jeho poézie bola ľudová slovesnosť. Našiel v nej podnety a pramene pre vlastnú tvorbu. Jeho prvé básne mali charakter ľudových rozprávok a piesní. \n\nCharakteristickou črtou prvých Bottových básní je alegorickosť. Alegorický charakter má aj kratšia skladba Báj na Dunaji, ktorá predstavuje Slovensko ako \"zakliatu krajinu\", čakajúcu na víťaza, ktorý ju oslobodí.\n\nVyvrcholením Bottovej básnickej tvorby bola báseň K mladosti. Tu sa už oslobodil od neskutočného sveta rozprávok. Odsudzuje pasivitu mládeže, burcuje a volá ju do boja za nový, lepší svet. Ďalšími dielami sú balady Ctibor, Žltá ľalia a Margita a Besná.\n\nVrcholným dielom Jána Bottu je lyricko-epická skladba Smrť Jánošíkova, napísaná v porevolučných rokoch. Jánošíka nezobrazuje v bojových, hrdinských situáciách, ako je známy z ľudového podania. Bottov Jánošík už len s trpkosťou spomína na svoj odboj. Vlastným jadrom básne je chytenie Jánošíka, jeho uväznenie a poprava. Celá skladba vyjadruje náladu Bottovej generácie po neúspešnej revolúcii. Ján Botto v tejto skladbe využil ľudovú reč a prostriedky ľudovej slovesnosti, pričom sa mu podarilo spojiť poetiku folklóru s vysokým básnickým majstrovstvom.\n\nV predspeve použil Botto alegóriu matky a detí, svoje verše posiela po Slovensku, ale bojí sa, že nenájdu ohlas, lebo Slovensko je zakliata krajina. Stretú však hôrnych chlapcov. Úvod je oslavou slobodného života. Autor opisuje život hôrnych chlapcov na Kráľovej holi. Dozvedajú sa o zlapaní Jánošíka, uvedomujú si svoj koniec, dohára aj vatra – symbol slobodného života. Jánošíka nepremohla sila, ale zrada. Do väzenia k nemu prichádza duša ľudu a lúči sa sním. V noci Jánošík sníva sen o mladosti a slobode. Vysvetľuje, že zbíjal kvôli pravde, kladie však otázku, či kradol viac on, alebo páni. Pred popravou ho kňaz vyzýva, na modlitbu, no on mu odpovie, aby sa modlil za ľud. Po poprave smúti nebo i zem a celá krajina je ako zakliata. Ľud si rozpráva povesti o Jánošíkovi, ktorý sa preň stáva symbolom slobody. V závere sa Jánošík ožení s kráľovnou víl – symbolom slobody.",
+    "features": "Romantizmus, ľudová inšpirácia, tématika slobody a revolúcie, lyrickosť a melanchólia"
   }
 ]

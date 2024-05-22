@@ -18,6 +18,11 @@ import com.example.maturant.topics.DetailScreen
 import com.example.maturant.viewModels.MaturitaViewModel
 
 
+/**
+ * MainActivity
+ * MainActivity slúži ako prvotná aktivita aplikácie, ktorá obsahuje navigáciu medzi jednotlivými obrazovkami.
+ * @constructor - Vytvára aktivitu
+ */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

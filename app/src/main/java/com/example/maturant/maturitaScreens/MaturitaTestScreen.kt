@@ -44,7 +44,12 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.maturant.ui.theme.AppColors
 
 
-
+/**
+ * MaturitaTestScreen
+ * MaturitaTestScreen slúži na zobrazenie obrazovky s maturitnými testami.
+ * @param navController - Parameter NavController slúži na navigáciu pomocou NavControllera, aby bolo možné sa presúvať zo screeny naspäť a sem.
+ * @param viewModel - Parameter viewModel slúži na zdieľanie dát medzi jednotlivými obrazovkami, načítavanie testov, či uchovávanie viacerých stavov, zároveň aj ukladá odpovede a vyhodnocuje ich.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MaturitaTestScreen(navController: NavController, viewModel: MaturitaViewModel = viewModel()) {
@@ -83,7 +88,7 @@ fun MaturitaTestScreen(navController: NavController, viewModel: MaturitaViewMode
         },
         content = { innerPadding ->
             LazyColumn(modifier = Modifier.padding(innerPadding)) {
-                items(listOf("2017", "2018", "2019", "2022", "2023", "2024")) { year ->
+                items(listOf("2018", "2019", "2022", "2023", "2024")) { year ->
                     YearItem(year = year, onClick = {
                         viewModel.onYearClick(year)
                     })
@@ -93,6 +98,12 @@ fun MaturitaTestScreen(navController: NavController, viewModel: MaturitaViewMode
     )
 }
 
+/**
+ * YearItem
+ * YearItem je jednoduchý composable element ktorý slúži na zobrazenie jednotlivých rokov testov v políčkach.
+ * @param year - Parameter year slúži na zobrazenie konkrétneho roka testu.
+ * @param onClick - Parameter onClick slúži na zavolanie funkcie, ktorá sa vykoná pri kliknutí na daný rok.
+ */
 @Composable
 fun YearItem(year: String, onClick: () -> Unit) {
     Card(
@@ -121,9 +132,16 @@ fun YearItem(year: String, onClick: () -> Unit) {
     }
 }
 
+/**
+ * TimerSetupDialog
+ * TimerSetupDialog slúži na zobrazenie dialógu, ktorý umožňuje nastaviť časovač pre daný rok.
+ * @param year - Parameter year slúži na zobrazenie konkrétneho roka testu, aby bolo užívateľovi jasné na aký rok nastavuje časovač.
+ * @param navController - Parameter navController slúži na navigáciu pomocou NavControllera, aby bolo možné sa presúvať zo screeny naspäť a sem.
+ * @param viewModel - Parameter viewModel slúži na zdieľanie dát medzi jednotlivými obrazovkami (v tomto prípade dialog).
+ */
 @Composable
 fun TimerSetupDialog(year: String, navController: NavController, viewModel: MaturitaViewModel) {
-    var minutesText by remember { mutableStateOf("60") }
+    var minutesText by remember { mutableStateOf("90") }
     var secondsText by remember { mutableStateOf("0") }
 
     AlertDialog(

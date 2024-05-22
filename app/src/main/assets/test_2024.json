@@ -1,80 +1,613 @@
 {
   "tests": [
     {
-      "year": "2022",
+      "year": "2024",
       "sections": [
         {
           "sectionId": 1,
-          "text": "Alexander Sergejevič Puškin – Desiate prikázanie\nMajetok cudzí v úcte mať\nkáže nám zákon vekmi vžitý;\nnemať tak, bože, nežné city,\nvedel by som ho dodržať.\nUkrátiť blížneho, to nikdy,\nnechcem ja jeho statky, dom,\nnevoľníkov, dvor s dobytkom:\nodo mňa nedočká sa krivdy,\nnech si to všetko, všetko má.\nNo ak má doma peknoočku\nnevoľnú, bože, krádež bozku\ndovolí mi hlas svedomia.\nA ak sa zavše aj tak stane,\nže milú družku vidím s ním,\nodpusť mi, že mu závidím\nanjela jeho, kristepane.\nVeď môžeš srdcu rozkázať?\nKto nie je rabom zvodnej chvíle?\nJak nemilovať, čo je milé?\nNa svete raj si nežiadať?\nHľadím a trpím neprestajne,\nno prísny zákon ctiť si viem,\nzavraciam srdce: skrotni, driem –\nmlčím… a vzdychám, blčím tajne.",
+          "text": "Ak beháte s hudbou, pohyb je efektívnejší a zrejme ste aj rýchlejší,\nnaznačuje nový výskum\n(upravené)\n Nová štúdia o behu naznačuje, že čím viac sa pri pohybe sústredíme na to, ako ho vykonávame, tým je pre nás namáhavejší. Len čo však nájdeme určité rozptýlenie, vynaložené úsilie bude pre naše telo menej náročné – subjektívne aj objektívne. Tvrdia to vedci z Iránu a z USA, ktorí\npracovali so skupinou 27 žien. Každá z __________ absolvovala na bežeckom páse štyri behy, zakaždým so sústredením sa na niečo iné. Pri zameraní sa na vlastný pohyb účastníčky výskumu pociťovali vyššiu námahu aj únavu. Keď pri rovnakom behu sledovali video, unavili sa menej. Nešlo však len o subjektívny pocit. Nižšia únava sa priaznivo odzrkadlila aj na ukazovateľoch, ktoré počas behu mapovali stav organizmu. Napríklad na nižších hodnotách laktátu či efektívnejšej spotrebe kyslíka. Závery výskumu sú v protiklade s tým, čo tréneri často odporúčajú začínajúcim bežcom. Kážu im, aby sa sústredili na správne dýchanie, vnímali údery srdca a kontrolovali prácu nôh. Zdá sa však, že to môže byť kontraproduktívne. Štúdia by mohla byť aj podporným dôkazom pre takzvanú hypotézu obmedzenej akcie. Ide o teóriu, ktorá naznačuje, že v prípade, ak naše telo vykonáva naučený pohyb podvedome, je pri tejto činnosti efektívnejšie, ako keď telo vedome kontrolujeme.\nPeter Kováč, 16. 11. 2021, dennikn.sk ",
           "questions": [
             {
-              "questionText": "Básnik v básni desiate prikázanie",
+              "questionText": "Ktoré tvrdenie vyplýva z ukážky 1?",
               "options": [
-                "nepovažuje túžbu po priateľovej družke za porušenie desiateho prikázania",
-                "nevedel odolať pokušeniu a pobozkal priateľovu manželku.",
-                "potlačil svoje osobné city a nenaplnil svoju skrytú túžbu.",
-                "sa rovnako správa k všetkým ženám bez ohľadu na ich postavenie."
+                "Človek, ktorý sa pri vykonávaní pohybovej aktivity zameriava na svoju techniku pohybu, býva vyčerpanejší",
+                "Športoví tréneri odporúčajú profesionálnym bežcom zamerať sa na efektívnu spotrebu kyslíka a kontrolu pohybu.",
+                "Tvrdenie, že bežci využívajúci pri pohybe isté rozptýlenie vynaložia menšie úsilie, je čisto subjektívne",
+                "Výsledky výskumu, ktorý sa uskutočnil na vzorke 27 žien, sú v rozpore s teóriou obmedzenej akcie"
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Hlavnou funkciou ukážky 1 je",
+              "options": [
+                "pôsobiť na čitateľskú verejnosť esteticky.",
+                "nabádať čitateľa k zdravému životnému štýlu",
+                "komunikovať s odbornou verejnosťou.",
+                "oboznámiť čitateľa so zaujímavými skutočnosťami."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti je správny prepis číslovky zo slovného spojenia so skupinou 27 žien\nz ukážky 1?",
+              "options": [
+                "dvadsiatich siedmich",
+                "dvadsiatichsiedmych",
+                "dvadsiatich siedmych",
+                "dvadsať sedem"
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Čo majú spoločné slová „srdca“ a „nôh“ z nasledujúceho súvetia?\n Kážu im, aby sa sústredili na správne dýchanie, vnímali údery srdca a kontrolovali\nprácu nôh.",
+              "options": [
+                "Patria k plnovýznamovým neohybným slovám",
+                "Majú rovnaké všetky morfologické kategórie.",
+                "Zastávajú funkciu rovnakého vetného člena.",
+                "Sú to hlavné vetné členy v danej vete súvetia."
               ],
               "correctAnswer": "C)",
               "type": "CHOICE"
             },
             {
-              "questionText": "V ktorej možnosti sa nachádza metafora?",
+              "questionText": "V ktorej možnosti dochádza vo všetkých slovách k znelostnej asimilácii/spodobovaniu?",
               "options": [
-                "nechcem jeho statky",
-                "majetok v úcte mať",
-                "dvor s dobytkom",
-                "hlas svedomia"
+                "organizmu, vyššia, obmedzenej",
+                "vedci, vlastný, absolvovala",
+                "nižšia, podvedome, pravda",
+                "takzvanú, však, vášho"
               ],
               "correctAnswer": "D)",
               "type": "CHOICE"
             },
             {
-              "questionText": "V ktorej možnosti je uvedený správny počet slabík v nasledujúcom texte?:\nA ak sa zavše aj tak stane, \nže milú družku vidím s ním,\nodpusť mi, že mu závidím\nanjela jeho, kristepane.",
+              "questionText": "Napíšte gramaticky a pravopisne správny tvar slova dobrovoľníčka, ktorý patrí\nna zakryté miesto v ukážke 1",
+              "correctAnswer": "dobrovoľníčok | dobrovolnicok",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Napíšte názov slovného druhu nasledujúceho slova ukážky 1.:\nkontrolujeme",
+              "correctAnswer": "sloveso | slovesa | slovesá | verbum | verbá | verba",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z nasledujúceho textu ukážky 1 slovo cudzieho pôvodu, ktorého lexikálny\nvýznam je: vedecky podložený, ale ešte definitívne nedokázaný názor/predpoklad/\ndomnienka.:\nNešlo však len o subjektívny pocit.\nNižšia únava sa priaznivo odzrkadlila aj na ukazovateľoch, ktoré počas behu mapovali\nstav organizmu. Napríklad na nižších hodnotách laktátu či efektívnejšej spotrebe kyslíka.\n Závery výskumu sú v protiklade s tým, čo tréneri často odporúčajú začínajúcim bežcom.\nKážu im, aby sa sústredili na správne dýchanie, vnímali údery srdca a kontrolovali prácu\nnôh. Zdá sa však, že to môže byť kontraproduktívne.\nŠtúdia by mohla byť aj podporným dôkazom pre takzvanú hypotézu obmedzenej akcie.",
+              "correctAnswer": "hypotézu | hypotéza | hypotezu | hypoteza",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 2,
+          "text": "_________ – Drak sa vracia\n(úryvok, upravené)\n[…]\nDnes vedela, za toľký čas rozležalo sa jej to v hlave, že on jej vlastne nikdy nepatril, pretože nepatril nikomu. Bol vždy sám. Sám proti všetkým, proti nej i proti sebe samému. Ak si niekto mohol robiť nárok na neho, mohol to byť len sám belzebub, vládca pekiel. Len on sám bol svedkom všetkých tých skutkov a myšlienok, čo privodili nešťastie na celú dedinu. Lebo že sa stal nešťastím dediny, bolo už celkom isté. Ohne, povodne, hlad a choroby sprevádzali jeho kroky a boli pamiatkou na jeho prítomnosť. Tak aspoň usúdila dedina a taká musela byť pravda. Veď nikto ani poriadne nevedel, kde sa tu vzal a odkiaľ prišiel. Starý Lepiš Madlušovie našiel ho vraj pred rokmi povyše Boce, keď sa vracal cez Čertovicu z jarmoku v Brezne. Lepiš bol už vtedy napoly slepý, ale jeho kôň, kôň, ktorý bol múdrejší ako teplický richtár, zastal vraj vtedy sám od seba na ceste a nepohol sa, kým gazda nezišiel z voza a nenahmatal podľa hlasu v tme vedľa cesty uzimené, drobné tielko. Nik nevie, ako vtedy starý Lepiš kalkuloval, jedni vravia, že si chcel iba vychovať z chlapca opatrovníka, iní tvrdia, že vedľa decka našiel i plný mešec dukátov. Dosť na tom, stihol ho ešte vyučiť svojmu remeslu a v dedine sa o ňom dozvedeli až potom, keď už bol hrnčiar načisto slepý a keď ho chlapča vodilo za ruku do krčmy a do sklepa.",
+          "questions": [
+            {
+              "questionText": "Ktoré tvrdenie vyplýva z ukážky 2?",
               "options": [
-                "9, 9, 8, 8",
-                "9, 8, 8, 9",
-                "8, 9, 9, 8",
-                "9, 8, 9, 8"
+                "Ľudia zabraňovali Drakovi vrátiť sa.",
+                "Ľudia odsudzovali Draka za inakosť.",
+                "Starý Lepiš zatajil Drakov pôvod.",
+                "Starý Lepiš bol vypočítavý človek."
               ],
               "correctAnswer": "B)",
               "type": "CHOICE"
             },
             {
-              "questionText": "V ktorej možnosti sa nachádza epiteton z básne Desiate prikázanie?",
+              "questionText": "Ktorá myšlienka nesúvisí s vyznením celého diela Drak sa vracia?",
               "options": [
-                "anjela jeho",
-                "zvodná chvíľa",
-                "majetok cudzí",
-                "prísny zákon"
+                "Najmocnejším preludom je verejná mienka – nikto presne nevie, kto ju vytvára,\nnikto ju nikdy osobne nepoznal, ale mnohí sa ňou nechajú utláčať.",
+                "Ľudia niekedy z pravdy uznávajú málo, z verejnej mienky mnoho.",
+                "Netreba sa báť tých, ktorí majú iný názor, ale tých, ktorí iný názor majú, ale sú\npríliš zbabelí na to, aby ho vyslovili.",
+                "Netráp sa pre mienku ľudí, ak máš svoju predstavu o živote."
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktoré tvrdenie o ukážke 2 je pravdivé?",
+              "options": [
+                "Nenachádza sa v nej pásmo postáv.",
+                "Z hľadiska vnútornej kompozície ide o vyvrcholenie.",
+                "Nenachádza sa v nej pásmo rozprávača",
+                "Z hľadiska vnútornej kompozície ide o obrat."
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti je uvedený znak literárneho smeru, do ktorého zaraďujeme dielo\nDrak sa vracia?",
+              "options": [
+                "Typická pre tento literárny smer je kombinácia viazanej a neviazanej reči.",
+                "V dielach tohto literárneho smeru sa vyskytujú rozprávkové motívy",
+                "Typické pre tento literárny smer je oslavovanie súdobého režimu",
+                "V dielach tohto literárneho smeru sa uplatňujú postupy a prvky drámy."
               ],
               "correctAnswer": "B)",
               "type": "CHOICE"
             },
             {
-              "questionText": "Ktorý druh rýmu použil A. S. Puškin v básni Desiate prikázanie? ",
+              "questionText": "Kto je autorom diela Drak sa vracia?",
               "options": [
-                "striedavý",
-                "združený",
-                "prerývaný",
-                "obkročný"
+                "Milo Urban",
+                "Dobroslav Chrobák",
+                "Peter Jilemnický",
+                "Ladislav Mňačko"
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Pomenujte jednoslovným literárnovedným termínom zvýraznený umelecký prostriedok\nv nasledujúcej vete.:\nTak aspoň „usúdila dedina.“",
+              "correctAnswer": "metonymia | personifikácia | personifikacia | zosobnenie",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z nasledujúcej časti ukážky 2 jedno neohybné slovo, ktorým sa naznačuje, že\nide o reprodukciu výpovede niekoho iného.:\nTak aspoň usúdila dedina a taká\nmusela byť pravda. Veď nikto ani poriadne nevedel, kde sa tu vzal a odkiaľ prišiel. Starý\nLepiš Madlušovie našiel ho vraj pred rokmi povyše Boce, keď sa vracal cez Čertovicu\nz jarmoku v Brezne.",
+              "correctAnswer": "vraj",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Doplňte chýbajúcu časť jazykovedného termínu do nasledujúcej vety.:\nV druhej polovici ukážky 2 dominuje __________ slohový postup.",
+              "correctAnswer": "rozprávací | rozpravaci",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 3,
+          "text": "Umberto Eco – Meno ruže\n(úryvok, upravené)\n„Uhádol si. Nechcel som, aby Malachiáš zomrel. Povedal som mu, aby stoj čo stoj knihu našiel a aby ju doniesol sem, ale aby ju neotváral. Povedal som mu, že má silu tisícich škorpiónov. Ale ten blázon prvýkrát chcel konať na vlastnú päsť. Nechcel som jeho smrť, bol verným vykonávateľom mojich príkazov. Ale nehovor mi, čo vieš, ja viem, že to vieš. Nechcem živiť tvoju pýchu, na to si celkom stačíš ty sám. Dnes predpoludním som v skriptóriu počul, ako sa pýtaš Benedikta na Coena Cypriani. Bol si veľmi blízko k pravde. Neviem, ako si prišiel na tajomstvo zrkadla, ale keď som sa od opáta dozvedel, že si sa pred ním zmienil o finis Africae, bol som si istý, že sem čoskoro prídeš. Preto som ťa čakal. A teraz mi povedz, čo vlastne chceš.“\n„Chcem vidieť,“ povedal Viliam, „posledný rukopis toho zväzku, v ktorom je jeden text arabský, jeden sýrsky a jeden výklad alebo prepis Coena Cypriani. Chcem vidieť tú grécku kópiu napísanú na plátennom pergamene, čiže papieri, ktorý bol vtedy ešte veľmi vzácny a vyrábal sa práve v Silose, neďaleko tvojho rodného Burgosu.“\nVysvetlivky:\nskriptórium – stredoveká pisárska dielňa v kláštoroch alebo v školách",
+          "questions": [
+            {
+              "questionText": "Z ukážky 3 vyplýva, že Viliam hľadá",
+              "options": [
+                "trojzväzkovú knihu s názvom Coena Cypriani.",
+                "tajomnú knihu s tromi originálnymi rukopismi",
+                "text napísaný na siloskom pergamene.",
+                "prepis arabského a sýrskeho textu."
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Viliamov spoločník v rozhovore v ukážke 3 bol s najväčšou pravdepodobnosťou",
+              "options": [
+                "Malachiášov nadriadený.",
+                "Malachiášov vrah.",
+                "Viliamov nadriadený.",
+                "Viliamov konkurent."
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Texty o textoch, fragmentárnosť, prelínanie žánrov a záhada sú znaky typické pre",
+              "options": [
+                "postmodernú literatúru.",
+                "surrealistické diela",
+                "naturalistickú literatúru.",
+                "expresionistické diela."
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza hyperbola z ukážky 3?",
+              "options": [
+                "živiť tvoju pýchu",
+                "konať na vlastnú päsť",
+                "má silu tisícich škorpiónov",
+                "bol si veľmi blízko k pravde"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Slovo blázon je v kontexte ukážky 3",
+              "options": [
+                "zastaraným slovom.",
+                "expresívnym slovom.",
+                "vulgárnym slovom.",
+                "neutrálnym slovom."
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Vypíšte z prvej priamej reči v ukážke 3 jednu nesklonnú číslovku.",
+              "correctAnswer": "prvýkrát | prvykrat ",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Napíšte gramaticky a pravopisne správny tvar genitívu plurálu slova kópia.",
+              "correctAnswer": "kópií | kopii",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Napíšte skloňovací vzor zvýrazneného slova v nasledujúcej vete.\nDnes predpoludním som „v skriptóriu“ počul…",
+              "correctAnswer": "mesto",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 4,
+          "text": "Ivan Bukovčan – Kým kohút nezaspieva\n(úryvok, upravené)\nPRVÉ DEJSTVO\nSiedmy výstup – Fischl a predošlí\n(Do svetla konečne vkročí starší človek, akoby v smútku; čierny kabát, čierny klobúk,\nplstené čierne topánky, tmavé rukavice; ten klobúk takmer nikdy nesníma z hlavy.)\nPANI (užasnuto): Pán Fischl… vy?!\nFISCHL: Dobrý večer, pán učiteľ. (Podáva ruky.) Ruky bozkávam, milostivá pani.\n(Srdečne starcovi.) Dobrý večer, pán Terezčák!\nŠUSTEK: Preboha – nemáte cigaretu?\nFISCHL (zdvorilo): Pre vás, pán doktor, vždycky. (Vytiahne tabatierku.) Aj vy ste mali… ten pech?\nŠUSTEK: Už som sa ponáhľal na stanicu a vtedy ma… (Nervózne si berie cigaretu.) Môžem ešte jednu…?\nFISCHL: Nech sa páči, koľko chcete.\nONDREJ (napäto): A vás… vás chytili až teraz?\nFISCHL: Mňa…? Totiž… (Pauza.) Mňa sem poslali.\nONDREJ: Tak vy nie ste… (Sklamaný.) Ten jedenásty?\nFISCHL (Tomkovi): Pán učiteľ, veliteľ mesta major von Lucas ma požiadal o… istú službu.\nNajprv som odmietol, no potom… (Zaváha, hryzie si peru.)\nTOMKO (čaká): Počúvam, pán Fischl.\nFISCHL (zdráhavo): Keď som sa dozvedel, ktoré osoby boli zaistené…\nŠUSTEK: Zaistené…?\nFISCHL: … respektíve zadržané, potom som už súhlasil, že… no, že sa stanem akýmsi\nprostredníkom medzi vami.\nTOMKO: Vidíte…? (Všetkým povzbudivo.) Nevravel som, že sa to vysvetlí?\nFISCHL: Musím vás, bohužiaľ, informovať o smutnej udalosti… o zákernej vražde, ktorej\nobeťou sa dnes večer stal…\nBABICA: Ten vojak…? To už vieme, pán Fischl!",
+          "questions": [
+            {
+              "questionText": "Ktorá replika z ukážky 4 naznačuje empatický postoj postavy? (empatia – schopnosť\nvciťovať sa do duševných pochodov druhého)",
+              "options": [
+                "ŠUSTEK: Preboha – nemáte cigaretu?",
+                "BABICA: Ten vojak…? To už vieme, pán Fischl!",
+                "ONDREJ: Tak vy nie ste… (Sklamaný.) Ten jedenásty?",
+                "TOMKO: Vidíte…? (Všetkým povzbudivo.) Nevravel som, že sa to vysvetlí?"
               ],
               "correctAnswer": "D)",
               "type": "CHOICE"
             },
             {
-              "questionText": "Do ktorého literárneho smeru sa zaraďuje prevažná časť tvorby A. S. Puškina?",
-              "correctAnswer": "romantizmus | do romantizmu",
+              "questionText": "V diele Kým kohút nezaspieva dominujú prvky",
+              "options": [
+                "nadrealizmu.",
+                "existencializmu.",
+                "naturizmu.",
+                "impresionizmu."
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Názov diela Kým kohút nezaspieva je odkazom na",
+              "options": [
+                "biblický text.",
+                "slovenské príslovie.",
+                "antickú bájku.",
+                "hrdinský epos."
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Bukovčan nasledujúcu scénickú poznámku neadresoval:\n(Do svetla konečne vkročí starší človek, akoby v smútku; čierny kabát, čierny klobúk,\nplstené čierne topánky, tmavé rukavice; ten klobúk takmer nikdy nesníma z hlavy.)",
+              "options": [
+                "kostymérkam.",
+                "divákom.",
+                "režisérovi.",
+                "hercovi."
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktoré tvrdenie o diele Kým kohút nezaspieva je pravdivé?",
+              "options": [
+                "Inscenáciu tejto divadelnej hry realizuje činoherný súbor.",
+                "Dielo ako celok zaraďujeme k tragikomédiám",
+                "Dielo ako celok zaraďujeme do absurdnej drámy",
+                "Inscenáciu tejto divadelnej hry realizuje kabaretný súbor."
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorá postava z ukážky 4 chýbala v šiestom výstupe prvého dejstva?",
+              "correctAnswer": "Fischl | pán Fischl | pan Fischl ",
               "type": "FILL_IN"
             },
             {
-              "questionText": "Vypíšte z básne Desiate prikázanie plnovýznamové zložené slovo.",
-              "correctAnswer": "peknoočku | peknoočka",
+              "questionText": "Pomenujte syntaktickú konštrukciu, ktorá je v nasledujúcej vete čiarkou odčlenená\nod pozdravu.:\nRuky bozkávam, milostivá pani.",
+              "correctAnswer": "oslovenie",
               "type": "FILL_IN"
             },
             {
-              "questionText": "Vypíšte z básne Desiate prikázanie vokalizovanú predložku.",
-              "correctAnswer": "odo",
+              "questionText": "Napíšte počet osôb zadržaných pre vraždu vojaka v diele Kým kohút nezaspieva.",
+              "correctAnswer": "10 | desať | desat",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 5,
+          "text": "Taťjana Lehenová – Vybraná spoločnosť\nDostala som chuť\nna malý spoločenský večer;\nlen pre vybranú spoločnosť.\nNa dvere vešiam ceduľky:\nNerušiť!\nNie sme doma,\nspíme a maľujeme!\nZatvorené pre všetkých!\nUž sa teším, ako si zapálim sviečku,\npustím hudbu celkom tichučko,\nnalejem pohár červeného\na s knižkou,\npoloženou len tak ledabolo pri ruke,\nzačnem rozhovor s pozvanými –\nobrátená do seba.",
+          "questions": [
+            {
+              "questionText": "Žena v básni z ukážky 5",
+              "options": [
+                "vyhľadáva dobrú spoločnosť.",
+                "organizuje večierok pre známych.",
+                "strávi večer osamote.",
+                "sa venuje maľovaniu."
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Slovo malý možno pri zachovaní vyznenia básne z ukážky 5 nahradiť\nslovom",
+              "options": [
+                "útly.",
+                "komorný.",
+                "drobný",
+                "banálny."
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Vybranú spoločnosť v ukážke 5 predstavujú",
+              "options": [
+                "pozvaní blízki.",
+                "hudba a čítanie",
+                "prítmie a poézia.",
+                "vlastné myšlienky."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktoré tvrdenie o ukážke 5 je pravdivé?",
+              "options": [
+                "Predstavuje básnické pásmo.",
+                "Je v nej dôsledne dodržaný rytmicko-syntaktický paralelizmus.",
+                "Je organizovaná stroficky.",
+                "Obsahuje anaforu a inotaj."
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Čím je posledný verš ukážky 5 z významového hľadiska?",
+              "options": [
+                "motívom diela",
+                "pointou básne",
+                "témou básne",
+                "rozuzlením deja"
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Doplňte do nasledujúcej vety správny jazykovedný termín.\nPomlčka v závere ukážky 5 signalizuje recitátorovi _________ prestávku/pauzu.",
+              "correctAnswer": "dramatickú | dramaticku | významovú | vyznamovu | logickú | logicku | dramatická | dramaticka | významová | vyznamova | logická | logicka",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Napíšte jednoslovný literárnovedný termín pomenúvajúci literárny druh ukážky 5.",
+              "correctAnswer": "lyrika ",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Napíšte názov verša/veršového systému využitého v ukážke 5.",
+              "correctAnswer": "voľný | volny",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 6,
+          "text": "Karl Vocelka – Habsburgovci v dejinách\n(úryvok, upravené)\nAké stopy zanechal dvor Habsburgovcov v obchodnom svete mesta Viedeň?\n Vďaka zásobovaniu dvora boli mnohí majitelia podnikov vyznamenaní titulom c. a k. dvorný dodávateľ; niektoré z nich, ako kaviareň Demel alebo hotel a  reštaurácia Sacher, sa stali nostalgickými atrakciami. Dvor vo Viedni bol nielen panovnícke centrum a od 18. storočia najmä byrokratický veľkopodnik, ale aj miesto, kde sa spotrebovalo veľké množstvo tovaru. Napríklad denne sa pripravovalo 500 porcií raňajok a obed pre 2 000 zamestnancov dvora. Preto bola s dvorom hospodársky úzko spojená veľká skupina Viedenčanov a osôb zo širokého okolia. Od roku 1782 sa pre týchto ľudí používal titul cisársko-kráľovský dodávateľ, od roku 1867 sa nazývali c. a k. dvornými dodávateľmi. Boli to obchodníci a podnikatelia so zvláštnou cisárskou výsadou. Smeli dodávať na cisársky dvor a túto činnosť aj verejne oznamovať, čo pre každý taký podnik znamenalo istý druh „pečate kvality“. Iba vo Viedni bolo viac ako 500 dvorných dodávateľov, okrem toho mali tento titul aj mnohé podniky v Ischli, Budapešti, v Karlových Varoch alebo v Prahe, ako aj v zahraničí (dokonca v krajinách ako Brazília, Egypt a Japonsko). Na konci monarchie bolo už 1223 dvorných dodávateľov. Skupiny týchto vyznamenaných dodávateľov sa nachádzali vo všetkých odvetviach a pri prechádzke viedenským vnútorným mestom sa nájde ešte veľa firemných štítov, ktoré na to poukazujú.",
+          "questions": [
+            {
+              "questionText": "Ktoré tvrdenie vyplýva z ukážky 6?",
+              "options": [
+                "Názov c. a k. dvorný dodávateľ mohli používať držitelia ocenenia kvality.",
+                "Názov c. a k. dvorný dodávateľ mohli používať hlavne viedenskí podnikatelia",
+                "Významní dodávatelia panovníckeho dvora boli aj z potravinárskeho odvetvia",
+                "Významnými dodávateľmi panovníckeho dvora boli výrobcovia vývesných štítov."
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V čase vzniku titulu cisársko-kráľovský dodávateľ sa na území Slovenska rozvíjala",
+              "options": [
+                "romantická literatúra.",
+                "renesančná literatúra.",
+                "klasicistická literatúra.",
+                "baroková literatúra."
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti platia obidva znaky pre text ukážky 6?",
+              "options": [
+                "rečnícke prvky, vedecká parafráza",
+                "monotematickosť, nesúvislý text",
+                "množstvo údajov, súvislý text",
+                "obraznosť, vedecká citácia"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Slovo dodávateľ",
+              "options": [
+                "vzniklo kombináciou skladania a odvodzovania.",
+                "vzniklo prenesením základného významu slova.",
+                "obsahuje tri slovotvorné základy",
+                "obsahuje slovotvornú predponu a príponu"
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti je gramaticky a pravopisne správny tvar vzťahového prídavného mena?",
+              "options": [
+                "portréty habsburských panovníkov",
+                "portréty Habsburských panovníkov",
+                "portréty habsburgských panovníkov",
+                "portréty Habsburgských panovníkov"
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Napíšte gramaticky a pravopisne správne obyvateľské meno mužského obyvateľa Prahy",
+              "correctAnswer": "Pražan | prazan",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Koľko slovesných podstatných mien sa nachádza v nasledujúcej časti ukážky 6?:\nVďaka zásobovaniu dvora boli mnohí majitelia podnikov vyznamenaní titulom c. a k. dvorný dodávateľ; niektoré z nich, ako kaviareň Demel alebo hotel a  reštaurácia Sacher, sa stali nostalgickými atrakciami.",
+              "correctAnswer": "1 | jedno",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Pomenujte z hľadiska vonkajšej kompozície textu nasledujúcu časť ukážky 6.:\nVďaka zásobovaniu dvora boli mnohí majitelia podnikov vyznamenaní titulom c. a k. dvorný dodávateľ; niektoré z nich, ako kaviareň Demel alebo hotel a  reštaurácia Sacher, sa stali nostalgickými atrakciami.",
+              "correctAnswer": "odsek",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 7,
+          "text": "TEXT A\nInzerát pridaný 10. 03. 2024:\nCestovná kancelária Vodný raj hľadá animátorov do vodáckych letných táborov! Obľubuješ prácu s deťmi a mládežou, leto a vodu, oplývaš technickým a IT nadaním, fyzickou zdatnosťou a dochvíľnosťou; máš skúsenosti z detských letných táborov, ukončené vzdelanie pedagogického, resp. psychologického zamerania a chceš si zarobiť 30 €/deň?\nPošli žiadosť, CV a _______ na: leto2024@vodny-raj.com a my sa určite ozveme!\nTEXT B",
+          "imageUrl": "b_url",
+          "questions": [
+            {
+              "questionText": "Ktorú podmienku CK Vodný raj Ondrej na základe ukážky 7 pravdepodobne spĺňa?",
+              "options": [
+                "Ukončené pedagogické vzdelanie.",
+                "Skúsenosti z letných táborov.",
+                "Dochvíľnosť, technické zručnosti.",
+                "Dobrá telesná kondícia."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorá možnosť patrí na zakryté miesto v texte A?",
+              "options": [
+                "motivačný list",
+                "lekársku správu",
+                "cielený rozhovor",
+                "správu o výsledku projektu"
+              ],
+              "correctAnswer": "A)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Taliančina patrí do rovnakej jazykovej skupiny indoeurópskych jazykov ako",
+              "options": [
+                "dánčina.",
+                "nemčina.",
+                "rumunčina",
+                "bulharčina"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej možnosti sa nachádza vokalizovaná predložka?",
+              "options": [
+                "za kladné vybavenie",
+                "na osobnom pohovore",
+                "dorozumiem sa aj po maďarsky",
+                "skúsenosti so spoluorganizovaním"
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Text B patrí do tej istej skupiny slohových útvarov/žánrov ako",
+              "options": [
+                "prívet",
+                "výklad.",
+                "recenzia.",
+                "reklamácia"
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý typ životopisu tvorí prílohu Ondrejovej žiadosti? Doplňte do nasledujúcej vety\nsprávne slovo.:\nV prílohe posielam svoj ______ životopis",
+              "correctAnswer": "štrukturovaný | strukturovany | úradný | uradny | administratívny | administrativny",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Nahraďte slovo „v škôlke“ v texte B združeným pomenovaním.",
+              "correctAnswer": "materskej škole | materskej skole | materská škola | materska skola",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Do ktorého jazykového štýlu patrí text B?",
+              "correctAnswer": "do administratívneho | do administrativneho | úradného | uradneho | administrativny | administratívny | úradný | uradny",
+              "type": "FILL_IN"
+            }
+          ]
+        },
+        {
+          "sectionId": 8,
+          "text": "Johann Wolfgang Goethe – Utrpenie mladého Werthera\n(úryvok, upravené)\n16. júna\n Prečo Ti nepíšem? – Spytuješ sa, hoci patríš k učeným ľuďom. Mal si uhádnuť, že sa mám dobre a že… Slovom, nadviazal som známosť, ktorá mi hlbšie zasiahla srdce. Mám… ja neviem. Bude ťažké vyrozprávať Ti poporiadku, ako sa stalo, že som spoznal jednu z najroztomilejších stvoričiek. Teším sa tomu a som šťastný, a preto asi nebudem vedieť všetko pravdivo opísať. Poznal som anjela! – Fuj! Veď to vraví každý o svojej vyvolenej, všakver? A predsa nie som schopný napísať Ti, aká je dokonalá a prečo je dokonalá; slovom, celkom mi zaujala myseľ. Taká čistá duša a taký um, toľká dobrota a taká rozhodnosť a taká vyrovnanosť v každodennom živote a v práci!\n To všetko, čo Ti tu o nej vravím, sú nesmierne, hlúpe táraniny, úbohé abstraktnosti, ktoré nevystihujú ani jedinú črtu jej bytosti. Nabudúce… Nie nabudúce, hneď teraz Ti to chcem vyrozprávať. Ak to nespravím teraz, nestane sa to nikdy. Lebo, medzi nami, odvtedy, čo som začal písať, chcel som už tri razy položiť pero, dať si osedlať koňa a rozbehnúť sa za ňou. A hoci som sa dnes ráno zaprisahal, že k nej nepôjdem, podchvíľou pristupujem k obloku, aby som pozrel, ako vysoko je ešte slnce.",
+          "questions": [
+            {
+              "questionText": "V nasledujúcej časti ukážky 8 prevládajú prvky:\nTo všetko, čo Ti tu o nej vravím, sú nesmierne, hlúpe táraniny, úbohé abstraktnosti, ktoré nevystihujú ani jedinú črtu jej bytosti. Nabudúce… Nie nabudúce, hneď teraz Ti to chcem vyrozprávať. Ak to nespravím teraz, nestane sa to nikdy. Lebo, medzi nami, odvtedy, čo som začal písať, chcel som už tri razy položiť pero, dať si osedlať koňa a rozbehnúť sa za ňou. A hoci som sa dnes ráno zaprisahal, že k nej nepôjdem, podchvíľou pristupujem k obloku, aby som pozrel, ako vysoko je ešte slnce.",
+              "options": [
+                "opisu.",
+                "výkladu.",
+                "charakteristiky.",
+                "úvahy."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktoré tvrdenie o Wertherovi vyplýva z ukážky 8?",
+              "options": [
+                "Prežíva neopätovanú lásku.",
+                "Je nešťastne zamilovaný.",
+                "Vyjadruje obdiv dievčine.",
+                "Výstižne opisuje dievčinu."
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V slovnom spojení „jednu z najroztomilejších stvoričiek“ sa nachádza",
+              "options": [
+                "zvukomaľba.",
+                "nonsens.",
+                "symbol.",
+                "zdrobnenina."
+              ],
+              "correctAnswer": "D)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "V ktorej časti ukážky 8 priznáva Werther vlastnú neobjektívnosť?",
+              "options": [
+                "Prečo ti nepíšem? – Spytuješ sa, hoci patríš k učeným ľuďom. Mal si uhádnuť, že sa\nmám dobre a že… Slovom, nadviazal som známosť, ktorá mi hlbšie zasiahla srdce.",
+                "Bude ťažké vyrozprávať Ti poporiadku, ako sa stalo, že som spoznal jednu\nz najroztomilejších stvoričiek. Teším sa tomu a som šťastný, a preto asi nebudem\nvedieť všetko pravdivo opísať.",
+                "Taká čistá duša a taký um, toľká dobrota a taká rozhodnosť a taká vyrovnanosť\nv každodennom živote a v práci!",
+                "A hoci som sa dnes ráno zaprisahal, že k nej nepôjdem, podchvíľou pristupujem\nk obloku, aby som pozrel, ako vysoko je ešte slnce."
+              ],
+              "correctAnswer": "B)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Ktorý typ priraďovacieho súvetia predstavuje nasledujúca veta?:\nTeším sa tomu a som šťastný.",
+              "options": [
+                "odporovacie",
+                "vylučovacie",
+                "zlučovacie",
+                "stupňovacie"
+              ],
+              "correctAnswer": "C)",
+              "type": "CHOICE"
+            },
+            {
+              "questionText": "Koľko určovacích vetných skladov sa nachádza v nasledujúcej vete?:\nCelkom mi zaujala myseľ.",
+              "correctAnswer": "tri | 3",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Vypíšte z nasledujúcej časti ukážky 8 jedno básnické slovo:\nTo všetko, čo Ti tu o nej vravím, sú nesmierne, hlúpe táraniny, úbohé abstraktnosti, ktoré nevystihujú ani jedinú črtu jej bytosti. Nabudúce… Nie nabudúce, hneď teraz Ti to chcem vyrozprávať. Ak to nespravím teraz, nestane sa to nikdy. Lebo, medzi nami, odvtedy, čo som začal písať, chcel som už tri razy položiť pero, dať si osedlať koňa a rozbehnúť sa za ňou. A hoci som sa dnes ráno zaprisahal, že k nej nepôjdem, podchvíľou pristupujem k obloku, aby som pozrel, ako vysoko je ešte slnce.",
+              "correctAnswer": "slnce",
+              "type": "FILL_IN"
+            },
+            {
+              "questionText": "Doplňte do nasledujúcej vety prvú časť literárnovedného termínu pomenúvajúceho\ntyp rozprávača.\nV ukážke 8 sa uplatnil _______ rozprávač.",
+              "correctAnswer": "priamy | subjektívny | subjektivny",
               "type": "FILL_IN"
             }
           ]

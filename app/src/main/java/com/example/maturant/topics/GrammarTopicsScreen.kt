@@ -23,6 +23,12 @@ import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.topics.dataInfoStructure.CommonComponents.MenuItemContent
 
 
+/**
+ * GrammarTopicsScreen
+ * GrammarTopicsScreen slúži na zobrazenie obrazovky s gramatickými štýlmi.
+ * @param navController - Parameter navController slúži na navigáciu pomocou NavControllera, aby bolo možné sa presúvať zo screeny naspäť a sem.
+ * @param viewModel - Parameter viewModel slúži na zdieľanie dát medzi jednotlivými obrazovkami, načítavanie štýlov, zároveň aj ukladá viaceré stavy.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun GrammarTopicsScreen(navController: NavController, viewModel: SharedViewModel = viewModel()) {

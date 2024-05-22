@@ -2,41 +2,51 @@
   {
     "name": "ADMINISTRATÍVNY ŠTÝL",
     "about": "Administratívny štýl sa vyznačuje formálnym jazykom, ktorý je jasne štrukturovaný a zodpovedá profesionálnemu prostrediu. Je určený pre písanie oficiálnych dokumentov, správ, zápisníc a podobne.",
-    "features": "Vecnosť, stručnosť, Adresnosť, Prehľadnosť"
+    "features": "Vecnosť - využíva nacionálne – pojmové (nepríznakové slová; pojmy – napr. dom, nie domček alebo chatrč, búda); odborné názvy (napr. zmenka, akcia, sociálny príspevok), čo ho približuje k odbornému štýlu. Prináša veľa faktov, vymenúva ich (enumerácia)\nKnižnosť - vete chýba pestrá modalita, vety sú oznamovacie. Využíva (hlavne v právnickej oblasti) komplikované zložené súvetia.\nAdresnosť - administratívne útvary majú konkrétneho príjemcu, adresáta (napr. úradné listy), niektoré sú adresované všetkým občanom štátu alebo mesta (zákony, vyhlášky, upozornenia na stanici, blízko lesa ...)\nStručnosť - útvary podávajú stručnú informáciu bez vysvetľovania (pozvánka)"
   },
   {
-    "name": "VEDECKÝ ŠTÝL",
-    "about": "Vedecký štýl je určený pre písanie vedeckých prác, odborných článkov a podobne.",
-    "features": "Objektívnosť, presnosť, logickosť, formálnosť"
+    "name": "ODBORNÝ ŠTÝL",
+    "about": "Odborný štýl je objektívny štýl verejného styku, ktorý sprostredkúva vedecké informácie, poznatky. Objektívny štýl sa využíva všade tam, kde treba podať nové informácie alebo určité poznatky; tam, kde sa zaznamenávajú dôležité myšlienky nadobudnuté vedeckým výskumom, úvahami, skúsenosťami. Na rozdiel od hovorového sa realizuje po predchádzajúcej príprave a chýba pri ňom spätná väzba. Vyznačuje sa stereotypnosťou, uniformovanosťou, presnosťou a úplnosťou",
+    "features": "Písomnosť - (niektoré sú ústne – referát, koreferát...) – súvisí s tým neprítomnosť intonácie, konštrukcia viet bezpríznaková, používajú sa zložité vety a súvetné celky, skladba viet je koncentrovanejšia a zomknutejšia\nMonologickosť - podáva ich 1. osoba (plural maiesticus – používa sa aj v bakalárskych a diplomových prácach), monologická povaha je konštituujúcim prvkom tohto štýlu\nVerejnosť - prejav je určený verejnosti, vzťah prijímateľa a autora je vzdialený, preto sa nevyužívajú subjektívne vyjadrovacie prostriedky; využívajú sa termíny, explikácie, odkazovacie zámená\nPojmovosť - používanie združených pomenovaní, texty sú náročné na vnímanie a vyznačujú sa opakovaním termínov, nedostatkom synonymie; v tomto štýle je najvyšší index opakovania slov"
   },
   {
     "name": "PUBLICISTICKÝ ŠTÝL",
-    "about": "Publicistický štýl je určený pre písanie novinových článkov, blogov a podobne.",
-    "features": "Aktuálnosť, zrozumiteľnosť, zaujímavosť, emotívnosť"
+    "about": "Publicistický štýl sa uplatňuje vo sfére žurnalistickej (novinárskej) komunikácie, cieľom je prinášať informácie o aktuálnych udalostiach, poúčať, ovplyvňovať, presviedčať a získavať pre svoj názor čitateľskú verejnosť\nPublicistický štýl na rozdiel od odborného štýlu prispôsobuje náročnosť obsahu a formy priemernej vzdelanostnej úrovni obyvateľstva - musí zabezpečiť všeobecnú zrozumiteľnosť textov, čo nie je podmienkou v náučnom štýle.",
+    "features": "Písomnosť - nedostatok spätnej väzby; členenie textu na titulok, nadtitulok; absencia mimojazykových prostriedkov; pasívne konštrukcie, polovetné konštrukcie; malá frekvencia spojky\nVerejnosť - všeobecná zrozumiteľnosť textov; všeobecný adresát, masmediálny priestor; gramatická nenáročnosť vety, tvarov; jazyková stereotypnosť napr. správ; zaokrúhľovanie číselných údajov; sloveso v tvare 1.os.pl.\nVariabilnosť - bohatstvo tém, kompozičná pestrosť, pestrosť útvarov; málo opakujúcich sa slov\nAktualizovanosť - presvedčivý a pútavý obsah; nevšedné vyjadrovanie – Hotovosť v pohotovosti; prezentácia individuálneho štýlu, hlavne v komentári; neologizmy – módne slová – predvstupové očakávania, ošetriť zákonom; metafory – strhol vedenie na našu stranu; hyperbola – patrí nám svet"
   },
   {
     "name": "HOVOROVÝ ŠTÝL",
-    "about": "Hovorový štýl je určený pre bežnú komunikáciu, napríklad v rozhovoroch, dialógoch a podobne.",
-    "features": "Neformálnosť, prirodzenosť, emotívnosť, spontánnosť"
+    "about": "Hovorový štýl je subjektívny jazykový štýl bežnej komunikácie. Funkciu a využitie má pri komunikácii v neoficiálnom/polooficiálnom styku na pracovisku v záujmovej a súkromnej komunikácii. V hovorovom štýle môžeme použiť rozprávací, informačný a opisný slohový postup, ale okrajovo aj výkladový slohový postup.",
+    "features": "Ústnosť a spontánnosť - používanie nepresných údajov, obrazné pomenovania a frazeologizmy\nKonverzačnosť - dialogická podoba textov, forma rozhovoru\nSúkromnosť - vplyv nárečia a slangu, p oužívanie zastaraných slov, porušovanie pravopisných a výslovnostných noriem\nSituačnosť - neverbálne prostriedky (gestikulácia, mimika, posturika...)"
   },
   {
     "name": "NÁUČNÝ ŠTÝL",
-    "about": "Náučný štýl je určený pre učebnice, učebné texty a podobne.",
-    "features": "Jasnosť, zrozumiteľnosť, prehľadnosť, vecnosť"
+    "about": "Náučný štýl je objektívny odborný štýl. Je to štýl verejných, vedecko-náučných a populárno-náučných jazykových prejavov. Útvary/žánre náučného štýlu môžu mať formu súvislého alebo nesúvislého textu. Využívajú sa v nich výrazové prostriedky spisovného jazyka.\nNáučný štýl je jedným z najnáročnejších jazykových štýlov. Má veľké nároky a požiadavky na adresáta, vyžaduje určitý stupeň vzdelania a poznatkov. Podľa úrovne, náročnosti obsahu a formy sa náučné jazykové prejavy delia na:\n vedecko-náučné\npopulárno-náučné",
+    "features": "Oboznámenie odborného publika s vedeckými objavmi\nVýber relevantných, významných faktorov\nPresná vedecká citácia, argumentácia\nStereotypná štylizácia"
   },
   {
     "name": "REČNÍCKY ŠTÝL",
-    "about": "Rečnícky štýl je určený pre prednášky a verejné prejavy.",
-    "features": "Expresívnosť, emotívnosť, priama komunikácia"
+    "about": "Rečnícky štýl je subjektívno-objektívny štýl využívajúci sa v súkromnej i verejnej komunikačnej sfére. Prostredie môže byť oficiálne (napr. politická reč), polooficiálne (napr. zhromaždenie v práci) i neoficiálne (príhovor na otcovej oslave). Aj v súkromnom rečníckom prejave sa zachovávajú znaky verejnosti, spoločenské pravidlá a odstup. Autorom je rečník. Adresát je verejný, prítomný, tvorí ho väčšinou skupina prijímateľov – publikum. Narozdiel od iných jazykových štýlov (napr. hovorového štýlu) neprechádza rečnícky štýl výraznými zmenami. Aj dnes má podobné znaky, a využíva podobné postupy, ktoré boli súčasťou verejných prejavov antických rečníkov.",
+    "features": "Verejnosť - realizuje sa najmä vo verejnej komunikačnej sfére, no využíva sa aj v súkromí. Používa sa výlučne spisovná forma jazyka\nÚstnosť/písomnosť - prejav má ústnu formu, no väčšina prejavov sa vopred pripravuje písomne a následne sa prednesie. Autor zámerne pracuje s akustickými jazykovými prostriedkami.\nSugestívnosť - adresátom rečníckeho prejavu je vždy skupina poslucháčov - publikum (Vážení prítomní!, Drahí zhromaždení!...)"
   },
   {
     "name": "UMELECKÝ ŠTÝL",
-    "about": "Umelecký štýl je určený pre literárne diela, básne, prózy a podobne.",
-    "features": "Kreativita, emotívnosť, obraznosť, originalita"
+    "about": "Umelecký štýl má dominantnú estetickú funkciu. Má bohatý inventár jazykových prvkov, spisovných a nespisovných prostriedkov (slang, nárečie, expresívna lexika). Má malý index opakovania slov, využíva väčšie množstvo synoným.",
+    "features": "Variabilnosť - variabilná lexika, nepriame pomenovania, variabilita žánrov (antiromán, antidráma)\nMnohoznačnosť - jedno slovo môže vystupovať vo viacerých významoch (oheň - farba, temperament, vlastnosť, láska)\nHovorovosť - má blízko k hovorovému štýlu (expresívne slová, dialektizmy,slang)\nNáznakovosť - signálovosť - autor sa nevyjadruje otvorene, ale necháva priestor na čitateľovu fantáziu, schopnosť dotvoriť text"
   },
   {
-    "name": "CITOSLOVCIA",
-    "about": "Citoslovcia sú slová, ktoré napodobňujú zvuky, ktoré vydávajú rôzne predmety, živočíchy a podobne.",
-    "features": "Zvuková napodobňovnosť"
+    "name": "PODMET",
+    "about": "Zväčša činiteľ deja, nositeľ vlastnosti\nPýtame sa kto? čo?\n\nVyjadrený podmet - je vyjadrený vo vete slovom\nOtec číta. (Kto číta? Otec.)\nDospelí môžu vstúpiť.\nNikto tu nie je.\nPrvý berie všetko.\nFajčiť je tu povolené.\n\nNevyjadrený podmet - nie je vyjadrený vo vete slovom (doplníme si ho do zátvorky), je jasný z kontextu, z tvaru slovesa\n(ona) Včera vôbec nepracovala. (Kto nepracoval? Ona.)\n(my) Nepôjdeme s vami. (Kto nepôjde? My.)\n\nViacnásobný podmet\nŽeny a deti majú prednosť.\nFutbal hrali nielen chlapci, ale aj dievčatá.\nUrobili ste to vy alebo oni.",
+    "features": "Hlavný nositeľ deja - vyjadruje kto alebo čo vykonáva dej alebo v akom stave sa nachádza subjekt vety.\nZhoduje sa s prísudkom - podmet sa zhoduje s prísudkom v rode, čísle a osobe.\nPodmet býva často substantívum alebo zámeno - najčastejšie je podmet vyjadrený podstatným menom (substantívom) alebo zámenom."
+  },
+  {
+    "name": "PRÍSUDOK",
+    "about": "Vyjadruje činnosť, stav, vlastnosť\nPýtame sa, čo niekto robí, čo sa s ním deje (prípadne aký je)\n\nSlovesný prísudok - je vyjadrený slovesom\nJednoduchý slovesný prísudok - je vyjadrený plnovýznamovým slovesom - Otec pracuje. (Čo robí otec? Pracuje.)\nVlasy starého otca šedivejú. (Čo sa deje s vlasmi? Šedivejú.)\n\nZložený slovesný prísudok - je zložený z pomocného a plnovýznamového slovesa\nOna nám nechce poradiť.\nZrazu prestala písať.\nVeď sa predsa musíte snažiť!\n\nMenný (sloveso-menný) prísudok - je zložený zo sponového slovesa (byť, stať sa) a plnovýznamového slovného druhu\nSused sa stal policajtom.\nPeter je zdravý.\nKatka nebola vždy taká.\n\nViacnásobný prísudok\nSused sa stal policajtom alebo záchranárom?\nPrincezná bola nielen krásna, ale aj múdra.\nCesta bola náročná a únavná.\nBude to nepríjemné, ba až odpudzujúce.",
+    "features": "Vyjadruje činnosť, stav alebo vlastnosť podmetu - prísudok informuje o tom, čo podmet robí (činnosť), v akom je stave alebo aké má vlastnosti. Je nositeľom deja vo vete.\nHlavné sloveso vety - prísudok je obyčajne vyjadrený slovesom, ktoré je kľúčovým slovom vety a udáva čas, spôsob, vid a ďalšie slovesné kategórie."
+  },
+  {
+    "name": "VETNÝ ZÁKLAD",
+    "about": "Základný vetný člen jednočlennej vety.\n\nSlovesný vetný základ - je vyjadrený určitým slovesným tvarom\nPrší. Hrmelo.\nPichá ma v boku.\nV škole sa o tom rozprávalo.\nDobre sa mi tu sedí.\nChcelo sa mi plakať.\n\nNeslovesný (menný) vetný základ - nie je vyjadrený určitým slovesným tvarom\nVyjadrený menom: Potraviny.\nVyjadrený príslovkou: Dobre.\nVyjadrený časticou: Samozrejme.\nVyjadrený citoslovcom: Ach!\nVyjadrený neurčitkom: Nerušiť!\nVyjadrený príčastím: Otvorené.",
+    "features": "Základné vetné členy - vetný základ sa skladá z dvoch hlavných vetných členov: podmetu a prísudku.\nJadro vety - vetný základ predstavuje jadro alebo kostru vety, na ktorú sa môžu nadväzovať ďalšie vetné členy (predmet, príslovkové určenia, prívlastky...)\nNezávislosť - vetný základ môže tvoriť samostatnú, zmysluplnú vetu."
   }
 ]

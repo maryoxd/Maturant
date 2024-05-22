@@ -2,7 +2,10 @@ package com.example.maturant.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-
+/**
+ * AppColors
+ * AppColors je objekt ktorý slúži na uchovávanie farieb ktoré sú používané v celej aplikácii.
+ */
 object AppColors {
      val Green: Color
         get() = Color(0xFF5AFF6C)

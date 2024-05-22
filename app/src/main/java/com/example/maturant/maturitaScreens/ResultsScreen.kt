@@ -19,6 +19,12 @@ import com.example.maturant.ui.theme.AppColors
 import java.io.File
 import java.util.Locale
 
+/**
+ * ResultsScreen
+ * ResultsScreen slúži na zobrazenie obrazovky s výsledkami testov pre dané roky, ak užívateľ uložil svoje výsledky.
+ * @param navController - Parameter navController slúži na navigáciu pomocou NavControllera, aby bolo možné sa presúvať zo screeny naspäť a sem.
+ * @param context - Parameter context slúži na získanie súboru s výsledkami testov.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ResultsScreen(navController: NavController, context: Context) {
@@ -104,7 +110,6 @@ fun ResultsScreen(navController: NavController, context: Context) {
             }
         }
     )
-
     if (showDialog) {
         AlertDialog(
             onDismissRequest = { showDialog = false },

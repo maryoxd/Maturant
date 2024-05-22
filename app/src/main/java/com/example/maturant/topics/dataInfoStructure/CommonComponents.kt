@@ -26,8 +26,19 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.maturant.ui.theme.AppColors
 
+
+/**
+ * CommonComponents
+ * CommonComponents slúži na uchovanie spoločných komponentov, ktoré sa používajú v rôznych častiach aplikácie.
+ */
 object CommonComponents {
 
+    /**
+     * BullettPoint
+     * BulletPoint slúži na vytvorenie ikony, ktorá reprezentuje bodový zoznam.
+     * @param icon - Parameter icon slúži ako ikona bodového zoznamu.
+     * @param size - Parameter size slúži ako veľkosť ikony.
+     */
     @Composable
     fun BulletPoint(icon: ImageVector, size: Int) {
         Icon(
@@ -39,6 +50,13 @@ object CommonComponents {
         )
     }
 
+    /**
+     * MenuItemContent
+     * MenuItemContent slúži na vytvorenie komponentu, ktorý reprezentuje položku v menu.
+     * @param text - Parameter text slúži na zobrazenie textu položky.
+     * @param backgroundColor - Parameter backgroundColor slúži na nastavenie farby pozadia položky.
+     * @param onClick - Parameter onClick slúži na zavolanie funkcie po kliknutí na položku.
+     */
     @Composable
     fun MenuItemContent(text: String, backgroundColor: Color, onClick: () -> Unit) {
         Card(

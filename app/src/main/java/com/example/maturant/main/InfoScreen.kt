@@ -22,6 +22,13 @@ import com.example.maturant.ui.theme.AppColors
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
+
+/**
+ * InfoScreen
+ * InfoScreen slúži ako unikátna obrazovka na zobrazovanie základných informácií o programe.
+ * Obsahuje LaunchedEffect na načítanie dát z .txt súborov (info.txt, zdroje.txt) a zobrazuje ich v LazyColumn.
+ * @param navController - slúži na navigáciu pomocou NavControllera, aby bolo možné sa presúvať zo screeny naspäť a sem.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun InfoScreen(navController: NavController) {
@@ -89,7 +96,7 @@ fun InfoScreen(navController: NavController) {
                         Spacer(modifier = Modifier.height(16.dp))
                         TitleBox(title = "ZDROJE PRÁCE", content = content2)
                         Spacer(modifier = Modifier.height(16.dp))
-                        TitleBox(title = "Mário Žilinčík, 2024", content = "")
+                        TitleBox(title = "Mário Žilinčík 2024", content = "")
                     }
                 }
             }
@@ -97,6 +104,12 @@ fun InfoScreen(navController: NavController) {
     )
 }
 
+/**
+ * TitleBox
+ * TitleBox je len jednoduchý Composable element, ktorý slúži na zobrazenie nadpisu a textu.
+ * @param title - Parameter title slúži ako samotný nadpis textu.
+ * @param content - Parameter content slúži ako text ktorý sa vypíše pod nadpis.
+ */
 @Composable
 fun TitleBox(title: String, content: String) {
     Column(
@@ -123,6 +136,13 @@ fun TitleBox(title: String, content: String) {
     }
 }
 
+/**
+ * LoadData
+ * LoadData je funkcia, ktorá slúži na načítanie obsahu súboru z assets.
+ * @param context - Parameter context slúži na získanie kontextu aplikácie.
+ * @param fileName - Parameter fileName slúži na získanie názvu súboru, ktorý sa má načítať.
+ * @return
+ */
 fun loadData(context: Context, fileName: String): String {
     return try {
         val inputStream = context.assets.open(fileName)

@@ -81,7 +81,7 @@
         },
         {
           "sectionId": 2,
-          "text": "Viliam Marčok - Biele miesta v slovenskej literatúre\n(úryvok, upravené)\nNázvom postmoderna sa označuje situácia európskej a americkej literatúry po vyčerpaní\npodnetov tzv. druhých avantgárd (najrôznejšie obmeny konkretizmu v poézii, nový román,\nneorealizmus atď.) alebo modernistických úsilí (ako sa tzv. druhá avantgarda nazýva\nvo Veľkej Británii a v literatúrach oboch Amerík). Toto označenie sa začalo používať v americkej\nliterárnej kritike v šesťdesiatich rokoch (kritik I. Howe začal diskusiu o nových javoch v americkej\nliteratúre v roku 1959), v európskej literárnej kritike sa udomácnilo v 70. rokoch. Predstava\n o postmoderne je veľmi voľná, otvorená aj diskutabilná. Od literárnych smerov avantgardy\nsa postmoderna odlišuje predovšetkýmm tak, že sa nezačala nijakým programovým vyhlásením\na nedosiahla ani ich ideovú a tvarovú vyhranenosť. (Nejde teda o nijaký nový -izmus, a to preto je aj používanie názvu 'postmodernizmus' mätúce!) Vznikala doslova nepozorovane v dielach neraz veľmi rozdielnych autorov, ktorí o sebe ani nevedeli. (Za jeden z jej prúdov sa dnes považuje aj magický realizmus juhoamerickej prózy.)\nJediným jej jednotiacim znakom je prítomnosť vzbury proti akémukoľvek totalitarizmu\n a manifestácia prularizmu života v literárnom diele. Postmoderna je taká literatúra, ktorá\nvystupuje proti akémukoľvej politickému diktátu a všetkým jeho formám v myslení, t. j. proti\nideológii, historickému determinizmu, strohému racionalizmu, technologickému i konzumnému\n prinucovaniu (napr. pásová výroba a reklama), tradíciám, militantnému kolektivizmu, náboženskému fanatizmu atď.",
+          "text": "Viliam Marčok - Biele miesta v slovenskej literatúre\n(úryvok, upravené)\nNázvom postmoderna sa označuje situácia európskej a americkej literatúry po vyčerpaní podnetov tzv. druhých avantgárd (najrôznejšie obmeny konkretizmu v poézii, nový román, neorealizmus atď.) alebo modernistických úsilí (ako sa tzv. druhá avantgarda nazýva vo Veľkej Británii a v literatúrach oboch Amerík). Toto označenie sa začalo používať v americkej literárnej kritike v šesťdesiatich rokoch (kritik I. Howe začal diskusiu o nových javoch v americkej literatúre v roku 1959), v európskej literárnej kritike sa udomácnilo v 70. rokoch. Predstava o postmoderne je veľmi voľná, otvorená aj diskutabilná. Od literárnych smerov avantgardy sa postmoderna odlišuje predovšetkýmm tak, že sa nezačala nijakým programovým vyhlásením a nedosiahla ani ich ideovú a tvarovú vyhranenosť. (Nejde teda o nijaký nový -izmus, a to preto je aj používanie názvu 'postmodernizmus' mätúce!) Vznikala doslova nepozorovane v dielach neraz veľmi rozdielnych autorov, ktorí o sebe ani nevedeli. (Za jeden z jej prúdov sa dnes považuje aj magický realizmus juhoamerickej prózy.)\nJediným jej jednotiacim znakom je prítomnosť vzbury proti akémukoľvek totalitarizmu a manifestácia prularizmu života v literárnom diele. Postmoderna je taká literatúra, ktorá vystupuje proti akémukoľvej politickému diktátu a všetkým jeho formám v myslení, t. j. proti ideológii, historickému determinizmu, strohému racionalizmu, technologickému i konzumnému prinucovaniu (napr. pásová výroba a reklama), tradíciám, militantnému kolektivizmu, náboženskému fanatizmu atď.",
           "questions": [
             {
               "questionText": "Odkedy sa podľa ukážky 2 v kontexte európskej literárnej kritiky používa pojem postmoderná? ",
@@ -140,17 +140,17 @@
             },
             {
               "questionText": "Ktorý slohový postup prevláda v ukážke 2?",
-              "correctAnswer": "výkladový | úvahový | výkladový a úvahový | úvahový, výkladový | výkladový, úvahový",
+              "correctAnswer": "výkladový | úvahový | výkladový a úvahový | úvahový, výkladový | výkladový, úvahový | vykladovy | uvahovy | vykladovy a uvahovy | uvahovy, vykladovy | vykladovy, uvahovy",
               "type": "FILL_IN"
             },
             {
               "questionText": "Ktorý jazykový štýl sa uplatnil v ukážke 2?",
-              "correctAnswer": "náučný | odborný | populárno-náučný",
+              "correctAnswer": "náučný | odborný | populárno-náučný | naucny | odborny | popularno-naucny",
               "type": "FILL_IN"
             },
             {
               "questionText": "Určte druh vedľajšej vety v nasledujúcom súvetí:\nPostmoderna je teda taká literatúra, ktorá vystupuje proti akémukoľvek politickému diktátu.",
-              "correctAnswer": "prívlastková",
+              "correctAnswer": "prívlastková | privlastkova",
               "type": "FILL_IN"
             }
           ]
@@ -216,7 +216,7 @@
             },
             {
               "questionText": "Ktorý druh melódie na konci vety sa uplatňuje v nasledujúcej vete?:\nTeraz bude pukať betón a lietať oceľ.",
-              "correctAnswer": "klesavá | uspokojivá končiaca | konkkluzívna kadencia",
+              "correctAnswer": "klesavá | uspokojivá končiaca | konkkluzívna kadencia | klesava |uspokojiva konciaca | konkluzivna kadencia",
               "type": "FILL_IN"
             },
             {
@@ -226,14 +226,14 @@
             },
             {
               "questionText": "Vypíšte z ukážky 3 ustálené slovné spojenie/vetu, ktoré/á vyjadruje odvahu riskovať úspech či neúspech.",
-              "correctAnswer": "Hop alebo trop... | Hop alebo trop ",
+              "correctAnswer": "Hop alebo trop... | Hop alebo trop",
               "type": "FILL_IN"
             }
           ]
         },
         {
           "sectionId": 4,
-          "text": "Dušan Taragel - Ako vzniká hit: Rozum Rudolfa Slobodu\n(úryvok)\nKeď sa v roku 1982 objavila v kníhkupectvách próza Rozum spisovateľa Rudolfa Slobodu,\nlen málokto tušil že práve vyšlo jedno z kľúčových diel slovenskej literatúry 20. storočia.\nPo desiatich rokoch normalizácie, keď vychádzali len romány plné „pozitívnych“ hrdinov\na budovateľov socializmu či pseudohistorické zlátaniny, sa odrazu vynorilo čosi, čo nebolo\nani pozitívne, ani optimistické, skôr naopak.\nCelý Rozum, až na niekoľko epizód, je silne autobiografický - Sloboda si prestal robiť\nzáznamy vo svojom denníku a namiesto nich voľne písal knihu o svojom živote. Po jej vyjdení sa mnohí neveriacky pýtali: Naozaj ten Sloboda bije svoju ženu? Naozaj býva v akejsi chate nad Devinskou Novou Vsou? Naozaj zabil svojho psa sekerou? Pre mnohých čitateľov bolo toto dielo nestráviteľné a čudovali sa, ako vôbec mohlo vyjsť. Pre iných - a bola to menšina - to bol závan sviežeho vzduchu v slovenskej literatúre.\nJeho rozprávanie je také úprimné a autentické, že slabšie povahy knihu ani nedočítajú, pretože\nsa im zdá nechutná a sebaobnažujúca. Sloboda akoby si v istej chvíli uvedomil, že prekračuje\nhranice, a preto text obzvláštnil vymysleným príbehom akéhosi Jána Hodžu, ktorého zabije manželka Uršuľa. Celý román však stojí na ropzrávaní bezmenného štyridsiatnika, ktorý sa snaží vytvoriť námeť na filmový scenár, pričom rieši rodinné problémy s manželkou trpiacou\nna schizofréniu, dospievajúcou dcérou, susedmi a kolegami v zamestnaní. Samozrejme, že\nnevyrieši nič, skôr naopak - vďaka svojmu „rozumu“ veči ešte viac skomplikuje.",
+          "text": "Dušan Taragel - Ako vzniká hit: Rozum Rudolfa Slobodu\n(úryvok)\nKeď sa v roku 1982 objavila v kníhkupectvách próza Rozum spisovateľa Rudolfa Slobodu, len málokto tušil že práve vyšlo jedno z kľúčových diel slovenskej literatúry 20. storočia. Po desiatich rokoch normalizácie, keď vychádzali len romány plné „pozitívnych“ hrdinov a budovateľov socializmu či pseudohistorické zlátaniny, sa odrazu vynorilo čosi, čo nebolo ani pozitívne, ani optimistické, skôr naopak. Celý Rozum, až na niekoľko epizód, je silne autobiografický - Sloboda si prestal robiť záznamy vo svojom denníku a namiesto nich voľne písal knihu o svojom živote. Po jej vyjdení sa mnohí neveriacky pýtali: Naozaj ten Sloboda bije svoju ženu? Naozaj býva v akejsi chate nad Devinskou Novou Vsou? Naozaj zabil svojho psa sekerou? Pre mnohých čitateľov bolo toto dielo nestráviteľné a čudovali sa, ako vôbec mohlo vyjsť. Pre iných - a bola to menšina - to bol závan sviežeho vzduchu v slovenskej literatúre. Jeho rozprávanie je také úprimné a autentické, že slabšie povahy knihu ani nedočítajú, pretož sa im zdá nechutná a sebaobnažujúca. Sloboda akoby si v istej chvíli uvedomil, že prekračuje hranice, a preto text obzvláštnil vymysleným príbehom akéhosi Jána Hodžu, ktorého zabije manželka Uršuľa. Celý román však stojí na ropzrávaní bezmenného štyridsiatnika, ktorý sa snaží vytvoriť námeť na filmový scenár, pričom rieši rodinné problémy s manželkou trpiacou na schizofréniu, dospievajúcou dcérou, susedmi a kolegami v zamestnaní. Samozrejme, že nevyrieši nič, skôr naopak - vďaka svojmu „rozumu“ veči ešte viac skomplikuje.",
           "questions": [
             {
               "questionText": "V ktorej možnosti je správne uvedený literárny žáner a nosná téma diela Rozum\nspomínaného v ukážke 4? ",
@@ -292,7 +292,7 @@
             },
             {
               "questionText": "Vypíšte z ukážky 4 názov literárneho žánru, ktorý je založený na pravidelných zápisoch.",
-              "correctAnswer": "denník | denníku",
+              "correctAnswer": "denník | denníku | dennik | denniku",
               "type": "FILL_IN"
             },
             {
@@ -302,14 +302,14 @@
             },
             {
               "questionText": "Vypíšte z nasledujúcej vety slovo, ktoré sa v nej v prúde reči spodobuje/znelostne asimiluje:\n...bolo to dielo nestráviteľné a čudovali sa, ako vôbec mohlo vyjsť.",
-              "correctAnswer": "vôbec",
+              "correctAnswer": "vôbec | vobec",
               "type": "FILL_IN"
             }
           ]
         },
         {
           "sectionId": 5,
-          "text": "Alfonz Bednár - Kolíska\n(úryvok, upravené)\nV predposlednej lieskovskej chalupe na hornom konci dediny Zita Černeková počúvala\nrádio. Dvere na kuchyni mala otvorené, obrátené k maličkému dvoru a k betónovému mostíku, tým sa ponad potok chodilo na širokú cestu. Dverami jej do teplej kuchyne zavieval\npríjemný chlad. Rádio mala postavené v kuchyni na pevnej drevenej konzole. To bolo!\nSpomenula si zrazu Zita. Kúpili si rádio, aj oni... Usmiala sa nad spomienkami, ako Černek,\njej muž, spravil z bukového dreva konzolu, pribil ju mocnými klincami na stenu nad veľký\nsivý hubáň. Zita naň pozrela, i na „starú dievku“m na smiešnú a skromnú, nikdy nekvitnúcu kvetinu, ako sa z hubáňa hlboko ťahá hnedolilavými stonkami a sivozelenými tučnými lístkami. Čoskoro bude na dlážke, pomyslela si. Deti už spali a Černek nebol doma.\nZita počúvala večerný program, prenos zo súdu (súd sa konal v meste v ten deň popoludní),\n„Obžalovaný Majerský,“ počúvala z rádia pevný prokurátorov hlas, „podľa výpovedí svedkov\nste rozvratník a sabotér, rozvracali ste družstvo, opovržlivo ste sa vyjadrovali o sovietskych kombajnoch a napomáhali ste kulácke bunky, ktorých cieľom je znemožniť v Temešanoch\nprechod od individuálneho ku kolektívnemu hospodáreniu. Priznávate sa?“ - „Družstvo som\nnerozvracal a nič som nesabotoval,“ počula Zita Černeková Majerského známy, už zahriaknutý\nhlas, „nikdy som nevidel sovietsky kombajn, kulácne bunky som nenapomáhal.“.",
+          "text": "Alfonz Bednár - Kolíska\n(úryvok, upravené)\nV predposlednej lieskovskej chalupe na hornom konci dediny Zita Černeková počúvala rádio. Dvere na kuchyni mala otvorené, obrátené k maličkému dvoru a k betónovému mostíku, tým sa ponad potok chodilo na širokú cestu. Dverami jej do teplej kuchyne zavieval príjemný chlad. Rádio mala postavené v kuchyni na pevnej drevenej konzole. To bolo! Spomenula si zrazu Zita. Kúpili si rádio, aj oni... Usmiala sa nad spomienkami, ako Černek, jej muž, spravil z bukového dreva konzolu, pribil ju mocnými klincami na stenu nad veľký sivý hubáň. Zita naň pozrela, i na „starú dievku“ na smiešnú a skromnú, nikdy nekvitnúcu kvetinu, ako sa z hubáňa hlboko ťahá hnedolilavými stonkami a sivozelenými tučnými lístkami. Čoskoro bude na dlážke, pomyslela si. Deti už spali a Černek nebol doma. Zita počúvala večerný program, prenos zo súdu (súd sa konal v meste v ten deň popoludní),\n„Obžalovaný Majerský,“ počúvala z rádia pevný prokurátorov hlas, „podľa výpovedí svedkov ste rozvratník a sabotér, rozvracali ste družstvo, opovržlivo ste sa vyjadrovali o sovietskych kombajnoch a napomáhali ste kulácke bunky, ktorých cieľom je znemožniť v Temešanoch prechod od individuálneho ku kolektívnemu hospodáreniu. Priznávate sa?“ - „Družstvo som\nnerozvracal a nič som nesabotoval,“ počula Zita Černeková Majerského známy, už zahriaknutý hlas, „nikdy som nevidel sovietsky kombajn, kulácne bunky som nenapomáhal.“.",
           "questions": [
             {
               "questionText": "Ktorú fázu dejovej línie diela Kolíska predstavuje ukážka 5? ",
@@ -368,24 +368,24 @@
             },
             {
               "questionText": "Zmeňte nezhodný prívlastok z nasledujúcej vety na zhodný a napíšte ho:\nDvere na kuchyni mala otvorené.",
-              "correctAnswer": "kuchynské",
+              "correctAnswer": "kuchynské | kuchynske",
               "type": "FILL_IN"
             },
             {
               "questionText": "Ktorý kompozičný postup využil autor pri spomienkach Zity Černekovej na Majerského v diele Kolíska?",
-              "correctAnswer": "retrospektívny | spätný | retrospektíva | retrospektívu",
+              "correctAnswer": "retrospektívny | spätný | retrospektíva | retrospektívu | retrospektivny | spatny | retrospektiva | retrospektivu",
               "type": "FILL_IN"
             },
             {
               "questionText": "Vypíšte z nasledujúceho časti textu ukážky 5 prístavok:\nV predposlednej lieskovskej chalupe na hornom konci dediny Zita Černeková počúvala\nrádio. Dvere na kuchyni mala otvorené, obrátené k maličkému dvoru a k betónovému\nmostíku, tým sa ponad potok chodilo na širokú cestu. Dverami jej do teplej kuchyne zavieval\npríjemný chlad. Rádio mala postavené v kuchyni na pevnej drevenej konzole. To bolo!\nSpomenula si zrazu Zita. Kúpili si rádio, aj oni... Usmiala sa nad spomienkami, ako Černek,\njej muž, spravil z bukového dreva konzolu, pribil ju mocnými klincami na stenu nad veľký\nsivý hubáň.",
-              "correctAnswer": "jej muž",
+              "correctAnswer": "jej muž | jej muz",
               "type": "FILL_IN"
             }
           ]
         },
         {
           "sectionId": 6,
-          "text": "Molière - Mizantrop\n(úryvok)\nALCEST\nTakýto nízky zvyk len odpor vo mne budí,\nhoci mu holduje dosť vašich módnych ľudí,\nveď najviac nenávidím faloš podliakov,\nčo vnucujú sa sľubmi, službou storakou,\nčo v každom objatí sú klzkí, ale sladkí,\nčo z povinnosti trepú samé taľafatky,\nčo bez výberu trúsia vľúdne vyznania,\nči ide o poctivca, či o oplana.\nČo máte z toho, ak vás dneska niekto chváli,\npodkuruje vám, aký ste dokonalý,\na líškavo vám veľkú úctu vysloví,\nkeď zajtra bľaboce to isté lumpovi.\nAk svedomie nám ešte neuspali reči,\ntakáto podlá pocta sa nám prosto prieči.\nStáva sa z nej len lacná, suchá potrava,\nkeď zistíme, že každý tĺk ju dostáva.\nÚcta si žiada výber, schopnosť porovnania –\na nikoho si nectí, kto sa vrtkým klania.\nAj vy ste podľahli tej pliage našich čias,\nnuž medzi priateľov už nechcem rátať vás.\nOdmietam láskavosť, čo na každého padá\na na zásluhy pritom vôbec neprihliada.\nV tom zástupe chcem zostať odlíšený, sám,\npretože ľudským davom zväčša pohŕdam.\nFILINT\nKto žije medzi ľuďmi, musí sa k nim milo\na prívetivo správať – tak už sa to vžilo.\nALCEST\nNemáte, Filint, pravdu: trestal by som hneď\nten obchod s priateľstvom, čo zahanbuje svet..",
+          "text": "Molière - Mizantrop\n(úryvok)\nALCEST\nTakýto nízky zvyk len odpor vo mne budí,\nhoci mu holduje dosť vašich módnych ľudí,\nveď najviac nenávidím faloš podliakov,\nčo vnucujú sa sľubmi, službou storakou,\nčo v každom objatí sú klzkí, ale sladkí,\nčo z povinnosti trepú samé taľafatky,\nčo bez výberu trúsia vľúdne vyznania,\nči ide o poctivca, či o oplana.\nČo máte z toho, ak vás dneska niekto chváli,\npodkuruje vám, aký ste dokonalý,\na líškavo vám veľkú úctu vysloví,\nkeď zajtra bľaboce to isté lumpovi.\nAk svedomie nám ešte neuspali reči,\ntakáto podlá pocta sa nám prosto prieči.\nStáva sa z nej len lacná, suchá potrava,\nkeď zistíme, že každý tĺk ju dostáva.\nÚcta si žiada výber, schopnosť porovnania –\na nikoho si nectí, kto sa vrtkým klania.\nAj vy ste podľahli tej pliage našich čias,\nnuž medzi priateľov už nechcem rátať vás.\nOdmietam láskavosť, čo na každého padá a na zásluhy pritom vôbec neprihliada. V tom zástupe chcem zostať odlíšený, sám, pretože ľudským davom zväčša pohŕdam.\nFILINT\nKto žije medzi ľuďmi, musí sa k nim milo a prívetivo správať – tak už sa to vžilo.\nALCEST\nNemáte, Filint, pravdu: trestal by som hneď ten obchod s priateľstvom, čo zahanbuje svet..",
           "questions": [
             {
               "questionText": "Ktorú ľudskú vlastnosť vyzdvihuje Alcest podľa ukážky 6? ",
@@ -454,14 +454,14 @@
             },
             {
               "questionText": "Vypíšte z nasledujúceho časti textu ukážky 5 vymedzovacie zámeno:\npodkuruje vám, aký ste dokonalý,\na líškavo vám veľkú úctu vysloví,\nkeď zajtra bľaboce to isté lumpovi.\nAk svedomie nám ešte neuspali reči,\ntakáto podlá pocta sa nám prosto prieči.",
-              "correctAnswer": "to isté",
+              "correctAnswer": "to isté | to iste",
               "type": "FILL_IN"
             }
           ]
         },
         {
           "sectionId": 7,
-          "text": "Peter Píšťanek - Rivers of Babylon\n(úryvok, upravené)\nTeraz už Rácz nejedáva zvyšky v ústraní tmavej kotolne. Dennodenne raňajkuje, obeduje\na večeria v hotelovej reštaurácii. Strmo tam vojde, v bagandžiach a s kabelou plnou vercajgu\ncez plece. Sadne si na svoje miesto. Má ho rezervované. Čašníci sa idú pretrhnúť. Rácz\nchlípe a divo trhá mäso. Mastnými rukami odštopľuje fľašu beaujolais. Krátkym pohľadom\nsi premeriava jej obsah a leje si ho do úst. Divo podupáva bagandžami. Pohľad na množstvo\npríboru rozloženého okolo taniera ho privádza do zúrivosti. Aj tak používa iba lyžicu. Čašníci\nho obstupujú, podávajú mu korenie, šaláty, mäsá, kečup. Celá reštaurácia sa zhrčila k Ráczovmu\nstolu. Hostia si na to zvykli. Radi počkajú. Pohľad na stolujúceho Rácza je neopakovateľný.\nLen noví, neskúsení, nervózne mrmlú a lúskajú prstami na obsluhu. Ostatní sa usilujú zahriaknuť\nich. I vydesený personál. Všetci bojazlivo zazerajú na Rácza, zápasiaceho s diviačou hlavou v šípkovej omáčke. Ak netrpezlivcov nezahriaknu včas, vyrušený Rácz vzhliadne vypúlenými očami od stola, posiateho mastnými fľakmi, omáčkami, vínovými škvrnami a črepmi. Nespratníkov si premeria pohľadom, ktorý nezabúda. Stačí, aby sa len tak mimochodom zmienil pred hlavným čašníkom, a hosť nie je obslúžený. Môže sa pratať kade ľahšie. Ak Rácza niekto rozzúri, odnesú si to všetci. Ak nechcú zmrznúť, musia mu za teplé radiátory znova zaplatiť.",
+          "text": "Peter Píšťanek - Rivers of Babylon\n(úryvok, upravené)\nTeraz už Rácz nejedáva zvyšky v ústraní tmavej kotolne. Dennodenne raňajkuje, obeduje a večeria v hotelovej reštaurácii. Strmo tam vojde, v bagandžiach a s kabelou plnou vercajgu cez plece. Sadne si na svoje miesto. Má ho rezervované. Čašníci sa idú pretrhnúť. Rácz chlípe a divo trhá mäso. Mastnými rukami odštopľuje fľašu beaujolais. Krátkym pohľadom si premeriava jej obsah a leje si ho do úst. Divo podupáva bagandžami. Pohľad na množstvo príboru rozloženého okolo taniera ho privádza do zúrivosti. Aj tak používa iba lyžicu. Čašníci ho obstupujú, podávajú mu korenie, šaláty, mäsá, kečup. Celá reštaurácia sa zhrčila k Ráczovmu stolu. Hostia si na to zvykli. Radi počkajú. Pohľad na stolujúceho Rácza je neopakovateľný. Len noví, neskúsení, nervózne mrmlú a lúskajú prstami na obsluhu. Ostatní sa usilujú zahriaknuť ich. I vydesený personál. Všetci bojazlivo zazerajú na Rácza, zápasiaceho s diviačou hlavou v šípkovej omáčke. Ak netrpezlivcov nezahriaknu včas, vyrušený Rácz vzhliadne vypúlenými očami od stola, posiateho mastnými fľakmi, omáčkami, vínovými škvrnami a črepmi. Nespratníkov si premeria pohľadom, ktorý nezabúda. Stačí, aby sa len tak mimochodom zmienil pred hlavným čašníkom, a hosť nie je obslúžený. Môže sa pratať kade ľahšie. Ak Rácza niekto rozzúri, odnesú si to všetci. Ak nechcú zmrznúť, musia mu za teplé radiátory znova zaplatiť.",
           "questions": [
             {
               "questionText": "Podľa ukážky 7 je Rácz najpravdepodobnejšie? ",
@@ -530,7 +530,7 @@
             },
             {
               "questionText": "Pomenujte vetný sklad v nasledujúcej vete:\nČašníci sa idú pretrhnúť.",
-              "correctAnswer": "prisudzovací | prisudzovací sklad",
+              "correctAnswer": "prisudzovací | prisudzovací sklad | prisudzovaci | prisudzovaci sklad",
               "type": "FILL_IN"
             }
           ]
@@ -597,12 +597,12 @@
             },
             {
               "questionText": "Vypíšte z časti Vysoké Tatry v ukážke 8 sloveso s neslabičnou predponou",
-              "correctAnswer": "vzrástla",
+              "correctAnswer": "vzrástla | vzrastla",
               "type": "FILL_IN"
             },
             {
               "questionText": "Vypíšte z ukážky 8 slovo, ktoré má rovnaký význam ako slovné spojenie miesto pobytu.",
-              "correctAnswer": "destináciu | destinácia",
+              "correctAnswer": "destináciu | destinácia | destinaciu | destinacia",
               "type": "FILL_IN"
             },
             {

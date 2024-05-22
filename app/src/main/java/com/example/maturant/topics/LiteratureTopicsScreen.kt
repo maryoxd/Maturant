@@ -22,6 +22,12 @@ import androidx.navigation.NavController
 import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.topics.dataInfoStructure.CommonComponents.MenuItemContent
 
+/**
+ * LiteratureTopicsScreen
+ * LiteratureTopicsScreen slúži na zobrazenie obrazovky s literárnymi autormi.
+ * @param navController - Parameter navController slúži na navigáciu pomocou NavControllera, aby bolo možné sa presúvať zo screeny naspäť a sem.
+ * @param viewModel - Parameter viewModel slúži na zdieľanie dát medzi jednotlivými obrazovkami, načítavanie autorov, zároveň aj ukladá viaceré stavy.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LiteratureTopicsScreen(navController: NavController, viewModel: SharedViewModel = viewModel()) {

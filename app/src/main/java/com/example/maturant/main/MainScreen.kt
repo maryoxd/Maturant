@@ -46,6 +46,12 @@ import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.viewModels.SharedViewModel
 
 
+/**
+ * Main screen
+ * MainScreen slúži ako hlavná obrazovka aplikácie, ktorá obsahuje navigáciu na jednotlivé obrazovky.
+ * @param navController - slúži na navigáciu pomocou NavControllera, aby bolo možné sa presúvať zo screeny naspäť a sem.
+ * @param viewModel - slúži na zdieľanie dát medzi jednotlivými obrazovkami.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewModel()) {
@@ -90,6 +96,7 @@ fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewMo
                         )
                     }
                     item { Spacer(modifier = Modifier.height(32.dp)) }
+                    // Lambda výraz zoberie všetky MenuItemInfo a v LazyItemScope cez ne iteruje a spracuje ich ako parameter pre MenuItem.
                     items(
                         listOf(
                             MenuItemInfo("GRAMATICKÉ TÉMY", AppColors.UranianBlue, "GrammarTopicsScreen"),
@@ -112,8 +119,22 @@ fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewMo
 }
 
 
+/**
+ * MenuItemInfo
+ * MenuItemInfo slúži ako pomocná data class pomocou ktorej neskôr vykreslujeme políčka pre dané témy (Gramatika, Literatúra, Testy, Výsledky)
+ * @property text - Text ktorý bude zobrazený v políčku.
+ * @property backgroundColor - Farba pozadia políčka.
+ * @property navigationDestination - Destinácia na ktorú sa má presmerovať po kliknutí na dané políčko.
+ * @constructor - Vytvára novú inštanciu MenuItemInfo.
+ */
 data class MenuItemInfo(val text: String, val backgroundColor: Color, val navigationDestination: String)
 
+/**
+ * MenuItem
+ * MenuItem už slúži ako Composable element, ktorý zobrazuje jednotlivé políčka s témami.
+ * @param menuItem - Parameter menuItem si zoberie dáta z atribútov MenuItemInfo.
+ * @param onClick - Parameter onClick slúži na zavolanie funkcie po kliknutí na dané políčko.
+ */
 @Composable
 fun MenuItem(menuItem: MenuItemInfo, onClick: () -> Unit) {
     OutlinedCard(
@@ -149,6 +170,13 @@ fun MenuItem(menuItem: MenuItemInfo, onClick: () -> Unit) {
     }
 }
 
+/**
+ * Bullet
+ * Bullet slúži ako Composable element, ktorý zobrazuje šípku pred textom.
+ * @param imageVector - Parameter imageVector slúži na zobrazenie šípky.
+ * @param contentDescription - Parameter contentDescription slúži na popis šípky.
+ * @param tint - Parameter tint slúži na zmenu farby šípky.
+ */
 @Composable
 fun Bullet(imageVector: ImageVector, contentDescription: String, tint: Color) {
     Icon(

@@ -1,7 +1,6 @@
 package com.example.maturant.viewModels
 
 import android.content.Context
-import android.util.Log
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -15,6 +14,11 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
+/**
+ * SharedViewModel
+ * SharedViewModel slúži na zdieľanie dát medzi jednotlivými obrazovkami, ako je napríklad zobrazenie štýlov, zobrazenie autorov a podobne.
+ * @constructor - Vytvára dáta pre SharedViewModel
+ */
 class SharedViewModel : ViewModel() {
     private val _styles = mutableStateOf<Map<String, StyleInfo>>(emptyMap())
     val styles: State<Map<String, StyleInfo>> = _styles
@@ -31,6 +35,11 @@ class SharedViewModel : ViewModel() {
     private val _isNavigationLocked = mutableStateOf(false)
     val isNavigationLocked: State<Boolean> = _isNavigationLocked
 
+    /**
+     * LoadStyles
+     * LoadStyles slúži na načítanie štýlov.
+     * @param context - Parameter context slúži na získanie prístupu k súboru so štýlmi.
+     */
     fun loadStyles(context: Context) {
         if (_styles.value.isNotEmpty()) return
         _isLoadingStyles.value = true
@@ -44,6 +53,11 @@ class SharedViewModel : ViewModel() {
         }
     }
 
+    /**
+     * LoadAuthors
+     * LoadAuthors slúži na načítanie autorov.
+     * @param context - Parameter context slúži na získanie prístupu k súboru s autorami.
+     */
     fun loadAuthors(context: Context) {
         if (_authors.value.isNotEmpty()) return
 
@@ -58,6 +72,10 @@ class SharedViewModel : ViewModel() {
         }
     }
 
+    /**
+     * LockNavigation
+     * LockNavigation slúži na zablokovanie navigácie na určitý čas.
+     */
     fun lockNavigation() {
         _isNavigationLocked.value = true
         viewModelScope.launch {

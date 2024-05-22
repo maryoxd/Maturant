@@ -37,6 +37,15 @@ import com.example.maturant.ui.theme.AppColors
 import com.example.maturant.viewModels.SharedViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 
+/**
+ * DetailScreen
+ * DetailScreen slúži ako samotný detail obrazovky, ktorá zobrazuje informácie o gramatických štýloch alebo literárnych autoroch.
+ * @param style - Parameter style slúži na získanie názvu gramatického štýlu alebo literárneho autora.
+ * @param source - Parameter source slúži na zistenie, či sa jedná o gramatický štýl alebo literárneho autora.
+ * @param colorName - Parameter colorName slúži na získanie farby pre daný gramatický štýl alebo literárneho autora.
+ * @param navController - Parameter navController slúži na navigáciu pomocou NavControllera, aby bolo možné sa presúvať zo screeny naspäť a sem.
+ * @param viewModel - Parameter viewModel slúži na zdieľanie dát medzi jednotlivými obrazovkami, načítavanie štýlov, či autorov, zároveň aj ukladá viaceré stavy.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DetailScreen(style: String, source: String, colorName: String, navController: NavController, viewModel: SharedViewModel = viewModel()) {
@@ -110,7 +119,7 @@ fun DetailScreen(style: String, source: String, colorName: String, navController
                     styleInfo?.let { info ->
                         item {
                             CategoryBox(if (source == "grammatical") "O ŠTÝLE" else "O AUTOROVI", info.about, color)
-                            CategoryBox(if (source == "grammatical") "ZNAKY" else "DIELA", info.features, color)
+                            CategoryBox("ZNAKY", info.features, color)
                         }
                     } ?: run {
                         item {
@@ -128,6 +137,13 @@ fun DetailScreen(style: String, source: String, colorName: String, navController
     )
 }
 
+/**
+ * CategoryBox
+ * CategoryBox slúži na vytvorenie komponentu, ktorý zobrazuje informácie o gramatických štýloch alebo literárnych autoroch.
+ * @param title - Parameter title slúži na zobrazenie nadpisu kategórie.
+ * @param content - Parameter content slúži na zobrazenie obsahu kategórie.
+ * @param appColors - Parameter appColors slúži na získanie farby pre daný gramatický štýl alebo literárneho autora.
+ */
 @Composable
 fun CategoryBox(title: String, content: String, appColors: Color) {
     Column(
