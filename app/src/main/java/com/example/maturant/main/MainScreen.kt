@@ -118,7 +118,6 @@ fun MainScreen(navController: NavController, viewModel: SharedViewModel = viewMo
     )
 }
 
-
 /**
  * MenuItemInfo
  * MenuItemInfo slúži ako pomocná data class pomocou ktorej neskôr vykreslujeme políčka pre dané témy (Gramatika, Literatúra, Testy, Výsledky)

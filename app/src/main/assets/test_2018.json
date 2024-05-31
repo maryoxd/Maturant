@@ -520,7 +520,7 @@
               "type": "CHOICE"
             },
             {
-              "questionText": "Ktorý viacnásobný vetný člen sa nachádza v nasledujúcom odseku ukážky 7?:\nAle Saveľjiča sa bolo ťažko striasť, keď už raz začal držať kázeň. „Tak vidíš, Peter Andrejevič, ako je to, keď sa človek opije. Hlavička ťažká, a jesť sa tiež nechce. Pijan nie je na nič súci… Vypi si uhorkového rôsolu s medom, ale najlepšie bude otráviť červíka pol pohárikom vodky.\nNedoniesť ti?“",
+              "questionText": "Ktorý viacnásobný vetný člen sa nachádza v nasledujúcom odseku ukážky 7?:\nAle Saveľjiča sa bolo ťažko striasť, keď už raz začal držať kázeň. „Tak vidíš, Peter Andrejevič, ako je to, keď sa človek opije. Hlavička ťažká, a jesť sa tiež nechce. Pijan nie je na nič súci… Vypi si uhorkového rôsolu s medom, ale najlepšie bude otráviť červíka pol pohárikom vodky.\nNedoniesť ti?“\n\n[Národný inštitút vzdelávania a mládeže na základe rozhodnutia validačnej komisie anuloval položku (všetkým žiakom bude pridelený jeden bod bez ohľadu na odpoveď)]",
               "correctAnswer": "*",
               "type": "FILL_IN"
             },

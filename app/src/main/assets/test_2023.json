@@ -144,12 +144,12 @@
               "type": "FILL_IN"
             },
             {
-              "questionText": "Jean Arthur Rimbaud bol predstaviteľom francúzskej literárnej moderny. Napíšte meno\na priezvisko, pod ktorým je známy hlavný predstaviteľ slovenskej literárnej moderny\n\n[Národný inštitút vzdelávania a mládeže na základe rozhodnutia validačnej komisie anuloval položku (všetkým žiakom bude pridelený jeden bod bez ohľadu na odpoveď)",
+              "questionText": "Jean Arthur Rimbaud bol predstaviteľom francúzskej literárnej moderny. Napíšte meno\na priezvisko, pod ktorým je známy hlavný predstaviteľ slovenskej literárnej moderny\n\n[Národný inštitút vzdelávania a mládeže na základe rozhodnutia validačnej komisie anuloval položku (všetkým žiakom bude pridelený jeden bod bez ohľadu na odpoveď)]",
               "correctAnswer": "*",
               "type": "FILL_IN"
             },
             {
-              "questionText": "Doplňte jednoslovný literárnovedný termín do nasledujúcej vety.\nUkážku 2 z hľadiska literárnych druhov zaraďujeme do __________. ",
+              "questionText": "Doplňte jednoslovný literárnovedný termín do nasledujúcej vety.:\nUkážku 2 z hľadiska literárnych druhov zaraďujeme do __________. ",
               "correctAnswer": "lyriky | lyrika",
               "type": "FILL_IN"
             }

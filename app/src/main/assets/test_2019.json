@@ -52,7 +52,7 @@
               "type": "CHOICE"
             },
             {
-              "questionText": "Orol tatranský boL",
+              "questionText": "Orol tatranský bol",
               "options": [
                 "súčasťou časopisu Slovenské pohľady.",
                 "prílohou novín Slovenské národné noviny.",
@@ -157,7 +157,7 @@
         },
         {
           "sectionId": 3,
-          "text": "Ovídius – Daidalos a Ikaros\n(úryvok, upravené)\nJe múdry Daidalos a Ikara má syna.\nVynájde zvláštnu vec: hľa, z krehkých vtáčích pier\nsi krídla zostrojí a k pleciam popripína;\nsyna tiež priúča, jak letieť cez éter.\n\n„Nech Minos vševládny ohradí zem i more,\nktoré nás zoviera a nedá uniknúť –\nje nebo nad Krétou, je šíra cesta hore,\ndo Grécka rodného nás volá voľná púť!”\n\nBol z Atén rodákom a v srdci mocnej Kréty\nbludisko zbudoval, v ňom toľko rôznych ciel\ni chodieb spletitých, že ledva z tejto spleti –\nledva z nej vyplietol sa i sám staviteľ!\n[…]\nkeď chlapca pochytí chuť stúpať hor a hor,\nsprievodcu opustí a len sa túži vtápať\nčím vyššie do výšin, až k slnku, nad obzor – –\nAle tá prudká slasť sa skoro zmení na pád.\n[…]\nZvať budú po tebe tú šíravinu vôd,\nkde otec – ktorý už viac nebol otcom – vzlykal:\n„Môj Ikar, kde si mi? Sem za mnou, Ikar, poď!\nV ktorej už končine ťa nájdem, biedny Ikar?“\n\nVtom uzrie hŕbku pier sa plaviť na ostrov.\nPrekľaje umenie, čo synáčka mu zmára.\nZ vĺn si ho vyloví, vykope mu rov.\nTen ostrov obdrží tiež meno od Ikara.",
+          "text": "Ovídius – Daidalos a Ikaros\n(úryvok, upravené)\nJe múdry Daidalos a Ikara má syna.\nVynájde zvláštnu vec: hľa, z krehkých vtáčích pier\nsi krídla zostrojí a k pleciam popripína;\nsyna tiež priúča, jak letieť cez éter.\n\n„Nech Minos vševládny ohradí zem i more,\nktoré nás zoviera a nedá uniknúť –\nje nebo nad Krétou, je šíra cesta hore,\ndo Grécka rodného nás volá voľná púť!”\n\nBol z Atén rodákom a v srdci mocnej Kréty bludisko zbudoval, v ňom toľko rôznych ciel i chodieb spletitých, že ledva z tejto spleti – ledva z nej vyplietol sa i sám staviteľ!\n[…]\nkeď chlapca pochytí chuť stúpať hor a hor, sprievodcu opustí a len sa túži vtápať čím vyššie do výšin, až k slnku, nad obzor – – Ale tá prudká slasť sa skoro zmení na pád.\n[…]\nZvať budú po tebe tú šíravinu vôd, kde otec – ktorý už viac nebol otcom – vzlykal:\n„Môj Ikar, kde si mi? Sem za mnou, Ikar, poď! V ktorej už končine ťa nájdem, biedny Ikar?“\n\nVtom uzrie hŕbku pier sa plaviť na ostrov. Prekľaje umenie, čo synáčka mu zmára. Z vĺn si ho vyloví, vykope mu rov. Ten ostrov obdrží tiež meno od Ikara.",
           "questions": [
             {
               "questionText": "Ktoré tvrdenie o ukážke 3 je pravdivé?",
@@ -525,7 +525,7 @@
               "type": "FILL_IN"
             },
             {
-              "questionText": "Výslovnosť ktorej hlásky slovenskej abecedy je v ukážke 7 zapísaná tromi grafémami?",
+              "questionText": "Výslovnosť ktorej hlásky slovenskej abecedy je v ukážke 7 zapísaná tromi grafémami?\n\n[Národný inštitút vzdelávania a mládeže na základe rozhodnutia validačnej komisie anuloval položku (všetkým žiakom bude pridelený jeden bod bez ohľadu na odpoveď)]",
               "correctAnswer": "*",
               "type": "FILL_IN"
             },
