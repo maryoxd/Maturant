@@ -22,7 +22,7 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
@@ -63,8 +63,8 @@ fun TestScreen(navController: NavController, viewModel: MaturitaViewModel = view
         viewModel.wasSaved.value = false
     })
 
-    val showExitDialog = remember { mutableStateOf(false) }
-    val showTimeUpDialog = remember { mutableStateOf(false) }
+    val showExitDialog = rememberSaveable { mutableStateOf(false) }
+    val showTimeUpDialog = rememberSaveable { mutableStateOf(false) }
 
     val minutes = viewModel.remainingTime.collectAsState().value / 60
     val seconds = viewModel.remainingTime.collectAsState().value % 60
