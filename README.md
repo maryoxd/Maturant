@@ -46,7 +46,6 @@ The "MATURANT" application was developed as part of a semester project at the Un
 
 2. Problem Definition <br>
 The problem identified is the lack of interactive learning tools for students preparing for graduation exams. Traditional study materials do not provide instant feedback, which can lead to inefficient learning processes. Additionally, manual test preparations (such as printing and checking answers by hand) are time-consuming and outdated. The "MATURANT" application seeks to solve these problems by providing:
-
 Interactive tests: Immediate feedback and grading of multiple-choice and fill-in-the-blank questions.
 Progress tracking: The ability to save test results and monitor progress over time.
 Simulated exam environment: The app includes a countdown timer, simulating the 100-minute limit students face during the real test.
