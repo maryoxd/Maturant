@@ -24,6 +24,7 @@ cd Maturant
 # Open the project in Android Studio  
 # Build & Run on an emulator or physical device
 ```bash
+
 ## 📸 Screenshots
 Here are some screenshots of the APP in action:
 
