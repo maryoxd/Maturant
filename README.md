@@ -22,7 +22,8 @@ git clone https://github.com/maryoxd/Maturant.git
 cd Maturant  
 
 # Open the project in Android Studio  
-# Build & Run on an emulator or physical device  
+# Build & Run on an emulator or physical device
+
 ## 📸 Screenshots
 Here are some screenshots of the APP in action:
 
@@ -31,4 +32,4 @@ Here are some screenshots of the APP in action:
 
 ### Styles
 ![Styles](screens/M3.jpg)
-a
+
