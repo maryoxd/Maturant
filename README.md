@@ -13,18 +13,9 @@
 - **Kotlin (Android Development)**  
 - **Jetpack Compose (UI Framework)**  
 - **JSON Parsing (Question Bank Management)**  
-- **LiveData & ViewModel (State Management)**  
-
-## 🚀 How to Install & Run  
-```bash
-# Clone the repository
-git clone https://github.com/maryoxd/Maturant.git  
-cd Maturant  
-
-# Open the project in Android Studio  
-# Build & Run on an emulator or physical device
+- **LiveData & ViewModel (State Management)**
+- 
 ## 📸 Screenshots
-
 Here are some screenshots of the APP in action:
 
 ### Actual Test
