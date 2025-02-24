@@ -14,7 +14,7 @@
 - **Jetpack Compose (UI Framework)**  
 - **JSON Parsing (Question Bank Management)**  
 - **LiveData & ViewModel (State Management)**
-- 
+  
 ## 📸 Screenshots
 Here are some screenshots of the APP in action:
 
