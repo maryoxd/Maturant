@@ -18,9 +18,12 @@
 ## 📸 Screenshots
 Here are some screenshots of the APP in action:
 
-### Actual Test
-![Actual Test](screens/M1.jpg)
+<p align="center">
+  <img src="screens/M1.jpg" width="600">
+</p>
+<h3 align="center">📷 Actual Test</h3>
 
-### Styles
-![Styles](screens/M3.jpg)
-
+<p align="center">
+  <img src="screens/M3.jpg" width="600">
+</p>
+<h3 align="center">🎨 Styles</h3>
